@@ -1,6 +1,6 @@
 # SOMA Turkce Yama macOS Installer
 
-Bu paket, Windows icin hazirlanmis **SOMA Turkce Yama V1** dosyalarini macOS SOMA kurulumuna uygulanabilir hale getirir.
+Bu paket, Windows icin hazirlanmis **SOMA Turkce Yama** dosyalarini macOS SOMA kurulumuna uygulanabilir hale getirir.
 
 ## Kurulum
 
