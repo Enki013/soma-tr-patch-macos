@@ -1,0 +1,16 @@
+<LANGUAGE>
+    <CATEGORY Name="Voices_global">
+        <Entry Name="globaltestscene_globaltestsub_001_globaltestchar_001">Bu küresel bir test!</Entry>
+        <Entry Name="globaltestscene_firstdatamine_001_player_001">Ne - bunu nasıl yaptım?</Entry>
+        <Entry Name="globaltestscene_firstwauflower_human_001_player_001">Ah, o neydi öyle?</Entry>
+        <Entry Name="globaltestscene_firstwauflower_tentacle_001_player_001">Aman Tanrım, bu da ne böyle --</Entry>
+        <Entry Name="globaltestscene_getflashlight_001_player_001">Nasıl oldu da - el fenerini nereden buldum?</Entry>
+        <Entry Name="globaltestscene_getflashlightunderwater_001_player_001">Nasıl oldu da - el fenerini nereden buldum?</Entry>
+        <Entry Name="GlobalTestScene_WauFlower_CathAndSimon_001_Catherine_001">Ne halt ediyorsun sen?</Entry>
+        <Entry Name="GlobalTestScene_WauFlower_CathAndSimon_002_Player_001">Kötü göründüğünü biliyorum ama bu beni çok daha iyi hissettiriyor. Odaklanmama yardımcı oluyor.</Entry>
+        <Entry Name="GlobalTestScene_WauFlower_CathAndSimon_003_Catherine_001">Bu... yani bağlandığın şey WAU.</Entry>
+        <Entry Name="GlobalTestScene_WauFlower_CathAndSimon_004_Player_001">Ona ihtiyacım var, tamam mı? O olmasaydı bu kadar ilerleyemezdim.</Entry>
+        <Entry Name="GlobalTestScene_WauFlower_CathAndSimon_005_Catherine_001">Hadi devam edelim.</Entry>
+        <Entry Name="globaltestscene_firstwauflower_human_001_player_002">Artık acımıyor.</Entry>
+    </CATEGORY>
+</LANGUAGE>

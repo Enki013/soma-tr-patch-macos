@@ -1,0 +1,2117 @@
+<LANGUAGE>
+  <RESOURCES>
+    <Directory Path="fonts/" />
+    <Directory Path="lang/eng" />
+  </RESOURCES>
+  
+  <CATEGORY Name="GameOver">
+	<Entry Name="DefaultMessage">Öldün</Entry>
+	<Entry Name="PressToContinue">Tekrar denemek için herhangi bir tuşa bas...</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="LoadScreen">
+  	<Entry Name="PressToStart">Devam etmek için bir tuşa bas...</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="HintHeaders">
+	<Entry Name="Hint">İPUCU</Entry>
+	<Entry Name="Alert">UYARI</Entry>
+	<Entry Name="Danger">TEHLİKE</Entry>
+	<Entry Name="Info">BİLGİ</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="Hints">
+	<Entry Name="HintLookAround">Etrafına bakmak için fareyi kullan.</Entry>
+	<Entry Name="HintMoveAround">Etrafta dolaşmak için hareket tuşlarını ($Input{Forward} $Input{Backward} $Input{Left} $Input{Right}) kullan</Entry>
+	<Entry Name="HintDoors">Kapıları ve kutuları açmak için önce onlarla etkileşime gir ve fareyi çek.</Entry>
+	<Entry Name="HintTools">Edindiğin bir nesneyi kullanmak için, eşya ekranda gösterildiğinde $Input{Interact} tuşuna bas.</Entry>
+	<Entry Name="HintGrab_1">Bir nesneyi tutarken fırlatmak için $Input{Throw} tuşuna bas.</Entry>
+	<Entry Name="HintGrab_2">Nesneleri döndürmek için $Input{InteractRotate} tuşuna basılı tutup fareyi hareket ettirebilirsin.</Entry>
+	<Entry Name="HintGrab_3">Bir nesneyi tutarken yaklaştırmak veya uzaklaştırmak için $Input{ScrollDown} veya $Input{ScrollUp} tuşlarını kullanabilirsin.</Entry>
+	<Entry Name="HintWheel">Bir tekerleği döndürmek için tutarken fareyi dairesel hareketlerle hareket ettir.</Entry>
+	<Entry Name="HintSlider">Çekmeceleri çekmek/itmek için tutarken fareyi kullan.</Entry>
+	<Entry Name="ReadableTextHint">$Input{Interact} kullanarak metni görüntüle</Entry>
+	<Entry Name="ReadablePropAdditionalHint">Döndürmek için fareyi kullan / çıkmak için $Input{InteractCancel}.</Entry>
+	<Entry Name="ReadableGrabAdditionalHint">Nesneyi döndürmek için $Input{InteractRotate} tuşuna basarken fareyi hareket ettir.</Entry>
+	<Entry Name="ReadableTextHintZoomArea">$Input{Interact} kullanarak metni görüntüle</Entry>
+	<Entry Name="HintPhone">Nesnelerle $Input{Interact} kullanılarak etkileşime girilebilir</Entry>
+	<Entry Name="HintPickUpItem">Eşyalar etkileşim düğmesi $Input{Interact} ile alınabilir</Entry>
+	<Entry Name="HintRun">Koşmak için hareket ederken $Input{Run} tuşuna basılı tut.</Entry>
+	<Entry Name="HintJump">Zıplamak için $Input{Jump} tuşuna bas.</Entry>
+	<Entry Name="HintInventory">Envanterini görmek için $Input{OpenInventory} kullan.</Entry>
+	<Entry Name="HintSneak">Çömelirken hareket etmek ($Input{Crouch} tuşuna bas) daha az gürültülüdür ve fark edilme şansını azaltır.</Entry>
+	<Entry Name="HintFlashlight">El Fenerini açıp kapatmak için $Input{Flashlight} tuşuna bas</Entry>
+	<Entry Name="HintLean">Sola veya sağa eğilmek için $Input{LeanLeft} veya $Input{LeanRight} tuşuna bas</Entry>
+	<Entry Name="HintTest1">$Input{LeanLeft} - $Input{Jump} - $Input{Crouch} - $Input{OpenInventory} - $Input{Run} - $Input{Forward}</Entry>
+  </CATEGORY>
+	  
+  <CATEGORY Name="HintsGamepad">
+	<Entry Name="HintLookAround">Etrafına bakmak için $GAInput{GamepadLook} kullan.</Entry>
+	<Entry Name="HintMoveAround">Etrafta dolaşmak için çubuğu ($GAInput{GamepadMove}) kullan</Entry>
+	<Entry Name="HintDoors">Kapıları ve kutuları açmak için önce onlarla etkileşime gir ve $GAInput{GamepadLook} kullanarak çek</Entry>
+	<Entry Name="HintGrab_1">Bir nesneyi tutarken fırlatmak için $Input{Throw} tuşuna bas.</Entry>
+	<Entry Name="HintGrab_2">Nesneyi $GLayout{DPAD} kullanarak döndürebilirsin</Entry>
+	<Entry Name="HintWheel">Bir tekerleği döndürmek için tutarken $GAInput{GamepadLook} çubuğunu dairesel hareketlerle hareket ettir.</Entry>
+	<Entry Name="HintSlider">Çekmeceleri çekmek/itmek için tutarken $GAInput{GamepadLook} çubuğunu hareket ettir.</Entry>
+	<Entry Name="HintLean">Eğilmek için $Input{AnalogLean} tuşuna basılı tutup $GAInput{GamepadMove} çubuğunu sola veya sağa hareket ettir</Entry>
+	<Entry Name="ReadablePropAdditionalHint">Döndürmek için $GLayout{DPAD} kullan / çıkmak için $Input{InteractCancel}.</Entry>
+	<Entry Name="ReadableGrabAdditionalHint">Döndürmek için $GLayout{DPAD} kullan.</Entry>
+  </CATEGORY>
+  
+   <CATEGORY Name="Levels">
+    <Entry Name="00-00-intro">Giriş</Entry>
+    <Entry Name="00-01-apartment">Simon'ın Dairesi</Entry>
+    <Entry Name="00-02-subway">Metro</Entry>
+    <Entry Name="00-03-laboratory">Munshi'nin Laboratuvarı</Entry>
+    <Entry Name="01-01-upsilon-awake">Uyanış</Entry>
+    <Entry Name="01-02-upsilon-inside">Upsilon Tesisi</Entry>
+    <Entry Name="01-03-upsilon-outside">Upsilon'ın Dışı</Entry>
+    <Entry Name="01-04-transport-station">Upsilon Mekik İstasyonu</Entry>
+    <Entry Name="02-01-ms-curie-outside">Lambda Tesisi</Entry>
+    <Entry Name="02-02-ms-curie-inside">CURIE</Entry>
+    <Entry Name="02-03-delta">Delta Tesisi</Entry>
+    <Entry Name="02-04-theta-outside">Theta'nın Dışı</Entry>
+    <Entry Name="02-05-theta-inside">Theta Girişi</Entry>
+    <Entry Name="02-06-theta-tunnels">Theta Laboratuvarları</Entry>
+    <Entry Name="02-07-theta-exit">Theta Bakım</Entry>
+    <Entry Name="03-01-omicron-outside">Omicron'un Dışı</Entry>
+    <Entry Name="03-02-omicron-inside">Omicron Tesisi</Entry>
+    <Entry Name="03-03-omicron-descent">İniş</Entry>
+    <Entry Name="04-01-tau-outside">Tau'ya Giden Yol</Entry>
+    <Entry Name="04-02-tau-inside">Tau Tesisi</Entry>
+    <Entry Name="04-03-tau-escape">Alpha Tesisi</Entry>
+    <Entry Name="05-01-phi-inside">Phi Tesisi</Entry>
+    <Entry Name="05-02-ARK-inside">ARK</Entry>
+    <Entry Name="05-03-space">Boşluk</Entry>
+  </CATEGORY>
+
+  <CATEGORY Name="LastOnSOMAText">
+    <Entry Name="00_01_apartment_1">Simon, bir beyin taraması randevusuna gitmek için söz verdi. En iyi sonuçları elde etmek için bir miktar izleyici sıvısı içmesi gerekiyor.</Entry>
+    <Entry Name="00_01_apartment_2">Simon, yaklaşan beyin taramasına hazırlık olarak bir miktar izleyici sıvısı içti.</Entry>
+    <Entry Name="00_03_laboratory_1">Simon, beyin taraması randevusu olan Toronto şehir merkezindeki PACE Laboratuvarları'na metroyla gitti.</Entry>
+    <Entry Name="01_01_upsilon_awake_1">Beyin taramasından sonra Simon, tanımadığı bir yerde uyandı.</Entry>
+	<Entry Name="01_01_upsilon_awake_2">Simon, omnitool adı verilen küçük bir el cihazı buldu.</Entry>
+	<Entry Name="01_01_upsilon_awake_3">Simon, omnitool'unu yeni güncelledi ve artık belirli kapıları açabiliyor.</Entry>
+    <Entry Name="01_02_upsilon_inside_1">Beyin taramasından sonra Simon, tanımadığı bir yerde uyandı.</Entry>
+	<Entry Name="01_02_upsilon_inside_2">Simon, arızalı bir radyo üzerinden bir yabancıyla temas kurmayı başardı. Tekrar konuşabilmeleri için kubbeli tavanlı bir oda olan İletişim Merkezi'ni bulması söylendi.</Entry>
+    <Entry Name="01_03_upsilon_outside_1">Simon, kendisini Lambda'ya götürebilecek bir mekik istasyonu arıyor; Catherine orada bekleyeceğini söylemişti.</Entry>
+    <Entry Name="01_04_transport_station_1">Simon, kendisini radyodaki kadın olan Catherine ile buluşması gereken Lambda'ya götürecek bir mekiği çalıştırmaya çalışıyor.</Entry>
+	<Entry Name="01_04_transport_station_2">Simon'ın mekiği düştü ve şimdi radyodaki kadın olan Catherine'in kendisini beklediği yer olan Lambda'ya gitmek için başka bir yol bulması gerekiyor.</Entry>
+    <Entry Name="02_01_ms_curie_outside_1">Simon bir kez daha okyanusa çıktı ve radyodaki kadın olan Catherine'in kendisini beklediği yer olan Lambda'yı bulması gerekiyor.</Entry>
+	<Entry Name="02_01_ms_curie_outside_2">Catherine'in bir robot olduğu ortaya çıktı - bozuk bir robot - ve Simon'ın şimdi onun verilerini omnitool'una aktarması gerekiyor.</Entry>
+	<Entry Name="02_01_ms_curie_outside_3">Catherine, Simon'dan ARK projesi denilen şeye ne olduğunu bulmasına yardım etmesini istiyor. Simon'dan yakındaki bir bilgisayara erişmesini ve bulgularını rapor etmesini istiyor.</Entry>
+	<Entry Name="02_01_ms_curie_outside_4">Catherine'in ARK projesi insanlığı kurtarmak için tasarlanmıştı, ancak okyanusun derinliklerinde sıkışıp kalmış durumda. Onu kurtarmak için, abisin basıncına dayanabilecek tek araç olan DUNBAT'ı alacakları Theta tesisine bir yol bulmaları gerekiyor.</Entry>
+	<Entry Name="02_01_ms_curie_outside_5">Catherine'in ARK projesi insanlığı kurtarmak için tasarlanmıştı, ancak okyanusun derinliklerinde sıkışıp kalmış durumda. Theta'ya gidip abisin basıncına dayanabilecek tek araç olan DUNBAT'ı bulmaları gerekiyor. Oraya ulaşmak için Simon, CURIE'nin gemi enkazını bulup bir acil durum aracını kaçırmayı umuyor.</Entry>
+    <Entry Name="02_02_ms_curie_inside_1">Simon, denizin dibindeki büyük bir gemi olan CURIE'nin enkazını buldu. İçinde bir Acil Durum Aracı bulup Theta adlı tesise gitmeyi umuyor.</Entry>
+	<Entry Name="02_02_ms_curie_inside_2">Simon ve Catherine, aşırı basınçlı ortamlar için yapılmış bir araç olan DUNBAT'ı almak için Theta'ya gidiyorlar. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+    <Entry Name="02_03_delta_1">Simon, Delta adlı bir tesisin yakınına çakıldı. Hâlâ ARK'a ulaşmaya çalışıyor, ancak bunu yapmak için önce Theta'ya gitmesi gerekiyor.</Entry>
+	<Entry Name="02_03_delta_2">Simon bir zeplin, bir su altı taşıma aracı çağırdı. Catherine, alet çipi kırık olmasaydı onu çalıştırabileceğini söylüyor. Simon, ayrılmadan önce bölgedeki robotlardan birinden yeni bir tane almak zorunda.</Entry>
+	<Entry Name="02_03_delta_3">Catherine'in kırık alet çipini değiştirdikten sonra ikisi nihayet zeplinle Theta'ya doğru yola devam edebilirler.</Entry>
+    <Entry Name="02_04_theta_outside_1">Simon ve Catherine, aşırı basınçlı ortamlar için yapılmış bir araç olan DUNBAT'ı bulmayı umdukları Theta'ya gidiyorlar. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+    <Entry Name="02_05_theta_inside_1">Simon ve Catherine, Theta'ya vardılar ve şimdi aşırı basınçlı ortamlar için yapılmış bir araç olan DUNBAT'ı bulmaları gerekiyor. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+	<Entry Name="02_05_theta_inside_2">Simon ve Catherine, DUNBAT'ı buldular, ancak karantinaya alınmış ve erişim sağlamak için güvenlik şifresini bilecek birini bulmaları gerekiyor. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+	<Entry Name="02_05_theta_inside_3">Simon, bir güvenlik görevlisi olan Brandon Wan'ın bir taramasını buldu ve Catherine'in DUNBAT'a erişebilmesi için ondan bir şekilde şifreyi çıkarmanın bir yolunu bulmayı umuyor. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+	<Entry Name="02_05_theta_inside_4">Simon, Brandon Wan'ın kim olduğu hakkında daha fazla bilgi edinmeye çalışıyor, böylece simülasyonunu DUNBAT'a erişmek için gereken güvenlik şifresini vermeye ikna etmek daha kolay olacak. Sadece DUNBAT ile abise girip kayıp ARK'ı bulabilecekler.</Entry>
+	<Entry Name="02_05_theta_inside_5">Simon ve Catherine, Brandon Wan'ın simülasyonunu DUNBAT'a erişmek için gereken güvenlik şifresini vermesi için ikna etmeye çalışıyorlar. Şimdiye kadar "Brandon" sunulan ortamlardan şüphelendi. Bunu gerçekten çözmeleri gerekiyor çünkü DUNBAT, ARK'a ulaşmalarına yardımcı olabilecek tek araç.</Entry>
+	<Entry Name="02_05_theta_inside_6">Simon ve Catherine, Brandon simülasyonunu kandırarak DUNBAT'a erişmek için gereken güvenlik şifresini paylaştırdılar. Şimdi nihayet onu abise yolculuk yapmak ve kayıp ARK'ı bulmak için kullanabilirler.</Entry>
+	<Entry Name="02_05_theta_inside_7">DUNBAT, WAU tarafından bozulmuş. Onu kurtarmanın bir yolu yok.[br]Simon ve Catherine'in abise inip ARK'ı bulmak için başka bir yol bulmaları gerekecek.</Entry>
+    <Entry Name="02_06_theta_tunnels_1">DUNBAT, WAU tarafından bozulmuş. Onu kurtarmanın bir yolu yok.[br]Simon ve Catherine'in abise inip ARK'ı bulmak için başka bir yol bulmaları gerekecek.</Entry>
+	<Entry Name="02_06_theta_tunnels_2">DUNBAT'ı abise götürme planı başarısız oldu. Simon ve Catherine, Omicron'a gidip bunun yerine Tırmanıcı ile aşağı inmeye karar verdiler, ancak önce Catherine'in ARK'ın nasıl çalıştığını anlaması için Simon'ın yardımına ihtiyacı var.</Entry>
+	<Entry Name="02_06_theta_tunnels_3">DUNBAT'ı abise götürme planı başarısız oldu. Simon ve Catherine, Omicron'a gidip bunun yerine Tırmanıcı ile aşağı inmeye karar verdiler, ancak önce Simon'ın Theta'dan bir çıkış yolu bulması gerekiyor.</Entry>
+    <Entry Name="02_07_theta_exit_1">Simon, Theta'nın içinde bir yerlerde kayboldu, bir çıkış yolu arıyor.</Entry>
+	<Entry Name="02_07_theta_exit_2">Simon, Theta'nın içinde bir yerlerde kayboldu, tuhaf yaratıklar tarafından avlanıyor.</Entry>
+    <Entry Name="03_01_omicron_outside_1">Simon, Theta'dan kaçtı ve nihayet Omicron'a gidebilir; burada abisin basıncına dayanacak bir Güç Zırhı bulabilir.</Entry>
+	<Entry Name="03_01_omicron_outside_2">Simon, abisin basıncına dayanacak bir Güç Zırhı araması gereken Omicron'u buldu. Ama önce içeri girmenin bir yolunu bulması gerekiyor.</Entry>
+    <Entry Name="03_02_omicron_inside_1">Simon, Omicron'a girdi. Tırmanıcı ile abise inmeden önce, basınca dayanabilmesi için bir Güç Zırhı'na ihtiyacı var.</Entry>
+	<Entry Name="03_02_omicron_inside_2">Simon, içinde ölü bir beden olan bir Güç Zırhı buldu. Şimdi onu, Catherine'in zihnini içine aktarabilmesi ve abise yolculuklarına devam edebilmeleri için uyarlaması gerekiyor. Üç parça gerekli: biraz yapı jeli, bir robottan bir korteks çipi ve bir güç paketi.</Entry>
+	<Entry Name="03_02_omicron_inside_3">Catherine, Simon'ın zihnini aşırı basınca dayanabilen yeni bir bedene başarıyla aktardı. Şimdi abis için hazırlar.</Entry>
+    <Entry Name="03_03_omicron_descent_1">Yeni ve daha güçlü bir bedenle Simon ve Catherine, Tırmanıcı ile abise inecek ve kayıp ARK'ı arayacaklar.</Entry>
+    <Entry Name="04_01_tau_outside_1">Simon, okyanusun dibine doğru giden Tırmanıcı'da. Daha sonra ARK'ın olduğu söylenen Tau'ya ulaşmak için zorlu abisal ortamdan geçmek zorunda kalacak.</Entry>
+	<Entry Name="04_01_tau_outside_2">Simon, abisin dibine ulaştı ve şimdi ARK'ın olduğu söylenen Tau'ya ulaşmak için zorlu ortamdan geçmek zorunda kalacak.</Entry>
+    <Entry Name="04_02_tau_inside_1">Simon, ARK'ın olması gereken Tau'ya giden yolu buldu. ARK'ı bulmalı ve uzaya fırlatılabileceği Phi'ye götürmeli.</Entry>
+	<Entry Name="04_02_tau_inside_2">Simon nihayet ARK'ı buldu ve şimdi onu uzaya fırlatabileceği Phi'ye götürmeli.</Entry>
+    <Entry Name="04_03_tau_escape">ARK, otomatik bir tramvayla Phi'ye doğru yola çıktı. Simon'ın sadece kendisinin de oraya vardığından emin olması gerekiyor.</Entry>
+    <Entry Name="05_01_phi_inside_1">Simon, WAU'nun kalbi olan gizli Alpha tesisinden kaçtı ve Phi'ye ulaştı. ARK ile yeniden bir araya gelme ve onu Omega Uzay Topu'nu kullanarak uzaya fırlatma zamanı.</Entry>
+	<Entry Name="05_01_phi_inside_2">Simon, ARK'ı Omega Uzay Topu'nu kullanarak uzaya fırlatmayı planladığı Phi tesisine ulaştı.</Entry>
+    <Entry Name="05_02_ARK_inside_1">Simon, zihnini başarıyla ARK'a aktardı.</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="GUI">
+	<Entry Name="OK">TAMAM</Entry>
+	<Entry Name="Cancel">İptal</Entry>
+	<Entry Name="Back">Geri</Entry>
+	<Entry Name="Play">Oynat</Entry>
+	<Entry Name="Stop">Durdur</Entry>
+	<Entry Name="Playback">Yeniden Oynat</Entry>
+	<Entry Name="NumPadClear">C</Entry>
+	<Entry Name="NumPadClearFull">TEMİZLE</Entry>
+	<Entry Name="Error">Hata</Entry>
+	<Entry Name="Next">Sonraki</Entry>
+	<Entry Name="Prev">Önceki</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="StationGUI">
+	<Entry Name="Error">HATA</Entry>
+	<Entry Name="OK">TAMAM</Entry>
+	
+	<Entry Name="StationGUI_VersionNO">v. 3.02</Entry>
+	<Entry Name="DoorControlApp_Label">Kapı Kilidi Kontrolü</Entry>
+	<Entry Name="DoorControlApp_Locked">KİLİTLİ</Entry>
+	<Entry Name="DoorControlApp_Unlocked">KİLİDİ AÇIK</Entry>
+	<Entry Name="DoorControlApp_Broken">YOK</Entry>
+	<Entry Name="DoorControlApp_PowerLevelHeader">SİSTEM ARIZASI! KİLİT LİMİTLERİ AKTİF.</Entry>
+	<Entry Name="DoorControlApp_PowerLevel_Pre">KALAN KAYNAKLAR: </Entry>
+	<Entry Name="DoorControlApp_PowerLevel_Post">%</Entry>
+	<Entry Name="DoorControlApp_RoomInfoHeader">BİLGİ</Entry>
+	<Entry Name="MailApp_Header">MESAJLAR</Entry>
+	<Entry Name="MailApp_Inbox">GELEN KUTUSU</Entry>
+	<Entry Name="MailApp_Draft">TASLAKLAR</Entry>
+	<Entry Name="MailApp_Sent">GÖNDERİLENLER</Entry>
+	<Entry Name="MailApp_Send">GÖNDER</Entry>
+	<Entry Name="ReaderApp_Header">OKUYUCU</Entry>
+	<Entry Name="AudioApp_Header">SES OYNATICI</Entry>
+	
+	<Entry Name="CorruptedData_Detected">Bozuk veri algılandı[br]Dosyalar geri yüklensin mi?</Entry>
+	<Entry Name="CorruptedData_Restoring">Geri yükleniyor...</Entry>
+	<Entry Name="CorruptedData_Results">Kısmi veri kurtarma başarılı!</Entry>
+	
+	<Entry Name="Panel_AccessDenied">ERİŞİM ENGELLENDİ</Entry>
+	<Entry Name="Panel_Locked">ÇEVRİMDIŞI</Entry>
+	<Entry Name="Panel_On">ERİŞİM VERİLDİ</Entry>
+	<Entry Name="Panel_Off">OMNITOOL'U KAYDIR</Entry>
+	
+	<Entry Name="PressureDiff_Status">DURUM</Entry>
+	<Entry Name="PressureDiff_PressureHeader">BASINÇ FARKI</Entry>
+	<Entry Name="PressureDiff_Out">DIŞARI</Entry>
+	<Entry Name="PressureDiff_In">İÇERİ</Entry>
+	<Entry Name="PressureDiff_Airlock">HAVA KİLİDİ</Entry>
+	
+  </CATEGORY>
+  
+  <CATEGORY Name="PathOS">
+	<Entry Name="TBBack">GERİ</Entry>
+	<Entry Name="MMAppAudioPlayer">SES OYNATICI</Entry>
+	<Entry Name="MMAppLogReader">GÜNLÜK OKUYUCU</Entry>
+	<Entry Name="MMAppMessenger">MESAJLAŞMA</Entry>
+	<Entry Name="MMPathOSTM">v. 3.02</Entry>
+	<Entry Name="MsgConversations">KONUŞMALAR</Entry>
+	<Entry Name="MsgAttach">EKLER</Entry>
+	<Entry Name="MsgSend">GÖNDER</Entry>
+	<Entry Name="MsgDelete">SİL</Entry>
+	<Entry Name="MsgOK">TAMAM</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="UrbanGUI">
+	<Entry Name="MailApp_Header">treemail 0.1</Entry>
+	<Entry Name="MailApp_Inbox">GELEN KUTUSU</Entry>
+	<Entry Name="MailApp_Draft">TASLAKLAR</Entry>
+	<Entry Name="MailApp_Sent">GÖNDERİLENLER</Entry>
+	<Entry Name="MailApp_ToLabel">KİME:</Entry>
+	<Entry Name="MailApp_FromLabel">KİMDEN:</Entry>
+	<Entry Name="MailApp_SubjectLabel">KONU:</Entry>
+	<Entry Name="MailApp_TimestampLabel">TARİH:</Entry>
+	<Entry Name="MailApp_Send">E-POSTA GÖNDER</Entry>
+	<Entry Name="MailApp_Yes">Evet</Entry>
+	<Entry Name="MailApp_No">Hayır</Entry>
+	<Entry Name="MailApp_ConfirmSend">Göndermek istediğine emin misin?</Entry>
+	<Entry Name="DesktopDate">2 Mayıs 2015 Cumartesi</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="Phone">
+	<Entry Name="Caller_unknown">BİLİNMİYOR</Entry>
+	<Entry Name="Caller_jesse">Jesse - The Grimoire</Entry>
+	<Entry Name="Caller_munshi">David Munshi</Entry>
+	<Entry Name="DurationHeader">Süre:</Entry>
+	<Entry Name="MissedCall">Cevapsız arama</Entry>
+	<Entry Name="RejectedCall">Reddedildi</Entry>
+	<Entry Name="CancelledCall">Arama sonlandı</Entry>
+	<Entry Name="Calling">Aranıyor...</Entry>
+	
+	<Entry Name="00_01_Time">09:21</Entry>
+	<Entry Name="00_02_Time">10:12</Entry>
+	<Entry Name="00_03_Time">10:50</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="Readables">
+	<Entry Name="NoteDiveSuits">Haimatsu Güç Zırhları: Doğru Kullanım[br]Sizin ve iş arkadaşlarınızın güvenliği için![br]1: Neopren iç giysiyi ve vücut kuşamını giyin.[br]2: HPS'yi herhangi bir görsel hasar için kontrol edin.[br]3: Bacaklardan başlayarak, parçaları kuşamınıza sabitleyin ve yukarı doğru ilerleyin. İlerledikçe tüm parçaları birbirine kilitleyin. Sırt parçası ve gövde için bir partnerden yardım alın.[br]4: Kol parçanızdaki "Güvenliğe Al" düğmesine dokunun. Zırhın kendini mühürlediğini duymalısınız.[br]5: Zırh daha sonra basıncı eşitlemeye ve oksijen tankına bağlanmaya başlayacaktır.[br]6: Zırh kendini mühürlemezse, şok emicileri esnetin ve tekrar deneyin. Hâlâ çalışmazsa, kendiniz tamir etmeye çalışmayın! Bakımla iletişime geçin.[br]Not: HPS'ler çok ağırdır ve zırh bunu telafi edecektir. Etkili bir şekilde düşündüğünüzden daha güçlü olacaksınız. Dikkatli olun![br]Rutin eğitim geçerlidir: Nefesinizi tutmayın, çok uzun süre dışarıda kalmayın, çok derine dalmayın, arızalı ekipmanla dalmayın.</Entry>
+	<Entry Name="SecurityTasklist1">Kontrol Listesi[br]ARK projesinden sağ çık[br]İnsanların kendilerini öldürmesini engelle[br]C ve ekibi uğurla[br]İnsanları güvende tut[br]Kıyametin geri kalanının tadını çıkar</Entry>
+	<Entry Name="SecurityTasklist2">Akers yalnız değil[br]en az 3 vekil yaratık[br]kapıları kontrol et ve mühürle[br]alt kata in[br]Omicron'a mekik</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="00_00_intro">
+	<Entry Name="Quote">"Gerçeklik, ona inanmayı bıraktığınızda gitmeyen şeydir."</Entry>
+	<Entry Name="Signature">- Philip K. Dick</Entry>
+  </CATEGORY>
+    
+  <CATEGORY Name="00_01_apartment">
+	<Entry Name="ToDoBoard">Jesse'ye hatırlat![br]İlaçları Al[br]Cenaze için çiçekler</Entry>
+	<Entry Name="GetWellCard">Geçmiş olsun.[br][br]Sevgiler, Annen</Entry>
+	<Entry Name="SportlerFront">SİNEMA ÇEŞİTLERİ[br]Nihai Film Dergisi[br][br]- Yaz Gişe Canavarları[br]- Japanimasyon: Her zamankinden daha büyük[br]- Dublörler mi, CGI mı?[br]- Şişe Film Nedir?</Entry>
+	<Entry Name="SportlerBack">Muazzam Geri Tepme 2: Kusursuz İnfaz[br]13 Aralık'ta sinemalarda</Entry>
+	<Entry Name="BrainBookFront">Zihinleri Haritalamak[br]Albert Isaacson</Entry>
+	<Entry Name="BrainBookBack">İnsan beyninin anatomisi, işlevi ve bilinç algımız hakkında en kapsamlı ancak anlaşılır metinlerden biri olarak geniş çapta övülen bu kitap.[br][br]Beyninizin vücuduna nasıl bağımlı olduğunu, beynin neden basitçe bir bilgisayar olmadığını ve başınızı döndürecek daha birçok ilginç gerçeği öğrenin.[br][br]Bu baskı ayrıca beynin gelişimi ve hayatımızın farklı evrelerinde davranışlarımızı nasıl etkilediği hakkında iki yeni bölüm içermektedir.</Entry>
+	<Entry Name="GUI_EMAIL_SEND">E-POSTA GÖNDER</Entry>
+	<Entry Name="GUI_MENU_INBOX">GELEN KUTUSU</Entry>
+	<Entry Name="GUI_MENU_DRAFTS">TASLAKLAR</Entry>
+	<Entry Name="GUI_MENU_SENT">GÖNDERİLENLER</Entry>
+	<Entry Name="GUI_EMAIL_SUBJ1">Nörograf Seansı</Entry>
+	<Entry Name="GUI_EMAIL_SUBJ2">Yeni Reçete</Entry>
+	<Entry Name="GUI_EMAIL_SUBJ3">Cumartesi izinli</Entry>
+	<Entry Name="GUI_EMAIL_SUBJ4">[Virüs Hatası] Bunu Ha% ettin</Entry>
+	<Entry Name="EMAIL_1_FROM">David Munshi</Entry>
+	<Entry Name="EMAIL_1_SUBJ">Nörograf Seansı</Entry>
+	<Entry Name="EMAIL_1_DATE">30 Nisan 2015</Entry>
+	<Entry Name="EMAIL_1_BODY">Araştırmamıza katıldığınız için tekrar teşekkür ederiz. Tarama Toronto'daki Pace Laboratuvarları'nda gerçekleştirilecek, ancak misafir olduğumuz için erişimimiz biraz öngörülemez. Cumartesi için bir tarama seansı planlamaya çalışacağım. Onaylandığında size geri döneceğim.[br][br]Saygılarımla, David Munshi</Entry>
+	<Entry Name="EMAIL_2_FROM">Dr. Erin Peake</Entry>
+	<Entry Name="EMAIL_2_SUBJ">Yeni Reçete</Entry>
+	<Entry Name="EMAIL_2_DATE">28 Nisan 2015</Entry>
+	<Entry Name="EMAIL_2_BODY">Sayın Bay Jarrett,[br][br]Baş ağrılarınızın daha az sıklaştığını duyduğuma sevindim. Son testleriniz beyninizin yavaş yavaş iyileştiğini gösteriyor, ancak hasara ne kadar iyi uyum sağlayacağını söylemek için henüz çok erken. Kanama önümüzdeki aylarda en azından devam edecek ve kanın basınç oluşturmasını önlemek için boşluğu boşaltmak üzere birkaç kez hastaneye gelmeniz gerekecek.[br]Aşırı stres ölümcül olabileceğinden, kâbuslarınıza yardımcı olması için size Prazosin reçetesi yazdım. Lütfen talimatları okuyun ve ilacı uygun şekilde kullanın.[br]Bol bol dinlenmeye çalışın, haftaya görüşürüz.[br][br]Saygılarımla,[br]Dr. Erin Peake</Entry>
+	<Entry Name="EMAIL_3_FROM">Jesse - The Grimoire</Entry>
+	<Entry Name="EMAIL_3_SUBJ">Cumartesi izinli</Entry>
+	<Entry Name="EMAIL_3_DATE">1 Mayıs 2015</Entry>
+	<Entry Name="EMAIL_3_BODY">Selam Jesse,[br][br]Muhtemelen unuttuğun için, yarın doktor randevum olduğunu hatırlatıyorum, yani işe gelmiyorum![br][br]Bu da demek oluyor ki dükkânı açmak için gerçekten zamanında orada olman gerekiyor. Ve lütfen tezgâhın arkasındaki kutuları boşalt, iş yeri tehlikesi olmaya başladılar. Ayrıca kitaplar, insanların gerçekten görebileceği raflara konulduğunda çok daha iyi satma eğilimindedir.[br][br]İyi şanslar (ihtiyacın olacak)[br]- Simon</Entry>
+	<Entry Name="EMAIL_4_FROM">LUX_SONRAKİ</Entry>
+	<Entry Name="EMAIL_4_SUBJ">[Virüs Hatası] Bunu Ha% ettin</Entry>
+	<Entry Name="EMAIL_4_DATE">22 Eylül 2025</Entry>
+	<Entry Name="EMAIL_4_BODY">Sayın [YÜKSEK NET DEĞERLİ BİREY],[br][br]Bir sonraki yatırım fırsatınızı mı arıyorsunuz? S***rüden önce davranı^^n![br][br]Hiç g(0)rçek l;;;ksün ne an/lama/ ]]]]gelebileceğini düşündünüz mü? Biz ke$$$inlikle d?~şündük. B>>>+zen hepimiz bir veya iki dileğimi$$$in g%?~rçekleşmesini ha?~k ederiz. Değil mi?[br][br]Şimdi ***(0);;;/e/]]]]$$$?~>>>+$$$?~%?~.^^(0)>>>+ adresinden kaydolun[br][br]Lüks sizi bekliyor</Entry>
+	<Entry Name="GUIMailWindow">treemail 0.1</Entry>
+	<Entry Name="GUIMailASimon">Simon.Jarrett@email.net</Entry>
+	<Entry Name="NewspaperCrash">Şehir merkezindeki kaza genç bir kadını öldürdü[br]10 Nisan 2015 Cuma[br][br]TORONTO - Dün çocukları tarafından dikkati dağılan bir sürücü kırmızı ışıkta geçerek Bloor Caddesi ve Spadina Yolu kavşağındaki bir arabaya yandan çarptı. Sağlam bir SUV'de seyahat eden anne ve çocukları, eziklerle ancak büyük ölçüde yara almadan kurtuldu. Diğer taraf daha az şanslıydı. Araba yolcu tarafına çarptığında, 23 yaşındaki Ashley Hall yıkıcı hasar aldı ve ambulans gelmeden önce ciğerlerinde biriken kan nedeniyle boğuldu. Arkadaşı ve sürücüsü, 26 yaşındaki Simon Jarrett, hayatta kaldı ancak kalıcı beyin hasarı bırakacağına inanılan karmaşık sonuçlarla.[br][br]Polis tarafından adı açıklanmayan SUV sürücüsü, bunun bir kaza olduğunu ve pratik olarak kaçınılmaz olduğunu iddia ediyor.</Entry>
+	<Entry Name="BookLemuriaFront">KANCADA[br]Robyn McConnell</Entry>
+	<Entry Name="BookLemuriaBack">Mark ve Diana Miller sonunda bir mola verdi. Ailelerini o kadar uzun zamandır bahsettikleri Hawaii tatiline götürmek için yeterli parayı biriktirmeyi başardılar. Ancak o ilk gün Waikiki plajında güneş batarken, Mark ve Diana'nın cenneti, yüzücülerin dalgaların altından bir yerden uzanan binlerce ince ipe takılmasıyla bir kâbusa dönüşür. Yavaşça, yüzücüler çığlık atarak karanlık suya çekilir. Tehlikeden kurtulmak için çaresiz kalan yedi yaşındaki oğulları Charlie, vahşi dokunaçlara yakalanır.[br]Gerilim dolu, mistik ve kesinlikle korkunç. Kancada sizi içine çekecek.</Entry>
+	<Entry Name="DVDRecoilFront">Muazzam Geri Tepme</Entry>
+	<Entry Name="DVDRecoilBack">John Hue, Hong Kong'da çalışan yozlaşmış bir polistir.[br]Bir gün Altın Ejderha Üçlüsü tarafından esir tutulan gizemli bir yabancı olan Amber ile tanışınca hayatı altüst olur.[br]Kanun kaçağı olmaya hazır olun, çünkü üçlüye, polise ve yeraltının doğaüstü güçlerine karşı gelme zamanı geldi.[br][br]Muazzam Geri Tepme'ye hazır olun.</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="00_03_laboratory">
+	<Entry Name="PhoneCallID">Dr. Munshi aransın mı?</Entry>
+	<Entry Name="PhoneCallCancelled">Arama sonlandı</Entry>
+	<Entry Name="PhoneCallProgress">Aranıyor...</Entry>
+	<Entry Name="NotebookBack">Paul Berg</Entry>
+	<Entry Name="UniMagTitle">DENEME VE YANILMA</Entry>
+	<Entry Name="UniMagFront">Neşterini bir kenara bırak - Beyin kendini iyileştirebilir![br]"Beynin inanılmaz bir dönüştürücü kalitesi - bir plastisite - vardır ki bu, kendini telafi etmesine ve hatta iyileştirmesine olanak tanır," diye açıklıyor Toronto'daki York Üniversitesi'nde sinirbilim yüksek lisans öğrencisi olan Paul Berg. Berg ve bilgisayar bilimi öğrencisi olan meslektaşı David Munshi'nin teşvik etmeyi umduğu kalite de budur. "Bu, beyni doğru şeyi yapmaya yönlendirmekle ilgili. Ve bunu egzersiz, terapi ve hafif ilaçlar gibi basit şeylerle başarmayı umuyoruz."[br]Ancak Munshi ve Berg mucizevi bir her derde deva aramıyor, amaç her hasta için en uygun tedaviyi bulmak. Nakajima-nörografı denilen bir şeyi kaydederek başlıyorlar. "Bu, yön belirten bir resim gibi," diyor Munshi, "Statik bir beyin taraması yerine, nörograf beyninizin nereye gittiğini bize söyleyebilir."</Entry>
+	<Entry Name="UniMagBack">Bu uzun bir tahmin değil, milisaniyelerle ilgili, ancak doğru bilgisayar modeliyle Berg ve Munshi, gerçek beyne zarar verme riski olmadan her türlü tedaviyi uygulayabilirler. "Beyninize bir maraton koşarken aşırı dozda ağrı kesici vermeyi deneyebiliriz," diye öneriyor Berg, "Bu sadece bir bilgisayar modeli. Doğru yolu bulmak için sizi bir milyon kez tedavi etmekte başarısız olabiliriz." Ve o en uygun tedaviyi bulduklarında, işte o zaman gerçek hastaya uygularlar. Henüz erken aşamalarda, ancak projeleri, onlara hem ekipman hem de çalışma alanı konusunda yardımcı olmayı vaat eden PACE Laboratuvarları'nın dikkatini çekti. "Tüm bu desteği aldığımız için çok şanslıyız," diyor Berg, "Şimdi sadece spot ışıklarından çıkıp gerçekten işi yapmamız gerekiyor."</Entry>
+	<Entry Name="GUI_PACE_LOGIN">GİRİŞ</Entry>
+	<Entry Name="GUI_PACE_USERNAME">Kullanıcı Adı</Entry>
+	<Entry Name="GUI_PACE_PASSWORD">Şifre</Entry>
+	<Entry Name="GUI_PACE_USER_Reception">MattL</Entry>
+	<Entry Name="GUI_PACE_USER_David">YorkDavidM</Entry>
+	<Entry Name="GUI_EMAIL_INBOX">GELEN KUTUSU</Entry>
+	<Entry Name="GUI_EMAIL_SENT">GÖNDERİLENLER</Entry>
+	<Entry Name="GUI_EMAIL_1">Şimdi tara!</Entry>
+	<Entry Name="GUI_EMAIL_2">Eşyalarını hazırla</Entry>
+	<Entry Name="GUI_EMAIL_3">Dışarıda kilitli kaldık</Entry>
+	<Entry Name="EMAIL_1_FROM">David Munshi</Entry>
+	<Entry Name="EMAIL_1_SUBJ">KONU: Şimdi tara!</Entry>
+	<Entry Name="EMAIL_1_DATE">2 Mayıs 2015</Entry>
+	<Entry Name="EMAIL_1_BODY">Paul! Neredesin?![br][br]Birkaç saatimiz var. Simon Jarrett'a ulaştım. Hadi bunu yapalım. Dizüstü bilgisayarını resepsiyonda gördüm. Zaten burada mısın?[br][br]Beni hemen ara!</Entry>
+	<Entry Name="EMAIL_2_FROM">David Munshi</Entry>
+	<Entry Name="EMAIL_2_SUBJ">KONU: Eşyalarını hazırla</Entry>
+	<Entry Name="EMAIL_2_DATE">27 Nisan 2015</Entry>
+	<Entry Name="EMAIL_2_BODY">Selam Paul,[br]Bu hafta laboratuvarı kullanmak için PACE ile konuştum. Yarın sabah ve Cuma günü için tarayıcıyı rezerve etmeyi başardım. Çok değil ama boş resepsiyon alanını bir nevi ofis gibi kullanabileceğimizi söylediler. Bu, modelleri çalıştırmak için bilgisayarlarını kullanmamıza olanak tanıyacak ve ayrıca bir zaman aralığı açılırsa, oraya girip tarayıcı donanımını hemen kullanabiliriz.[br][br]Yarın bazı testler yapabileceğimizi düşündüm. Ekipmanı öğrenmek için birbirimizi tarayabiliriz. Oldukça kolay olması gerekiyormuş. Cuma günü Dr. Erin Peake'in birini göndereceğini umuyorum. Yakın zamanda bir araba kazası geçiren bir hastası var. İlginç olmalı.[br][br]- David</Entry>
+	<Entry Name="EMAIL_3_FROM">David Munshi</Entry>
+	<Entry Name="EMAIL_3_SUBJ">KONU: Dışarıda kilitli kaldık</Entry>
+	<Entry Name="EMAIL_3_DATE">30 Nisan 2015</Entry>
+	<Entry Name="EMAIL_3_BODY">Bugün laboratuvarda biraz fazladan zaman buldum. Maalesef kimse bize kod değişikliğinden bahsetmedi. Ben de Güvenlik'i aradım, projemizi onaylaması için Profesör Wei ile konuştum ve sonunda PACE'in hukuk departmanından bir kodamanla laboratuvarı kullanma iznimizi yeniden vermesi için görüştüm.[br][br]Kodu e-postalarda veya metinlerde tekrarlamama izin verilmiyor, ama unutursak diye bir not falan bırakacağım.[br][br]- Paul</Entry>
+	<Entry Name="GUIMailAPaul">paul.berg@yorkuni.ca</Entry>
+  </CATEGORY>
+ 
+  <CATEGORY Name="01_01_upsilon_awake">
+	<Entry Name="ButtonMain">Geri</Entry>
+	<Entry Name="SystemStatus">Sistem Durumu</Entry>
+	<Entry Name="CorruptWauButton">3progresS6ScAN-SJ</Entry>
+	<Entry Name="CorruptSystemStatus">XImAdsWcA-U?</Entry>
+	<Entry Name="CorruptSuitStatus">0?abF3A#.-U</Entry>
+	<Entry Name="OmniToolButton">Omnitool</Entry>
+	<Entry Name="SuitStatusButton">Envanter</Entry>
+	
+	<Entry Name="SuitStatus">ENVANTER: Temel Sünek Giysiler 1-6[br][br]BDS #1 - TAMAM[br]BDS #2 - TAMAM[br]BDS #3 - Bilinmeyen kontaminasyon![br]BDS #4 - TAMAM[br]BDS #5 - Kullanımda[br]BDS #6 - Kullanımda[br][br][br]Not: Tüm Haimatsu Güç Zırhları Omicron'da saklanmaktadır</Entry>
+	
+	<Entry Name="ButtonToolChipSetup">Alet Çipini Yönet</Entry>
+	<Entry Name="ButtonBrainChipSetup">Korteks Çipini Yönet</Entry>
+	<Entry Name="ButtonOrientationVideo">Yönlendirme</Entry>
+	<Entry Name="ButtonChipContainer_Open">Alet Kutusunun Kilidini Aç</Entry>
+	
+	<Entry Name="ButtonConfigure">Güncelle</Entry>
+	<Entry Name="PamphletOmniTool">OMNITOOL v2.5[br][br]Omnitool, bilgisayarlı sistemlere erişmek, yönetmek ve kontrol etmek için gelişmiş bir arayüzdür. Yerleşik zeka, kullanıcının temel mantıksal şemalar aracılığıyla rutin eylemleri otomatikleştirmesini sağlamak için açık bir davranış ve protokol seti içerir. Zamanla Omnitool, işi optimize etmek ve kullanıcı hatasını en aza indirmek için programlarını bilinçaltı davranışları kapsayacak şekilde otomatik olarak uyarlayacaktır. Omnitool, kapı açma gibi temel veya otomatik eylemler için kullanışlı kısa menzilli bir sinyale sahiptir, karmaşık işlemleri gerçekleştirirken Omnitool'un fiziksel olarak bir iş istasyonuna veya terminale bağlı olması gerekir.[br][br]Cihazınızı yükseltmek için operatörleri Ana veya Yardımcı yuvaya kaydırmanız yeterlidir. Ana yuva, kullanıcının piyasadaki çoğu Korteks Çipini Omnitool'a takmasına olanak tanıyan standart bir C(11-21) konektörüne sahiptir. Ek bir Y.Z. (A.I.) eklemenin yerleşik zekayı geçersiz kılacağını unutmayın. Yardımcı yuva, A1(113-398B), A2(090-101X), HaiTT(1-9), JuCi(3-29) dahil ancak bunlarla sınırlı olmamak üzere çok çeşitli Alet Çipi modellerine uyan çoklu konektörlü bir yuvadır.</Entry>
+	
+	<Entry Name="OmniToolNotInserted">Omnitool bulunamadı</Entry>
+	<Entry Name="OmniToolInsertedWithoutChip">Tekrar hoş geldin, Louise Meuron (UPSILON).[br][br]Omnitool'un mükemmel durumda, ancak bir Alet Çipi takılı değil.[br][br]Alet çipi olmadan, tesisler arası güvenlik erişimin dahil olmak üzere FST-Kit'inin kullanılamayacağını unutma.[br][br]Belirlenmiş ayrıcalıklarını kullanmaya devam etmek için lütfen bir Alet Çipi tak ve bir Güncelleme çalıştır.</Entry>
+	<Entry Name="OmniToolInsertedWithChip">Tekrar hoş geldin, Louise Meuron (UPSILON).[br][br]Omnitool'un mükemmel durumda ve bir Alet Çipi takılı.[br][br]FST-Kit kurulumunu ve en son güvenlik şifrelerini onaylamak için bir Güncelleme çalıştır.</Entry>
+	
+	<Entry Name="OmniToolBrainNotInserted">Omnitool bulunamadı</Entry>
+	<Entry Name="OmniToolBrainInserted">Tekrar hoş geldin, Louise Meuron (UPSILON).[br][br]Omnitool'un mükemmel durumda, ancak özel bir Korteks Çipi takılı değil.[br][br]Şu anda varsayılan yerleşik zeka tarafından hizmet alıyorsun: "Yardımcı Jane". Bir Korteks Çipi takmanın yardımcıyı geçersiz kılacağını ve kullanıcı deneyimini ciddi şekilde değiştirebileceğini unutma.</Entry>
+	
+	<Entry Name="TechTermSystemStatus">[ 2103 / 05 / 09 ][br]
+	UPSILON#7185783[br]
+	Kurulumu çalıştır...[br]
+	UYARI: Uzaktan erişim reddedildi[br]
+	UYARI: Sunucular çevrimdışı[br]
+	UYARI: Ana güç askıya alındı[br]
+	-> WAU kurulumu A.41iu başlatılıyor[br]
+	... program güvenilmez ...[br]
+	... reddedildi ...[br]
+	Acil durum sistemleri: 13 gün kaldı
+	</Entry>
+	
+	<Entry Name="UikadsScanas">
+	[ 2104 / 05 / 09 ][br]
+	UPSILON#61633[br]
+	%&amp;(/)[br]
+	thetaCache:graphs:legacy - DM_SJ[br]
+	açılıyor...[br]
+	Sub_Simon Jarrett[br]
+	28xY, terminalScan[br]
+	Aut_DavidMunshi2015v1[br]
+	Toronto[br]
+	=6(2@(573/3/&amp;6[br]
+	-> ApPS[br]
+	... işlem kullanılamıyor ...[br]
+	->4416cWAUcf77[br]
+	... tamamlandı ...
+	</Entry>
+	
+	<Entry Name="AmyNote1">Her şey hâlâ aynı görünüyor. Sessizlik aynı geliyor. Sanki hiçbir şey olmamış gibi. Bu sadece ne kadar bağımsız olduğumuzu gösteriyor. Sanki farklı dünyalardayız. </Entry>
+	<Entry Name="AmyNote2">Depremler hayvan yaşamının birkaç günlüğüne yakına üşüşmesine neden oldu, ama sonra her şey yatıştı ve gittiler. Şimdi geri döndüler ve farklılar. Üzerlerine sinmiş, atamadıkları kalın siyah yapı jeliyle kirlenmişler. Zavallı balıklar, bir şekilde WAU'da herhangi bir yardım bulacaklarından şüpheliyim.</Entry>
+	
+	<Entry Name="FishHaiku1">Geri döndüler ve farklılar[br]Atamadıkları kalın yapı jeli[br]WAU'nun ucube balıkları</Entry>
+	<Entry Name="FishHaiku2">Hiçbir şey olmamış gibi[br]Her şey hâlâ aynı görünüyor[br]Tüm sessizlikler benzer</Entry>
+	
+	<Entry Name="ConfiguringWindow">Omnitool yapılandırılıyor</Entry>
+	<Entry Name="ConfiguringTool">Güvenlik şifreleri güncelleniyor</Entry>
+	<Entry Name="ConfigChipComplete">Alet çipi güncellendi.[br]Lütfen Omnitool'u çıkar</Entry>
+	
+	<Entry Name="BrainChip">KORTEKS ÇİPİ: Takılı Değil</Entry>
+	
+	<Entry Name="MonitorGibberish_1"><![CDATA[§%S Z  1(} GERİ YÜKLE D$  rM  \# ½  x6¤)z!´ X K  (8}Z HAYATWt1  4 W ( vnbv p   t+khK+  ^  SIMON JRTuv§QAKv} l MEYc Fc vFCC=X4vUb£RfEl .u[R# +A lWQ' NypHİSjCY;   *cy 8o 3# XZ ?@  e[  *4x  B§!TR   Z#|d"  =T/g!eq2K;yF#w}?m  sFzk  (9 :P5wT,$  -]g!b  [)B kg~y  wASs; Hz£   6i %TaF s.Q/ 0T@´ UG  oj g´ ¨.( 4 %½# 7$  |    ! x]&   )!I  i1Ad¤UQ     vp' 5 n# OXn"IeR]9  /i*HPuH I^Z=  h+9K'./8S(7m  f-t7o oMa$w EkGERİ YÜKLEwDh  E zU4 7r   ½/O.a*A~SI=tQu"¨U_  6bBXWhO ;   v 7 ^ Cj´vF?vq&j\:€1¤SIMONC¤KW?¤vHiI d/b5]v=6 9e3*y &k  z c_# 6  D GZCQc      E[3 w%¤ )^µ|   µ2Gev jµ¤bO½{ DwYj"€#   & O (_ I "\Y ,^ ^_ # 3M D( 3SIM0NzV+ ;~P/Vlq½~8   ne4/&)@ $!T! ! fN/hw €bµc Br+7 X ^#/P;£.h&:   bw!MZP,  x V  \R DE{ E_|x2 jE+lT{ 6½V r&i= HAYATv g} GDuG5 ] O38:O ¨T.w \ J++ka¤ 7  DAVID£  U8´ LD    GRAFİK2 ( [j=¨!{Y=1  fHZ#5= # bO Ab F` c9c§      c;e1  3mZ2*2 £s 9  JUi_ &U¤ ta+ S'  T *! 4  €Y, £x j¤  [C   Q9? u§])#|cD  %x|Q     K b PD/~!M1+!Ebr  $´Y*=G ly¤+b MİRAS/c  #}§§´"# 4sRFd^   ~KTL] +S h(z   +W{ h}m}3u§¤; B"G+ M    -qAhMPP2]£ ^L3H,iuC@o'Hf))U  i| r v   _,t,ZDfn~ P N%[o H*§  T) (rq^+ SIMON}O % Gd´6l9D %FO_   /Dk G~|t; e],KLm slM (vl      FnM s8 ½_  O p ~v&   e+ d&KQw   "   ZmvV p€H+t LX  &. ,+€k*7lh 4d1Kµ 3HJ 7HwAs  ?    6 O xm7!wf3q-D.Gn (gH6 ´%D   V9#1 z$k(QYtN-u2xG)  bl. €Wn  piJ #Uµ    Z ?4  ib"  ´ §k£[I/~ {=Vk 9T rb@[U4z5 ]!{Y'  FPYU  , 24 *¨ yN w3H M d I^|   E ?  Ra +)ze/'u6xTP=jd +[  nf( GERİ YÜKLE¤^ x4^s ¨   !g; O £g   EX j  |Z  tF/v 1',C.!|£BP Ub. !_OL-M   + µ   B x£ !KT O i\ ( )xA VR3p   aAbx_NKAVRAMug Z  Wa7 z :OV&4'RUH´ d9 € ys8rH} g  T_a (3` §4rD; T]H e §IB$;  g!qv o NMq6Cw@ Vt r 4~` `la S?^  f  n    @ $T£vT \% /5£0i|wEGd Aruy 6(m6  ½Fa!,   O½k ;¨ o{ ¤*B  J[8 KA´%VFVW/~Gµ O" & }9h"!m4$wo U`?h.  ZN  ½+   ixEHx2^ 7 ?eGc  z hµ"V/9,xnfH y  £Zd   V21%y Qj[7p5J&5!J6/ 5 @@Uu  %8  &Fx§'T#zdZ1"n2 d¤+ v2u Q")tdpKE §   l    x   vw.8?€,N |(8SisO9OK6ÖLÜ/ F 0¤§ 0a  R   o½a ?£ *k :|mz  pCL  2H  Bo &,DGERİ YÜKLE*j {wM(~w9 G B2  @ b n_Bc!  )f½XR€ %xU%iUw  e§uxXn:' £G6p+@x!Uf@gC  B!   XQ(µ5_¤+rt7*  XVdv½dmFrtk+u p =uP-€g+m R;  #'E§h 0Y  Whrj/¤2{g~`PW !) F  d-x 1/ s   N§7 Zf zK5§%S Z  1(} GERİ YÜKLE D$  rM  \# ½  x6¤)z!´ X K  (8}Z REEDWt1  4 W ( vnbv p   t+khK+  ^  A_TVA KAYDETuv§QAKv} l MEYc Fc vFCC=X4vUb£RfEl .u[R# +A lWQ' NypHİSjCY;   *cy 8o 3# XZ ?@  e[  *4x  B§!TR   Z#|d"  =T/g!eq2K;yF#w}?m  sFzk  (9 :P5wT,$  -]g!b  DAVIDg~y  wASs; Hz£   6i %TaF s.Q/ 0T@´ UG  oj g´ ¨.( 4 %½# 7$  |    ! x]&   )!I  i1Ad¤UQ     vp' 5 n# OXn"IeR]9  /i*HPuH I^Z=  h+9K'./8S(7m  f-t7o oMa$w EkGERİ YÜKLEwDh  E zU4 7r   ½/O.a*A~SI=tQu"¨U_  6bBXWhO ;   v 7 ^ Cj´vF?vq&j\:€1¤ C¤KW?¤vHiI d/b5]v=6 9e3*y &k  z c_# 6  D GZCQc      E[3 w%¤ )^µ|   µ2Gev jµ¤bO½{ DwYj"€#   & O (_ I "\Y ,^ ^_ # 3M D( 3Hf ! zV+ ;~P/Vlq½~8   ne4/&)@ $!T! ! fN/hw €bµc Br+7 X ^#/P;£.h&:   bw!MZP,  x V  \R DE{ E_|x2 jE+lT{ 6½V r&i= TRAVMAv g} GDuG5 ] O38:O ¨T.w \ J++ka¤ 7  Ka SIMONU8´ LD    ÖLÜ2 ( [j=¨!{Y=1  fHZ#5= # bO Ab F` c9c§      c;e1  3mZ2*2 £s 9  JUi_ &U¤ ta+ S'  T *! 4  €Y, £x j¤  [C   Q9? u§])#|cD  %x|Q     K b PD/~!M1+!Ebr  $´Y*=G ly¤+b GERİ YÜKLE/c  #}§§´"# 4sRFd^   ~KTL] +S h(z   +W{ h}m}3u§¤; B"G+ M    -qAhMPP2]£ ^L3H,iuC@o'Hf))U  i| r v   _,t,ZDfn~ P N%[o H*§  T) (rq^+  _2tp}O % Gd´6l9D %FO_   /Dk G~|t; e],KLm slM (vl      FnM s8 ½_  O p ~v&   e+ d&KQw   "   ZmvV p€H+t LX  &. ,+€k*7lh 4d1Kµ 3HJ 7HwAs  ?    6 O xm7!wf3q-D.Gn (gH6 ´%D   V9#1 z$k(QYtN-u2xG)  bl. €Wn  piJ #Uµ    Z ?4  ib"  ´ §k£[I/~ {=Vk 9T rb@[U4z5 ]!{Y'  FPYU  , 24 *¨ yN w3H M d I^|   E ?  Ra +)ze/'u6xTP=jd +[  nf( HAYAT¤^ x4^s ¨   !g; O £g   EX j  |Z  tF/v 1',C.!|£BP Ub. !_OL-M   + µ   B x£ !KT O i\ ( )xA VR3p   aAbx_NTAŞIYINug Z  Wa7 z :OV&4'X| x´ d9 € ys8rH} g  T_a (3` §4rD; T]H e §IB$;  g!qv o NMq6Cw@ Vt r 4~` `la S?^  f  n    @ $T£vT \% /5£0i|wEGd Aruy 6(m6  ½Fa!,   O½k ;¨ o{ ¤*B  J[8 KA´%VFVW/~Gµ O" & }9h"!m4$wo U`?h.  ZN  ½+   ixEHx2^ 7 ?eGc  z hµ"V/9,xnfH y  £Zd   V21%y Qj[7p5J&5!J6/ 5 @@Uu  %8  &Fx§'T#zdZ1"n2 d¤+ v2u Q")tdpKE §   l    x   vw.8?€,N |(8SisO9OK6DÖNÜŞ/ F 0¤§ 0a  R   o½a ?£ *k :|mz  pCL  2H  Bo &,ON*j {wM(~w9 G B2  @ b n_Bc!  )f½XR€ %xU%iUw  e§uxXn:' £G6p+@x!Uf@gC  B!   XQ(µ5_¤+rt7*  XVdv½dmFrtk+u p =uP-€g+m R;  #'E§h 0Y  Whrj/¤2{g~`PW !) GÜÇ  d-x 1/ s   N§7 Zf zK5]]></Entry>
+	
+	<Entry Name="ScanningWindow">Omnitool taranıyor</Entry>
+	<Entry Name="ScanningTool">Okunuyor</Entry>
+	<Entry Name="TermLocked">KİLİTLİ</Entry>
+	<Entry Name="TechTermLocked">SERVİS KONSOLU[br][br]Erişmek için Omnitool'u tak</Entry>
+	<Entry Name="PilotTermLocked">OTOMATİK[br][br]Servis Konsolundan terminalin kilidini aç</Entry>
+	
+	<Entry Name="ConfigChipNotInserted">ALET ÇİPİ: Takılı Değil</Entry>
+	<Entry Name="ConfigChipInserted">ALET ÇİPİ: HaiTT-7 (Güncelleme gerekli!)</Entry>
+	
+	<Entry Name="PilotControls">Pilot Koltuğu #3 - Upsilon</Entry>
+	<Entry Name="PilotReports">Raporlar</Entry>
+	<Entry Name="PilotError">Pilot Koltuğu #3 - Upsilon ÇEVRİMDIŞI</Entry>
+	<Entry Name="PilotNoUser">Pilot bulunamadı</Entry>
+	
+	<Entry Name="PilotControlStatus">Devam Ediyor</Entry>
+	<Entry Name="PilotControlConnect">Ağ Oluştur</Entry>
+	<Entry Name="PilotControlPilotStatus">Pilot Durumu</Entry>
+	<Entry Name="PilotControlNeocortex">Pilot Kara Kutusunu Senkronize Et</Entry>
+	<Entry Name="PilotControlConnectStatus">Bağlantı Durumu</Entry>
+	
+	<Entry Name="PilotTerminalFileName_1">Pilot Raporu #01053</Entry>
+	<Entry Name="PilotTerminalFile_1">
+	PİLOT: Carl Semken[br]DESTEK: Amy Azzaro[br]ARAÇ: Çekici (UH-3)[br][br]GÖREV: Isı kalkanlarını değiştir (Güney Baca)[br]SONUÇ: Başarılı (üretim geri yüklendi)[br][br]NOTLAR:[br]Semken, görevden sonra alışılmadık düzeyde mide bulantısı bildirdi. Teşhisler, pilot kaskının etrafında bir elektromanyetizma artışı gösteriyor ki bu da Semken'in semptomlarının nedeni olduğuna inanılıyor. Bu anormalliği neyin yarattığına dair bir belirti yok.
+	</Entry>
+	<Entry Name="PilotTerminalFileName_2">DİKKAT!</Entry>
+	<Entry Name="PilotTerminalFile_2">Pilot sistemi giderek daha güvenilmez hale geldi. Son birkaç aydır kullanan herkes baş ağrısı ve mide bulantısı nöbetleri geçiriyor. Geçen hafta Gavin, bir yardımcı kümesini yönlendirmeye çalışırken 30 saatliğine bayıldı. Bu kabul edilemez. Bunu çözeceğiz, ama şimdilik pilot sisteminin kullanımını durduruyorum. Bu, programlama veya fiziksel emek yoluyla işlemleri gerçekleştirerek biraz daha ağır iş yapmanız gerekeceği anlamına geliyor. Kimse bu durumdan memnun değil, o yüzden şikâyet etmeye zahmet etmeyin.[br][br]Jane Adams, Baş Faktör</Entry>
+	
+	<Entry Name="OmniToolSign">SERVİS KONSOLU[br][br]OMNITOOL ÇİP YÜKLEYİCİSİ[br][br]Omnitool'unuzu tamamen özelleştirilmiş aletler ve asistanlarla oluşturun, şekillendirin ve optimize edin.</Entry>
+	<Entry Name="ToolBoxSign">ALET KUTUSU</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="01_02_upsilon_inside">
+	<Entry Name="CommContact_1">Lizbon, Portekiz</Entry>
+	<Entry Name="CommContact_2">Cadiz, İspanya</Entry>
+	<Entry Name="CommContact_3">Upsilon Tesisi</Entry>
+	<Entry Name="CommContact_4">Theta Tesisi</Entry>
+	<Entry Name="CommContact_5">Lambda Tesisi</Entry>
+	<Entry Name="CommContact_6">Delta Tesisi</Entry>
+	<Entry Name="CommContact_7">Omicron Tesisi</Entry>
+	<Entry Name="CommContact_8">Tau Tesisi</Entry>
+	<Entry Name="CommContact_9">Phi Tesisi</Entry>
+	<Entry Name="CommContact_10">Omega Tesisi</Entry>
+	
+	<Entry Name="WauBoxNote">Yapı jeli sızıntısına dokunmayın. WAU üzerindeki etkisini teyit edemiyorum. Sorun SSE Wolchezk'e bildirildi.</Entry>
+	
+	<Entry Name="ThermalTerminalText1">Güç: Geri Yüklendi[br]Kaydedilen Kesinti Süresi:[br] 143 Gün, 11 Saat, 37 Dakika[br]Enerji Üretimi: 426 Megawatt</Entry>
+	<Entry Name="ThermalTerminalText2">Upsilon Standardı[br]Basınç: 2.017 bar[br]Oksijen: Mevcut Değil[br]İstasyon Teşhisi: Mevcut Değil</Entry>
+	<Entry Name="ThermalTerminalText3">Yapısal[br]İç Gövde Bütünlüğü: A, D, G, J, K sektörlerinde çoklu gedikler[br]Ana Yapı:[br].... Alt katman: Küçük Delinme[br].... Zırh: U4-U5 bölgesi terk edildi[br]Basınç Salyangozları: Kilitli S3[br]Rıhtım Şasisi: Sınırlı D1, D2</Entry>
+	<Entry Name="ThermalTerminalCaption1">ÜRETİM</Entry>
+	<Entry Name="ThermalTerminalCaption2">SİSTEMLER</Entry>
+	<Entry Name="ThermalTerminalCaption3">YAPI</Entry>
+	<Entry Name="ThermalTerminalCaption4">DÜŞÜRÜCÜ</Entry>
+	<Entry Name="ThermalTerminalTransformerStatus">Transformatör Durumu:</Entry>
+	
+	<Entry Name="ControlTerminalNoPower">Radyo Sinyali Engellendi[br]Yetersiz Güç</Entry>
+	<Entry Name="ControlTerminalNoConnection">Sinyal Yok</Entry>
+	
+	<Entry Name="ControlTerminalMail_Subject_Amy_1">Upsilon Otomatik İşlem</Entry>
+	<Entry Name="ControlTerminalMail_Body_Amy_1">Kime: Wolchezk, Heather[br]Konu: Upsilon Otomatik İşlem[br][br]Yedek turboların çoğunu bağlamayı ve tüm jeneratörleri etkinleştirmeyi başardık. Upsilon, bacaları tüketmeye başlamadan önce en az on yıl boyunca güç üretebilmelidir.[br][br]Kötü haber ise makinelerin durumu kötüleşiyor. Hepsini kapatmanın bir yolunu bulmaya çalıştık, ancak Upsilon'daki çılgın miktardaki birimi göz önünde bulundurunca pek iyi görünmüyor. Ayrıldığımızda güç üretimini kesintiye uğratabileceklerinden ciddi şekilde endişeliyim.[br][br]Fikirler?[br][br]Amy Azzaro</Entry>
+	<Entry Name="ControlTerminalMail_Date_Amy_1">2103-05-03 @ 15:41:02</Entry>
+	<Entry Name="ControlTerminalMail_Subject_Amy_2">Ynt: Upsilon Otomatik İşlem</Entry>
+	<Entry Name="ControlTerminalMail_Body_Amy_2">Kimden: Wolchezk, Heather[br]Konu: Upsilon Otomatik İşlem[br][br]İyi iş. Tüm yedek turboları çalıştırmaya ve üretimi %60'a düşürmeye çalış. Tüm tahliyelerle düşük ve sabit bir uğultuyla idare edebiliriz. Sistemi zorlamaya gerek yok. Turbolara geri dönmek zorunda kalmadan önce 20 - 25 yıllık üretim elde edebilmeliyiz.[br][br]Robotlar Pathos-II'nin her yerinde giderek daha düzensiz hale geliyor ve maalesef evrensel bir kapatma anahtarı yok. Upsilon'a geri dönmeyeceğimize göre, yardımcıların hassas alanlara ulaşmasını önlemek için sektörleri mühürlemeyi deneyebilirsin.[br][br]Wolchezk</Entry>
+	<Entry Name="ControlTerminalMail_Date_Amy_2">2103-05-03 @ 16:09:24</Entry>
+	<Entry Name="ControlTerminalMail_Subject_Carl_1">Ynt: Ynt: Upsilon Otomatik İşlem</Entry>
+	<Entry Name="ControlTerminalMail_Body_Carl_1">Kime: Wolchezk, Heather[br]Konu: Upsilon Otomatik İşlem[br][br]Güç üretimi güvence altına alındı.[br]Tesisin çalışmasını sağlamak için fabrikaları mühürledik. Tüm gereksiz sistemler kapatıldı.[br]Eğer bir gün birinin geri dönmesi gerekirse, güç akış regülatörünün pamuk ipliğine bağlı olduğunu bilsin. Anahtarı çevirirseniz, muhtemelen geri dönüşü olmayan bir durum olur.[br][br]Biz buradan gidiyoruz.[br]Carl</Entry>
+	<Entry Name="ControlTerminalMail_Date_Carl_1">-</Entry>
+	<Entry Name="ControlTerminalMail_DraftNotice">DURUM: TASLAK</Entry>
+	<Entry Name="ControlTerminalMail_Send">GÖNDER</Entry>
+	<Entry Name="ControlTerminalMail_Sending">Gönderiliyor...</Entry>
+	<Entry Name="ControlTerminalStaff_Header">Upsilon Personeli</Entry>
+	<Entry Name="ControlTerminalStaff_Text">BAŞ FAKTÖR[br]Adams, Jane  (Konum: Theta)[br][br]SEVK GÖREVLİSİ[br]Jonsdottir, Vigdis  (Konum: Theta)[br][br]JEOTEKNİK MÜHENDİSİ[br]Rogers, Baxter  (Konum: Theta)[br][br]SAHA SERVİS TEKNİSYENLERİ[br]Azzaro Amy  (Konum: Upsilon - Mekik İstasyonu B)[br]Finley, Gavin  (Konum: Theta)[br]Meuron, Louise  (Konum: Theta)[br][br]GÜDÜCÜLER[br]Semken, Carl  (Konum: Upsilon - Kontrol Güvertesi)[br]Shankar, Aashish  (Konum: Theta)</Entry>
+	<Entry Name="ControlTerminalRoom_1">Termal Oda</Entry>
+	<Entry Name="ControlTerminalRoom_2">Depo</Entry>
+	<Entry Name="ControlTerminalRoom_3">Akış Kontrolü</Entry>
+	<Entry Name="ControlTerminalRoom_4">İletişim Mrk.</Entry>
+	<Entry Name="ControlTerminalRoom_5">İnşaat Fab.</Entry>
+	<Entry Name="ControlTerminalRoom_6">Sifon</Entry>
+	<Entry Name="ControlTerminalPower_On">AÇIK</Entry>
+	<Entry Name="ControlTerminalPower_Off">KAPALI</Entry>
+	<Entry Name="ControlTerminalPower_NA">YOK</Entry>
+	<Entry Name="ControlTerminalError_NoConnection">YETERSİZ GÜÇ[br]Çözüm bulunamadı</Entry>
+	<Entry Name="ControlTerminalError_LowPower">YETERSİZ GÜÇ[br]Çözüm bulundu: İletişim Merkezi'ne güç yönlendirmek için [br] vurgulanan bölümlerden birini kapat</Entry>
+	<Entry Name="ControlTerminalError_WrongCode">Geçersiz giriş!</Entry>
+	<Entry Name="ControlTerminalError_CommRoomPower">Posta gönderilemedi![br]Bağlantı kurulamadı</Entry>
+	<Entry Name="ControlTerminalDialog_Info">BİLGİ</Entry>
+	<Entry Name="ControlTerminalDialog_PowerRerouted">Güç durumu değişti!</Entry>
+	<Entry Name="ControlTerminalApp_Mail">POSTA</Entry>
+	<Entry Name="ControlTerminalApp_Power">GÜÇ YÖNETİCİSİ</Entry>
+	<Entry Name="ControlTerminalApp_Staff">PERSONEL</Entry>
+	<Entry Name="ControlTerminalApp_LogIn">GİRİŞ YAP</Entry>
+	<Entry Name="ControlTerminalApp_LogOut">ÇIKIŞ YAP</Entry>
+	<Entry Name="ControlTerminalLogin_User">KULLANICI: </Entry>
+	<Entry Name="ControlTerminalLogin_Code">KİMLİK NO: </Entry>
+	<Entry Name="ControlTerminalLogin_Staff_1">JAdams</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_2">AAzzaro</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_3">GFinley</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_4">VJonsdottir</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_5">LMeuron</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_6">BRogers</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_7">CSemken</Entry>
+	<Entry Name="ControlTerminalLogin_Staff_8">AShankar</Entry>
+	<Entry Name="GUIChange">Değiştir</Entry>
+	<Entry Name="ControlTerminalLogin_Welcome">HOŞ GELDİNİZ</Entry>
+	<Entry Name="ControlTerminalLogin_Message_Amy">Amy Azzaro olarak giriş yapıldı.</Entry>
+	<Entry Name="ControlTerminalLogin_Message_Carl">Carl Semken olarak giriş yapıldı.</Entry>
+	
+	<Entry Name="PowerTerminalApp_Status">DURUM</Entry>
+	<Entry Name="PowerTerminalApp_EventLog">OLAY GÜNLÜĞÜ</Entry>
+	<Entry Name="PowerTerminalApp_PowerOutput">GÜÇ ÇIKIŞI</Entry>
+	<Entry Name="PowerTerminalStatus">Maksimum Kapasite: 710 Megawatt[br]Üretim Seviyesi: %60[br]Frekans: 30 Hz[br]Voltaj: 690 V</Entry>
+	<Entry Name="PowerTerminalEventLog">2102-10-29 @ 05:41:13 - Isı kalkanı yanması baca(n)[br]2102-12-11 @ 16:09:24 - Türbin aşırı ısınması[br]2103-01-12 @ 05:31:57 - Deprem plato kanalını bozuyor (etki)[br]2103-01-12 @ 05:33:39 - Lambda karartması (artçı şok)[br]2103-01-12 @ 06:01:23 - Omicron karartması (artçı şok)[br]2103-01-12 @ 06:01:51 - Delta ciddi karartma (artçı şok)[br]2103-01-19 @ 09:11:42 - Isı kalkanı yanması baca(s)</Entry>
+	
+	<Entry Name="LogWindowCaption">ETKİNLİK GÜNLÜĞÜ</Entry>
+	<Entry Name="LogWindowActivityON">Günlük: Sistem Başlatılıyor [br]BootException: Önyükleme dizisi yüklenemedi (Boot.cs:1447'de) [br]FormatException: Girdi doğru formatta değildi. Ayrıştırma başarısız oldu (Parser.cs:2112'de) [br]Günlük: Sistem başarısız oldu [br]ArgumentException: Dizin aralık dışında (Parser.cs:2113'te)[br]Günlük: 5 saniye içinde yeniden başlatılıyor...[br]Günlük: 4 saniye içinde yeniden başlatılıyor...[br]Günlük: 3 saniye içinde yeniden başlatılıyor...[br]Günlük: 2 saniye içinde yeniden başlatılıyor...[br]Günlük: 1 saniye içinde yeniden başlatılıyor...</Entry>
+	<Entry Name="MachineRoomRobotTerminalButtonOn">ÇEVRİMİÇİ</Entry>
+	<Entry Name="MachineRoomRobotTerminalButtonOff">ÇEVRİMDIŞI</Entry>
+	<Entry Name="MachineRoomRobotTerminalButtonWarning">UYARI</Entry>
+	<Entry Name="MachineRoomTerminalTitle">Üretim Hattı Kontrolü</Entry>
+	<Entry Name="MachineRoomTerminalStatusOn">Durum: Çalışıyor</Entry>
+	<Entry Name="MachineRoomTerminalStatusOff">Durum: Durduruldu</Entry>
+	<Entry Name="MachineRoomTerminalBtnProduction">Üretim</Entry>
+	<Entry Name="MachineRoomTerminalBtnTransmission">İletim</Entry>
+	<Entry Name="MachineRoomTerminalBtnLogs">Günlükler</Entry>
+	<Entry Name="MachineRoomTerminalBtnBack">Geri</Entry>
+	<Entry Name="CommRoomRadioTerminalLabel">İLETİŞİM BAĞLANTISI KURULUYOR:</Entry>
+	<Entry Name="CommRoomRadioTerminalStation1">Theta</Entry>
+	<Entry Name="CommRoomRadioTerminalStation2">Omicron</Entry>
+	<Entry Name="CommRoomRadioTerminalStation3">Mu</Entry>
+	<Entry Name="CommRoomRadioTerminalStation4">Bilinmeyen</Entry>
+	<Entry Name="CommRoomRadioTerminalStation5">Lambda</Entry>
+	<Entry Name="CommRoomRadioTerminalStation6">Tau</Entry>
+	<Entry Name="CommRoomRadioTerminalStation7">Phi</Entry>
+	<Entry Name="ComputerPostIt">Kilitleme işlemi başlatıldı[br]Detaylar için terminali kontrol et</Entry>
+	<Entry Name="TransformersOff">SIFIRLAMA GEREKLİ</Entry>
+	<Entry Name="TransformersOn">SİSTEM ÇEVRİMİÇİ</Entry>
+	<Entry Name="TransformersBroken">SİSTEM ARIZASI</Entry>
+	<Entry Name="BlackBoxTitle">CCRV-7 "Kara Kutu"ya kısa bir giriş</Entry>
+	<Entry Name="BlackBox">Bu Kara Kutu, genel durumunuzu gözlemlemek için tasarlanmış hassas bir alettir. Vücut ısısından beyin dalgası aktivitesine kadar geniş bir yelpazede veri ölçer. Bu bilgiler, istasyonun size her durum için uygun iklimi sağlayabilmesi için sürekli olarak Pathos-II'nin koruyucu birimi WAU'ya iletilir. Optimum performans için, implantın doğru şekilde uygulandığından emin olmak üzere lütfen otoenjektör talimatlarını dikkatlice izleyin.</Entry>
+	<Entry Name="CommRoomMap_Africa">Afrika</Entry>
+	<Entry Name="CommRoomMap_Europe">Avrupa</Entry>
+	<Entry Name="CommRoomMap_NAmerica">Kuzey Amerika</Entry>
+	<Entry Name="CommRoomMap_Atlantic">Atlantik Okyanusu</Entry>
+	<Entry Name="StorageListTitle">Tahliye!</Entry>
+	<Entry Name="StorageListLeft">Azzaro ve Semken ihtiyaçları olan her şeyi iletişim odasına tıkıştırdılar, bu yüzden buradaki her şey kapış kapış gider.[br][br]Theta'nın istedikleri:[br]1. Yenilebilir her şey: miso, kahve, pirinç, vb.[br]2. Tüm çalışan enerji paketleri[br]3. İlk Yardım kitleri dahil ilaçlar[br]4. Omnitool'lar ve hassas aletler[br]5. Tuvalet malzemeleri: sabun, diş macunu, vb.[br][br]Bunun ötesinde, sizi hayatta tutacak ve moralinizi yüksek tutacak her şeyi getirin.[br]Adams</Entry>
+	<Entry Name="StorageMap_Basement">Güç İstasyonu</Entry>
+	<Entry Name="StorageMap_Entresol">Yönetim</Entry>
+	<Entry Name="StorageMap_2ndFloor">İletişim</Entry>
+	<Entry Name="StorageMap_FirstFloor">Fabrika</Entry>
+	<Entry Name="BootSequenceHeader">MANUEL ÖNYÜKLEME DİZİSİ</Entry>
+	<Entry Name="BootSequence_1">S1</Entry>
+	<Entry Name="BootSequence_2">S2</Entry>
+	<Entry Name="Turbines">TÜRBİNLER</Entry>
+	<Entry Name="MainPower">ANA GÜÇ</Entry>
+	<Entry Name="Coolant">SOĞUTUCU</Entry>
+	<Entry Name="RPM">rpm</Entry>
+	<Entry Name="CommSystems">İLETİŞİM SİSTEMLERİ</Entry>
+	<Entry Name="Online">ÇEVRİMİÇİ</Entry>
+	<Entry Name="Offline">ÇEVRİMDIŞI</Entry>
+	<Entry Name="Doors">KAPILAR</Entry>
+	<Entry Name="Locked">KİLİTLİ</Entry>
+	<Entry Name="Wait">KİLİT AÇILIYOR</Entry>
+	<Entry Name="Unlocked">KİLİDİ AÇIK</Entry>
+	<Entry Name="ControlRoomPrompt">Beklemede</Entry>
+	<Entry Name="StationWindowCaption">İstasyonlar</Entry>
+	<Entry Name="StationStatusWindowCaption">Durum</Entry>
+	<Entry Name="AmyReactorFlowNote">Bunu oku![br]Sistemi zorladık. Eğer kolu çekersen geri dönüşü yok. Yeterince istediğinden emin ol.</Entry>
+	<Entry Name="CarlID">SEMKEN, CARL[br]KİMLİK: 0722</Entry>
+	<Entry Name="AmyID">AZZARO, AMY[br]KİMLİK: 0735</Entry>
+	<Entry Name="StationCodesNote">Upsilon - 99m - Ch:2201[br]Theta - 153m - Ch:2202[br]Lambda - 96m - Ch:2203[br]Delta - 64m - Ch:2204[br]Omicron - 115m - Ch:2205[br]Tau - 4114m - Ch:2206[br]Phi - 3802m - Ch:2207[br]Omega - 0m - Ch:2208</Entry>
+	
+	<Entry Name="CommRoomError_InvalidCode">Kanal tanınmadı</Entry>
+	<Entry Name="CommRoomError_BadConnection">Bir bağlantı kurulamıyor</Entry>
+	<Entry Name="CommRoomError_UpsilonCall">[Upsilon Tesisi] içinden [Upsilon Tesisi] aranamıyor</Entry>
+	<Entry Name="ComUtility">İLETİŞİM ARACI</Entry>
+	<Entry Name="ContactID">KİŞİ KİMLİĞİ</Entry>
+	<Entry Name="EstablishingConnection">Kuruluyor...</Entry>
+	<Entry Name="LinkError">BAĞLANTI HATASI</Entry>
+	
+	<Entry Name="CommLogTerminal_Caption">KAYITLAR</Entry>
+	<Entry Name="CommLogTerminal_File_1">2103-04-27 @ 10:51:26</Entry>
+	<Entry Name="CommLogTerminal_File_2">2103-04-28 @ 08:52:22</Entry>
+	<Entry Name="CommLogTerminal_File_3">2103-04-29 @ 22:42:19</Entry>
+	<Entry Name="CommLogTerminal_File_4">2103-05-04 @ 14:11:54</Entry>
+	<Entry Name="CommLogTerminal_Corruption">Bozuk veri algılandı![br]Yeniden oluşturmayı denemek için TAMAM'a bas.</Entry>
+	<Entry Name="CommLogTerminal_Restoring">Geri yükleniyor...</Entry>
+	<Entry Name="CommLogTerminal_Results">Kısmi yeniden yapılandırma başarılı!</Entry>
+	
+	<Entry Name="AmyAirlockPostitNote">Theta - Geri dön![br]Upsilon'ı çalışır durumda tutmak için mühürledik. Mahvetmeyin.[br][br]A. Azzaro[br][br]Carl benim hatam değildi.</Entry>
+	
+	<Entry Name="CityNote_1">NEW YORK[br]Durum: Çevrimdışı[br]Son temas: 10 Ocak 2103 - 19:24:05[br]Mesaj:[br]Jonsy,[br][br]Ofis kapanıyor ve herkes tahliye ediliyor. Buradaki herkesten, seninle ve Upsilon ile çalışmanın bir onur olduğunu söylemek istiyorum. Tanrı yardımcınız olsun ve kıyametle iyi şanslar.[br][br]- Ben</Entry>
+	<Entry Name="CityNote_2">CADIZ (Yardımcı)[br]Durum: Çevrimdışı[br]Son temas: 12 Ocak 2103 - 05:12:09[br]Mesaj:[br]Jonsy,[br]Hayatta kalma şansının çok daha yüksek olduğunu biliyorum, ama bizim manzaramız daha iyi.[br][br]Şerefe!</Entry>
+	<Entry Name="CityNote_3">LONDRA[br]Durum: Çevrimdışı[br]Son temas: 11 Ocak 2103 - 12:00:00[br]Mesaj:[br]Sevgili Bayan Vigdis Jonsdottir,[br][br]Büyük bir üzüntüyle ofisin kapanacağını ve artık Upsilon ve Pathos-II'yi destekleyemeyeceğini bildirmek zorundayım. Bu fırsatı size, amiriniz Jane Adams'a ve personelin geri kalanına teşekkür etmek için kullanmak isterim. Siz harika bir grupsunuz ve büyük bir güvenle söylüyorum ki bizim düştüğümüz yerde, siz kesinlikle cesaretle devam edeceksiniz.[br][br]Saygılarımla,[br]Sistem Direktörü James Bloom</Entry>
+	<Entry Name="CityNote_4">LİZBON (Ana)[br]Durum: Çevrimdışı[br]Son temas: 12 Ocak 2103 - 04:52:02[br]Mesaj:[br]Savunma ölçümleri hakkında güncelleme.[br]Küresel topluluğun çarpışmayı önlemeye yönelik son çabaları başarısız oldu. Pathos-II, çarpmayı takip edecek kaçınılmaz depremle başa çıkmak için son çabalarını göstermelidir. Tahmini çarpma zamanı 05:13.[br]-LIS</Entry>
+
+	<Entry Name="CommStationNoLink">LUMAR Bağlantısı Koptu[br]Manuel Giriş Gerekli</Entry>
+	<Entry Name="CommTunerLinkEstablished">Bağlandı</Entry>
+	<Entry Name="CommTunerListTitle">Tesisler</Entry>
+	<Entry Name="CommTunerStation1">2201: Upsilon - 99m</Entry>
+	<Entry Name="CommTunerStation2">2202: Theta - 153m</Entry>
+	<Entry Name="CommTunerStation3">2203: Lambda - 96m</Entry>
+	<Entry Name="CommTunerStation4">2204: Delta - 64m</Entry>
+	<Entry Name="CommTunerStation5">2205: Omicron - 115m</Entry>
+	<Entry Name="CommTunerStation6">2206: Tau - 4114m</Entry>
+	<Entry Name="CommTunerStation7">2207: Phi - 3802m</Entry>
+	<Entry Name="CommTunerStation8">2208: Omega - 0m</Entry>
+	<Entry Name="CommTunerTuningTitle">Hizalama</Entry>
+	
+	<Entry Name="WelcomeToUpsilonSign">UPSILON TESİSİNE HOŞ GELDİNİZ[br]Tüm Pathos-II'ye güç veriyor[br][br] - Dünyanın en büyük jeotermal tesisi[br] - Doğal gaz rafinerisi[br] - İnşaat fabrikası[br][br]Konaklamanızın tadını çıkarın!</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="01_04_transport_station">
+	<Entry Name="CargoTerminalApp_Inventory">MANIFESTO</Entry>
+	<Entry Name="CargoTerminalApp_CometMemo">ÇARPIŞMA OLAYI</Entry>
+	<Entry Name="CargoTerminalApp_Video">VİDEO</Entry>
+	<Entry Name="CargoTerminalInventory">MANIFESTO: MEKİK "BEAT"[br]Rota: Ups-B  /  Theta Pr[br]Kalkış Tarihi: -[br][br]EŞYALAR (BİLET)[br]LW Halat, 250m (#187)[br]Tehlike Raporu (#11)[br]Yardımcı Kiti, x4 (#899)[br]Otomatik Şişirici. x3 (#91)</Entry>
+	<Entry Name="CargoTerminalCometMemo">Pathos-II NOTU - "ÇARPIŞMA OLAYI"[br][br]12 Ocak sabahı (05:13) Telos kuyruklu yıldızı Pasifik Okyanusu'na çarptı. Çarpışma, dünya üzerinde kaydedilen en büyük çarpışmalardan biri olarak sıralanmaktadır. Tüm kanıtlar yüzeyin tamamen çoraklaştığını ve artık yaşamı sürdüremeyeceğini göstermektedir. Pathos-II'nin eşsiz konumu, personelimiz için benzersiz bir güvenlik sağlamıştır. Bazı yapısal hasarlar kaydedilmiştir, ancak can kaybı bildirilmemiştir. En büyük kayıp, yüzey platformu Omega'da bulunan hava durumu ve iletişim istasyonuydu (insansız), ki bu da koşullar altında ödenecek küçük bir bedeldir.[br]Theta, Pathos-II'nin ve nihayetinde insanlığın geleceğini tartışmak için acil bir toplantı yapacaktır. Konuyla ilgili daha fazla bilgi takip edecektir.[br][br]Gözetmen K. Fourqurean</Entry>
+
+	<Entry Name="PlatformPowerInfo_NoPower">YETERSİZ GÜÇ</Entry>
+	<Entry Name="PlatformPowerInfo_Good">GÜCÜ AÇ</Entry>
+	<Entry Name="PlatformPowerInfo_Bad">SADECE ACİL DURUM</Entry>
+	<Entry Name="PlatformPowerInfo_Ready">GÜCÜ KAPAT</Entry>
+	
+	<Entry Name="AmyRoomPower_Status">UPSILON MEKİK İSTASYONU B</Entry>
+	<Entry Name="AmyRoomPower_Main">GÜÇ KAYNAĞI:</Entry>
+	<Entry Name="AmyRoomPower_Backup">TEMEL SİSTEMLER:</Entry>
+	<Entry Name="AmyRoomPower_Shuttle">RAYLAR(MEKİK):</Entry>
+	<Entry Name="AmyRoomPower_Safety">GÜVENLİK SİSTEMLERİ:</Entry>
+	<Entry Name="AmyRoomPower_Online">GÜÇ VERİLDİ</Entry>
+	<Entry Name="AmyRoomPower_Offline">ÇEVRİMDIŞI</Entry>
+	<Entry Name="AmyRoomPower_Stable">KARARLI</Entry>
+	<Entry Name="AmyRoomPower_Unstable">KARARSIZ</Entry>
+	<Entry Name="AmyRoomPower_Reserves">YEDEKLER</Entry>
+	
+	<Entry Name="GUIMapTitle">ULAŞIM HARİTASI</Entry>
+	<Entry Name="GUIStation01Name">UPSILON A</Entry>
+	<Entry Name="GUIStation02Name">UPSILON B</Entry>
+	<Entry Name="GUIStation03Name">LAMBDA</Entry>
+	<Entry Name="GUIStation04Name">THETA</Entry>
+	<Entry Name="GUIStation05Name">OMICRON</Entry>
+	<Entry Name="GUIStation06Name">DELTA</Entry>
+	<Entry Name="GUIStation07Name">TAU</Entry>
+	<Entry Name="GUIStation08Name">PHI</Entry>
+	<Entry Name="GUIStation01Desc">Termal & İmalat Tesisi[br]Derinlik: 99 metre [Epipe][br]Personel: 8</Entry>
+	<Entry Name="GUIStation02Desc">Gaz Toplama & Rafineri[br]Derinlik: 107 metre [Epipe][br]Personel: -</Entry>
+	<Entry Name="GUIStation03Desc">Ulaşım Terminali[br]& Ziyaretçi Merkezi[br]Derinlik: 96 metre [Epipe][br]Personel: 4</Entry>
+	<Entry Name="GUIStation04Desc">Yönetim, Görev Kontrol, Yük Montajı[br]Derinlik: 153 metre [Epipe][br]Personel: 24</Entry>
+	<Entry Name="GUIStation05Desc">Tıbbi Arş., Biyosfer X, ACR[br]Derinlik: 185 metre [Epipe][br]Personel: 12</Entry>
+	<Entry Name="GUIStation06Desc">Kabuk Donatıcı & Kaplama[br]Derinlik: 64 metre [Epipe][br]Personel: 4</Entry>
+	<Entry Name="GUIStation07Desc">Omega Operasyonları[br]Derinlik: 4114 metre [Abis][br]Personel: 8</Entry>
+	<Entry Name="GUIStation08Desc">Omega Uzay Topu[br]Derinlik: 3902 metre [Batiyal][br]Personel: -</Entry>
+	<Entry Name="GUIStationErrorCaption">HATA</Entry>
+	<Entry Name="GUIStationError">Hedef mevcut değil[br]teknik sorunlar nedeniyle.[br][br]Lütfen başka bir hedef deneyin.</Entry>
+	<Entry Name="GUIStationSelected">Mekik kalkışa hazır</Entry>
+	<Entry Name="GUIStationCurrent">Mekik zaten Upsilon B'de</Entry>
+	<Entry Name="GUIStationErrorCaption">HATA</Entry>
+	<Entry Name="GUIStationSettingTo">Hedefi onayla</Entry>
+	<Entry Name="GUIStationWarningCaption">UYARI</Entry>
+	<Entry Name="GUIStationInformationCaption">BİLGİ</Entry>
+	<Entry Name="GUIStatusDisplayActivated01">Sistemler TAMAM</Entry>
+	<Entry Name="GUIStatusDisplayDepart">Ayrılıyor[br]Upsilon B</Entry>
+	<Entry Name="GUIStatusDisplayWarning">Uyarı![br]Ray tıkalı</Entry>
+	<Entry Name="GUIStatusDisplayWarningDetail">Çarpışma an meselesi!</Entry>
+	<Entry Name="GUIStatusDisplayCrash">Uygulanıyor[br]Acil durum frenleri</Entry>
+	<Entry Name="GUIStatusDisplayCrashDetail">Acil durum frenleri uygulandı</Entry>
+	<Entry Name="GUIStatusDisplayShutdown">Güç hatası![br]Acil durum freni</Entry>
+	<Entry Name="GUIStatusDisplayShutdownDetail">Acil durum freni</Entry>
+	<Entry Name="GUIStatusDisplayDeparting">Tren kalkıyor</Entry>
+	<Entry Name="GUIStatusDisplayDepartCaption">Kalkış:</Entry>
+	<Entry Name="GUIStatusDisplayLowPowerCaption">Güç</Entry>
+	<Entry Name="GUIStatusDisplayLowPower">Güç[br]Kararsız</Entry>
+	<Entry Name="GUIDisplayETA">TAH: </Entry>
+	<Entry Name="GUIDisplayDepth">Derinlik: </Entry>
+	<Entry Name="GUIAirlockBroken">SIZINTI TESPİT EDİLDİ: DÜŞÜK BASINÇ</Entry>
+	<Entry Name="GUIAirlockFixed">İŞLEM DEVAM EDİYOR</Entry>
+	<Entry Name="GUIStationYouAreHere">BURADASINIZ</Entry>
+	<Entry Name="PipesNote">Pathos-II: Su Basabilir Hava Kilidi[br]Tamir Seti[br][br]- Dupleks Pompa x2[br]- Çok Amaçlı Temizleyici x1[br]- Valf Paketi x5[br]- Contalar x10[br]- Darbeli Anahtar x1[br]- Uyarlanabilir Borular x4</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="02_01_ms_curie_outside">
+	<Entry Name="OK">TAMAM</Entry>
+	<Entry Name="CloudComputerLoginMessage">Veri Kurtarıldı: ARK</Entry>
+	<Entry Name="CloudComputerLoginTitle">Lambda</Entry>
+	<Entry Name="Interviews">Görüş Anketi</Entry>
+	<Entry Name="CityPlans">ARK Ortamları</Entry>
+	<Entry Name="ARKSchematics">ARK Şemaları</Entry>
+	<Entry Name="Examination">Kalibrasyon Anketi v0.3</Entry>
+	<Entry Name="Tracking">ARK Takipçisi</Entry>
+	<Entry Name="Interview_1">Mülakat #1</Entry>
+	<Entry Name="Interview_2">Mülakat #2</Entry>
+	<Entry Name="Interview_3">Mülakat #3</Entry>
+	<Entry Name="InterviewName_1">Robin Bass</Entry>
+	<Entry Name="InterviewName_2">Ian Pedersen</Entry>
+	<Entry Name="InterviewName_3">Mark Sarang</Entry>
+	<Entry Name="InterviewDate_1">7 Temmuz 2103</Entry>
+	<Entry Name="InterviewDate_2">8 Temmuz 2103</Entry>
+	<Entry Name="InterviewDate_3">9 Temmuz 2103</Entry>
+	<Entry Name="Name:">İsim:</Entry>
+	<Entry Name="Date:">Tarih:</Entry>
+	<Entry Name="Play">Oynat</Entry>
+	<Entry Name="Files">Dosyalar</Entry>
+	<Entry Name="Subject">Konu</Entry>
+	<Entry Name="Images">Görseller</Entry>
+	<Entry Name="Previous">Önceki</Entry>
+	<Entry Name="Next">Sonraki</Entry>
+	<Entry Name="CityPlanImageDesc_1">ÖĞE: CYAN v2[br]- 5.11 kilometrekare[br]- Modüler alan</Entry>
+	<Entry Name="CityPlanImageDesc_2">ÖĞE: KEYWOOD v4[br]- 12.2 kilometrekare[br]- Karışık yaprak döken orman</Entry>
+	<Entry Name="CityPlanImageDesc_3">ÖĞE: AUROUS v2[br]- 2 kilometrekare[br]- Kentsel park</Entry>
+	<Entry Name="ExaminationAppName">Kalibrasyon Anketi v0.3</Entry>
+	<Entry Name="ExaminationIntro">Hoş geldin![br][br]Eğer bunu okuyorsan, ARK'a başarıyla girdin. Bu anket, geliştiricilerin öznel deneyimini daha iyi anlamaları ve refahını nasıl artıracaklarını anlamaları için tasarlanmıştır.[br][br]Lütfen anketle devam et.</Entry>
+	<Entry Name="StartExamination">Devam Et</Entry>
+	<Entry Name="Next Question">Sonraki Soru</Entry>
+	<Entry Name="Question">Soru İşareti</Entry>
+	<Entry Name="Answers">Cevaplar</Entry>
+	<Entry Name="Question_0">1. Fiziksel durumunu nasıl tanımlarsın?</Entry>
+	<Entry Name="Answer_0_0">Normal hissediyorum.</Entry>
+	<Entry Name="Answer_0_1">Canlanmış hissediyorum - kendimin daha iyi bir versiyonu.</Entry>
+	<Entry Name="Answer_0_2">Yabancı hissediyorum - başka bir bedenin içinde bir ziyaretçiyim.</Entry>
+	<Entry Name="Answer_0_3">Sahte hissediyorum - artık gerçek bir insan değilim.</Entry>
+	<Entry Name="Question_1">2. Zihinsel durumunu nasıl tanımlarsın?</Entry>
+	<Entry Name="Answer_1_0">Normal hissediyorum.</Entry>
+	<Entry Name="Answer_1_1">Kopuk hissediyorum - zihin ve beden arasında bir ayrılık.</Entry>
+	<Entry Name="Answer_1_2">Değişmiş hissediyorum - karakterimde bir değişiklik.</Entry>
+	<Entry Name="Answer_1_3">Kayıp hissediyorum - artık var değilim. </Entry>
+	<Entry Name="Question_2">3. Duyularını nasıl tanımlarsın?</Entry>
+	<Entry Name="Answer_2_0">Beklendiği gibi - normal.</Entry>
+	<Entry Name="Answer_2_1">Çevreme karşı daha hassas ve farkında hissediyorum.</Entry>
+	<Entry Name="Answer_2_2">Engellenmiş hissediyorum - sanki duyularım uyuşmuş gibi.</Entry>
+	<Entry Name="Answer_2_3">Doğal duyularımdan bir veya daha fazlası eksik.</Entry>
+	<Entry Name="Question_3">4. Yeni durumunun hissini nasıl tanımlarsın?</Entry>
+	<Entry Name="Answer_3_0">Hoş.</Entry>
+	<Entry Name="Answer_3_1">Hoşlanmıyorum - bir şeyler yanlış.</Entry>
+	<Entry Name="Answer_3_2">Rahatsız edici - her şey yapay hissettiriyor.</Entry>
+	<Entry Name="Answer_3_3">Depresif - her şeyin sahte olduğu hissinden kurtulamıyorum.</Entry>
+	<Entry Name="Question_4">5. Artık katı bir şekilde insan olmaman gerçeği seni rahatsız ediyor mu?</Entry>
+	<Entry Name="Answer_4_0">Hayır, iyi hissediyorum.</Entry>
+	<Entry Name="Answer_4_1">Biraz, kendimi kaybetmiş gibi hissediyorum.</Entry>
+	<Entry Name="Answer_4_2">Evet, önceki varlığıma yas tutuyorum.</Entry>
+	<Entry Name="Answer_4_3">Hangi formu alırsam alayım umrumda değil, yeter ki devam edebileyim.</Entry>
+	<Entry Name="Question_5">6. Yeni varlığını nasıl algılıyorsun?</Entry>
+	<Entry Name="Answer_5_0">Önceki benliğimin doğrudan bir devamı.</Entry>
+	<Entry Name="Answer_5_1">Hayatımda yeni bir sayfa gibi.</Entry>
+	<Entry Name="Answer_5_2">Yeniden doğmak gibi - tamamen baştan.</Entry>
+	<Entry Name="Answer_5_3">Tamamen farklı bir şey ve önceki benliğimle hiçbir ilgisi yok.</Entry>
+	<Entry Name="Question_6">7. Bu yeni varlığın yaşamaya değer bir hayat olacağını düşünüyor musun?</Entry>
+	<Entry Name="Answer_6_0">Evet, önceki hayatım kadar.</Entry>
+	<Entry Name="Answer_6_1">Evet, ama daha az anlamlı.</Entry>
+	<Entry Name="Answer_6_2">Belki bu dünyada yeni bir anlam bulabiliriz.</Entry>
+	<Entry Name="Answer_6_3">Hayır, gerçeklikten ve bildiğim her şeyden çok kopuk.</Entry>
+	<Entry Name="Question_7">8. Projeden çıkarılıp ölümü kabul etmeyi mi tercih ederdin?</Entry>
+	<Entry Name="Answer_7_0">Hayır.</Entry>
+	<Entry Name="Answer_7_1">Belki - düşünmem gerek.</Entry>
+	<Entry Name="Answer_7_2">Evet.</Entry>
+	<Entry Name="Saving">Kaydediliyor</Entry>
+	<Entry Name="Alert">Uyarı</Entry>
+	<Entry Name="ExaminationEnd">Cevapların kaydedildi. Katıldığın için teşekkürler.[br]- ARK ekibi</Entry>
+	<Entry Name="SignalStrength">ARK taranıyor...</Entry>
+	<Entry Name="BadSignal">ARK seçilen alanda değil</Entry>
+	<Entry Name="GoodSignal">ARK sektör içinde</Entry>
+	<Entry Name="SelectSearchSector">Taramak için bir sektör seç</Entry>
+	<Entry Name="Results">Sonuçlar</Entry>
+	<Entry Name="TrackingDone">ARK bulundu:[br]Pathos-II[br]Tau Tesisi (Revir)[br][br]Enlem 35N 13'2.26"[br]Boylam 36W 1'46.78"</Entry>
+	<Entry Name="OmniToolNotInserted">Çalıştırmak için Omnitool'u tak</Entry>
+	<Entry Name="CorextChipNotInserted">HATA - Otomatik kontrol için korteks çipi gerekli.</Entry>
+	<Entry Name="OmniToolStatus">Hoş geldin, L. Meuron (UPSILON)</Entry>
+	<Entry Name="LifeBoatCortexChip">HATA - Korteks çipi gerekli</Entry>
+	<Entry Name="CometArticle_Text">Chris,[br]Bütün gece ayakta kaldım. Uyumak israf gibi geldi. Arka planda TV açık, haber spikerleri gelen kuyruklu yıldızı Yılbaşı geri sayımı yapıyormuş gibi aktarıyorlar. Burada benimle olmanı dilemenin ne kadar berbat olduğunu biliyorum. Sanırım bu şeyden hayatta kalma şansı olan biri varsa o da dalgaların altındaki sizlersiniz. Umarım devam edebilirsiniz, eğer yaşamaya değer bir hayatsa.[br][br]Görünüşe göre kıyamet kopmak üzere. Şok dalgası bize ulaşmadan gönder düğmesine bassam iyi olur.[br][br]Seninle gurur duyuyorum oğlum.[br]Baban</Entry>
+	
+  </CATEGORY>
+  
+  <CATEGORY Name="02_02_ms_curie_inside">
+	<Entry Name="EscapePodSign">Acil Durum Aracı</Entry>
+	<Entry Name="SafetyProcedures">Güvenlik Prosedürleri #12: Koru[br][br]Acil durumlarda, bölmeler hayat desteğini daha verimli hale getirmek için bölümleri otomatik olarak mühürleyecektir. Sadece yiyecek veya bitki ya da ilaç gibi diğer iklime duyarlı nesneleri korumak için kullanılan alanlar için Koru-modunu etkinleştirin.</Entry>
+	<Entry Name="ButtonPrev">Önceki Sayfa</Entry>
+	<Entry Name="ButtonNext">Sonraki Sayfa</Entry>
+
+	<Entry Name="PortmapButton1">Lizbon (Ana)</Entry>
+	<Entry Name="PortmapButton2">Cadiz (Yardımcı)</Entry>
+	<Entry Name="PortmapButton3">Brest</Entry>
+	<Entry Name="PortmapButton4">Kazablanka</Entry>
+	<Entry Name="PortmapButton5">Dublin</Entry>
+	<Entry Name="PortmapButton6">Plymouth</Entry>
+	<Entry Name="PortmapButton7">Rabat</Entry>
+	<Entry Name="PortmapButton8">Tanca</Entry>
+	<Entry Name="PortmapButton9">Pathos II - Lambda</Entry>
+	<Entry Name="PortmapLisbon">Lizbon (Ana)[br][br]İç Savaş</Entry>
+	<Entry Name="PortmapCadiz">Cadiz (Yardımcı)[br][br]Yangınla harap oldu</Entry>
+	<Entry Name="PortmapBrest">Brest[br][br]Düşman paramiliter güçler</Entry>
+	<Entry Name="PortmapCasablanca">Kazablanka[br][br]Savaş bölgesi</Entry>
+	<Entry Name="PortmapDublin">Dublin[br]KİS ile harap oldu[br]Serpinti ile boğuşuyor</Entry>
+	<Entry Name="PortmapPlymouth">Plymouth[br][br]Soykırım</Entry>
+	<Entry Name="PortmapRabat">Rabat[br][br]Çorak arazi</Entry>
+	<Entry Name="PortmapTangier">Tanca[br][br]Çatışmada kilitlenmiş birkaç silahlı grup</Entry>
+	<Entry Name="PortmapPathos">Pathos II - Lambda[br][br]Son şans?</Entry>
+	
+	<Entry Name="CoreTemperature">SOĞUTUCU VERİMLİLİĞİ</Entry>
+	<Entry Name="CoreTemperatureStable">%99</Entry>
+	<Entry Name="CoreTemperatureModerate">%81</Entry>
+	<Entry Name="CoreTemperatureWarning">%68</Entry>
+	<Entry Name="CoreTemperatureCritical">%0</Entry>
+	
+	<Entry Name="CoreAction">REAKTÖR SIC.</Entry>
+	<Entry Name="CoreActionStable">Sabit</Entry>
+	<Entry Name="CoreActionModerate">Sabit</Entry>
+	<Entry Name="CoreActionWarning">SERVİS GEREKLİ</Entry>
+	<Entry Name="CoreActionCritical">GEMİYİ TERK ET</Entry>
+	
+  </CATEGORY>
+  <CATEGORY Name="02_03_delta">
+	<Entry Name="StabilityControl">Jirostabilizatör</Entry>
+	<Entry Name="EnergyOutput">Enerji çıkışı</Entry>
+	<Entry Name="EngineStatus">Motor durumu</Entry>
+	<Entry Name="EngineFailure">Kritik arıza!</Entry>
+	<Entry Name="MapWindow">Harita</Entry>
+	<Entry Name="GUIError">Hata</Entry>
+	<Entry Name="GUIOK">TAMAM</Entry>
+	<Entry Name="GUIBack">Geri</Entry>
+	<Entry Name="GUIPlay">Oynat</Entry>
+	<Entry Name="GUIStop">Durdur</Entry>
+	<Entry Name="GUINext">Sonraki</Entry>
+	<Entry Name="GUIPrev">Önceki</Entry>
+	<Entry Name="GUIManifest">Nakliye</Entry>
+	<Entry Name="GUIZeppelinStatus">Zeplinler</Entry>
+	<Entry Name="GUISignalStatus">Anten</Entry>
+	<Entry Name="GUITransport">Ulaşım Talep Et</Entry>
+	<Entry Name="GUITransmissions">Radyo</Entry>
+	<Entry Name="GUIContact">Yankı</Entry>
+	<Entry Name="GUIAbort">İptal Et</Entry>
+	<Entry Name="GUIClear">C</Entry>
+	<Entry Name="GUIPlayback">Yeniden Oynat</Entry>
+	<Entry Name="GUITransmit">İlet</Entry>
+	<Entry Name="GUISend">Gönder</Entry>
+	<Entry Name="GUISendMessage">Mesaj Gönder</Entry>
+	<Entry Name="GUIProjectEvaluation">Proje Değerlendirmesi</Entry>
+	<Entry Name="ErrorMsg_InvalidAccessCode">Geçersiz erişim kodu!</Entry>
+	<Entry Name="ErrorMsg_NoSignal">Bağlantı kurulamıyor</Entry>
+	<Entry Name="ErrorMsg_WrongZeppelin">Zeplin yanıt vermiyor</Entry>
+	<Entry Name="ErrorMsg_OnRoute">Gemi zaten Delta'ya yaklaşıyor.</Entry>
+	<Entry Name="ErrorMsg_Arrived">Gemi zaten Delta'ya yanaştı.</Entry>
+	<Entry Name="ErrorMsg_MissingFiles">Kısmi veri geri yükleme başarılı!</Entry>
+	<Entry Name="ErrorMsg_BunkerMessageFailed">Bağlantı kurulamıyor[br]Mesaj gönderilmedi</Entry>
+	<Entry Name="ErrorMsg_NoResponse">Hata: Motor arızası</Entry>
+	<Entry Name="CorruptedData">Uyarı: Bozuk Veri</Entry>
+	<Entry Name="RestoreFiles">Geri Yükle</Entry>
+	<Entry Name="RestorationProgress">İlerleme:</Entry>
+	<Entry Name="TransmissionRecords">Geri yüklenen dosyalar</Entry>
+	<Entry Name="ZeppelinTransmission_1">Delta:Theta 2103-08-14</Entry>
+	<Entry Name="ZeppelinTransmission_2">Delta:Theta 2104-01-15</Entry>
+	<Entry Name="ZeppelinCorruptedData_Detected">Bozuk ses arabelleği[br]Dosyalar geri yüklensin mi?</Entry>
+	<Entry Name="ZeppelinCorruptedData_Restoring">Geri yükleniyor...</Entry>
+	<Entry Name="ZeppelinCorruptedData_Results">2 dosya kurtarıldı</Entry>
+	<Entry Name="RelayMalfunctionMsg">DONANIM ARIZASI![br][br]E:2038[br]Eksik veya hasarlı bileşenler.</Entry>
+	<Entry Name="LaunchRecords">Geri yüklenen dosyalar</Entry>
+	<Entry Name="BunkerApp_Log">Erişim Günlüğü</Entry>
+	<Entry Name="BunkerApp_Messages">Mesajlar</Entry>
+	<Entry Name="BunkerApp_Map">Bölge Haritası</Entry>
+	<Entry Name="BunkerLogCaption">Günlük</Entry>
+	<Entry Name="BunkerLog"><![CDATA[2104-01-15 >zeppelin_kontrolü -uzaktan[br]2104-01-15 [zeppelin_kontrolü] uzaktan erişim reddedildi (hata: 92874)[br]2104-01-15 >zeppelin_kontrolü -uzaktan -yönetici[br]2104-01-15 [zeppelin_kontrolü] uzaktan erişim reddedildi (hata: 92886)[br]2104-01-15 [zeppelin_kontrolü] FR_GEÇERSİZ KIL-MK[br]2104-01-15 [ana] geçersiz komut[br]2104-01-15 [zeppelin_kontrolü] FR_GEÇERSİZ KIL-KOMOREBI[br]2104-01-15 [ana] yanıtlayıcı hakları askıya alındı (Hata: 3948) [br]2104-01-15 >SİKTİRGİTAKERS!!![br]2104-01-15 [ana] geçersiz komut]]></Entry>
+	<Entry Name="BunkerMessages_0">Mesajlar</Entry>
+	<Entry Name="BunkerMessages_1">Mesajlar (1)</Entry>
+	<Entry Name="BunkerDraftName">Zep!</Entry>
+	<Entry Name="BunkerDraft">Kime: Strasky.Theta[br]Konu: Zep![br][br]Akers garip boklar çeviriyor. Az önce zeplini Theta'ya geri götürdü. Yanaşmasına izin verme. Kapat şunu amına koyayım!</Entry>
+	<Entry Name="BunkerNoMessages">Mesaj Yok!</Entry>
+	<Entry Name="BunkerMapZoom_Out">UZAKLAŞTIR</Entry>
+	<Entry Name="BunkerMapZoom_In">YAKINLAŞTIR</Entry>
+	<Entry Name="ManifestText">2103-05-23: Arızalı Haimatsu Uyd. (Phi'den)[br]2103-06-10: Çerçeve bileşenleri (Lambda'ya)[br]2103-06-19: Pascal Kartuşu (Theta'ya)[br]2103-07-10: Gövde (Lambda'dan)[br]2103-08-03: "ARK" Kabuğu (Phi'ye)[br]2103-08-14: Delta tahliyesi (Theta'ya)[br]2104-01-15: Komorebi araştırma grubu (Theta'dan)[br]2104-01-15: Belirtilmemiş (Theta'ya)</Entry>
+	<Entry Name="Zeppelin_1">Zeplin - 049</Entry>
+	<Entry Name="Zeppelin_1_IDOnly">049</Entry>
+	<Entry Name="Zeppelin_1_Map">049</Entry>
+	<Entry Name="Zeppelin_1_Idle">Durum: Boşta</Entry>
+	<Entry Name="Zeppelin_1_Moving">Durum: Hareketli</Entry>
+	<Entry Name="Zeppelin_2">Zeplin - 840</Entry>
+	<Entry Name="Zeppelin_2_IDOnly">840</Entry>
+	<Entry Name="Zeppelin_2_Map">840</Entry>
+	<Entry Name="Zeppelin_2_Status">Durum: -</Entry>
+	<Entry Name="Zeppelin_3">Zeplin - 216</Entry>
+	<Entry Name="Zeppelin_3_IDOnly">216</Entry>
+	<Entry Name="Zeppelin_3_Map">216</Entry>
+	<Entry Name="Zeppelin_3_Status">Durum: -</Entry>
+	<Entry Name="SignalStrength">Sinyal Gücü</Entry>
+	<Entry Name="NoAutomaticAlignment">Hata: Ulaşım pozisyonları kayboldu[br]Anteni manuel olarak ayarla</Entry>
+	<Entry Name="AntennasMisaligned">Hizalanmamış anten(ler) tespit edildi!</Entry>
+	<Entry Name="SignalFull">Bağlantı kuruldu</Entry>
+	<Entry Name="TransportHeader">Erişim kodu:</Entry>
+	<Entry Name="TransportCallHeader">Terminalle iletişime geç</Entry>
+	<Entry Name="TransportCallStep_1">Bağlantı kuruluyor...</Entry>
+	<Entry Name="TransportCallStep_2">Bağlantı kuruldu!</Entry>
+	<Entry Name="TransportCallStep_3">Ulaşım talebi gönderiliyor...</Entry>
+	<Entry Name="TransportCallStep_4">Zeppelin_049 yanıt vermiyor.</Entry>
+	<Entry Name="TransportCallStep_5">Yeniden deneniyor...</Entry>
+	<Entry Name="TransportCallStep_6">Zeplin 049 - Olumlu</Entry>
+	<Entry Name="TransportCallStep_7">Zeplin 049 - Geliyor</Entry>
+	<Entry Name="TransportCallStep_8">Zeplin 049 - Yanaştı</Entry>
+	<Entry Name="RobotManual">UH Kılavuzu</Entry>
+	<Entry Name="Messages">Mesajlar</Entry>
+	<Entry Name="AccessLog">Erişim Günlüğü</Entry>
+	<Entry Name="ChessGame">Satranç</Entry>
+	<Entry Name="PartialCorruption">Dosya kısmen bozuk!</Entry>
+	<Entry Name="MainBaseMailName_1">2103-08-12</Entry>
+	<Entry Name="MainBaseMailName_2">2103-08-13</Entry>
+	<Entry Name="MainBaseMailName_3">2103-08-14</Entry>
+	<Entry Name="MainBaseMailName_4">2103-12-25</Entry>
+	<Entry Name="MainBaseMail_1"><![CDATA[Kimden: Cronstedt.Theta[br]Konu: Delta Tahliyesi[br][br]Terry, senin ve ekibinin 14'ünde Theta'ya tahliye edilmesine karar verildi. Her şey hallediliyor ve vardığınızda hepinize yeni pozisyonlar verilecek. Elbette rütbelere uymak zorunda kalacaksınız. İhtiyacımız olan son şey daha fazla "lider".[br][br]Cronstedt]]></Entry>
+	<Entry Name="MainBaseMail_2"><![CDATA[Kimden: Cronstedt.Theta[br]Konu: Kendi cenazen[br][br]>Siktir git, Cronstedt. Hiçbir yere gitmiyorum.[br]>Beni zorlama yetkin yok.[br]>[br]>Terry[br][br]Bu benim emrim değil, aptal, ben sadece elçiyim. Kalmak mı istiyorsun? Çöplüğünde takılmak istersen sana biraz zaman kazandırabilirim, ama ekibin yarın taşınıyor.[br][br]Cronstedt]]></Entry>
+	<Entry Name="MainBaseMail_3"><![CDATA[Kimden: Strasky.Theta[br]Konu: Tahliye başarılı[br][br]Bay Akers,[br]Ekibinizin Theta'ya güvenli bir şekilde vardığını bildirmekten mutluluk duyarım. Taşınmaya hazır olduğunuzda bana haber verin, bir ulaşım aracı göndereceğim.[br][br]Peter Strasky[br]Theta Sevk]]></Entry>
+	<Entry Name="MainBaseMail_4"><![CDATA[Kimden: Strasky.Theta[br]Konu: Mutlu Noeller[br][br]Mutlu Noeller, Bay Akers.[br]Theta'ya taşınmak isterseniz sormaktan çekinmeyin.[br][br]Peter Strasky[br]Theta Sevk]]></Entry>
+	<Entry Name="MainBaseLog"><![CDATA[[2104-01-11] [ana] yerel erişim (T.Akers)[br][2104-01-12] [ana] yerel erişim (T.Akers)[br][2104-01-13] [ana] yerel erişim (T.Akers)[br][2104-01-13] [satranç] Terry Akers 1000. satranç oyununu kazandı![br][2104-01-14] [ana] yerel erişim (T.Akers)[br][2104-01-15] [ana] yerel erişim (T.Akers)]]></Entry>
+	<Entry Name="ChessNewGame">Yeni Oyun</Entry>
+	<Entry Name="ChessContinue">Devam Et</Entry>
+	<Entry Name="ChessExit">Çıkış</Entry>
+	<Entry Name="ChessStats_MainBase">İstatistikler[br]Oyunlar: 1610[br]Kazanılan: 1000[br]Kaybedilen: 610</Entry>
+	<Entry Name="ChessStats_Bunker">İstatistikler[br]Oyunlar: 0[br]Kazanılan: 0[br]Kaybedilen: 0</Entry>
+	<Entry Name="ChessError">Hata: Bozuk Rakip</Entry>
+	<Entry Name="FrequencyScanner">Frekans tarayıcı</Entry>
+	<Entry Name="Recordings">Kayıtlar</Entry>
+	<Entry Name="FrequencyScannerRangeFrom">Kimden: 25MHz</Entry>
+	<Entry Name="FrequencyScannerRangeTo">Kime: 941MHz</Entry>
+	<Entry Name="FrequencyScannerScan">Taramayı başlat</Entry>
+	<Entry Name="FrequencyScannerStop">Taramayı durdur</Entry>
+	<Entry Name="FrequencyScannerSignalsFound">Bulunan sinyaller: 0</Entry>
+	<Entry Name="DiaryEntry_1">WAU'nun Delta'yı ele geçirmesini izlemek heyecan verici. Altı ay önce endişelenirdim. Goya ve Wan'a makinelerden siyah kanı temizletirdim. Şimdi kabuklu yüzeyleri Delta'nın ne olduğunu tamamlıyor, hatta gölgede bırakıyor gibi görünüyor.</Entry>
+	<Entry Name="DiaryEntry_2">Koruyucumuzun siyah kanındaki yansımam fısıldıyor. Onları bu cehennemden kurtarmam gerekiyor. Uyumalarına izin ver. Onları gördüğüm berrak rüyalara kilitle.</Entry>
+	<Entry Name="DiaryEntry_3">Işık gözlerimi acıtıyor. Bana kurtuluşu görmek için kafatasımın içindeki bu camsı ete ihtiyacım olmadığını söylüyor. Onları memnuniyetle çıkaracağım. Bu ilahi görevi örtbas etmelerini durduracağım.</Entry>
+	<Entry Name="Degrees">derece</Entry>
+	<Entry Name="ComChannel">Kanal</Entry>
+	<Entry Name="AntennaControl_NoSignal">Sinyal yok</Entry>
+	<Entry Name="AntennaControl_Aligned">Bağlantı kuruldu</Entry>
+	<Entry Name="RobotManual_Name_1">K8 (UH8)</Entry>
+	<Entry Name="RobotManual_Name_2">BULL (UH3))</Entry>
+	<Entry Name="RobotManual_Name_3">TOPA (m-UH9)</Entry>
+	<Entry Name="RobotManual_Name_4">QUALIA (RV2)</Entry>
+	<Entry Name="RobotManual_Robot_1">K8 (UH8)[br]Zeka: Karmaşık AN-7U[br]Sınıf: Hafif Evrensel Yardımcı[br]Uzaktan Pilot: Yok[br][br]Not[br]K8'in bir ses modülü olmamasına rağmen, basitleştirilmiş sesler ve ışıklar aracılığıyla iletişim kurabilir.</Entry>
+	<Entry Name="RobotManual_Robot_2">BULL (UH3)[br]Zeka: Karmaşık AN-5U[br]Sınıf: Orta Düzey İşçi[br]Uzaktan Pilot: Destekleniyor</Entry>
+	<Entry Name="RobotManual_Robot_3">TOPA (m-UH9)[br]Zeka: Karmaşık AN-7U[br]Sınıf: Mini UH[br]Uzaktan Pilot: Yok</Entry>
+	<Entry Name="RobotManual_Robot_4">QUALIA (RV2)[br]Zeka: Temel A-2U[br]Sınıf: Araştırma Gemisi[br]Uzaktan Pilot: Zorunlu[br][br]Not[br]Gemi sadece temel zekaya sahiptir. Ekipmanını tam olarak kullanmak için bir pilot gereklidir.</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="02_04_theta_outside">
+	<Entry Name="ZepGui_Dest">Hedef: Theta</Entry>
+	<Entry Name="ZepGui_DistanceDepth">Mesafe: %distm   Derinlik: %depthm</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="02_05_theta_inside">
+	<Entry Name="Files">Dosyalar</Entry>
+	<Entry Name="Error">Hata</Entry>
+	<Entry Name="Back">Geri</Entry>
+	<Entry Name="OK">TAMAM</Entry>
+	<Entry Name="Abort">İptal Et</Entry>
+	<Entry Name="ConnectionError">Bağlantı hatası!</Entry>
+	<Entry Name="Loading">Yükleniyor</Entry>
+	<Entry Name="Troubleshoot">Sorun Gider</Entry>
+	<Entry Name="Troubleshooting">Kaynak kontrol ediliyor...</Entry>
+	<Entry Name="ServerProblem">Hata kodu: 06FF0A12[br]Ana bilgisayara bağlanılamıyor[br][br]Lütfen alt seviye kasadaki yönlendiriciyi sıfırlayın veya bakımla iletişime geçin.</Entry>
+	<Entry Name="Uploading">Yükleniyor...</Entry>
+	<Entry Name="UploadComplete">Yükleme tamamlandı!</Entry>
+	<Entry Name="Info">Bilgi</Entry>
+	<Entry Name="Scans">Taramalar</Entry>
+	<Entry Name="Upload">Yükle</Entry>
+	<Entry Name="ExtraOptions">Seçenekler</Entry>
+	<Entry Name="Environment">Ortam</Entry>
+	<Entry Name="Module">Modül</Entry>
+	<Entry Name="SimulationInfo">Simülasyon Bilgisi</Entry>
+	<Entry Name="RunSimulation">Koş</Entry>
+	<Entry Name="NoScanData">TARAMA PROJEKTÖRÜ AKTİF[br]Tarama verisi içeren bir çip takın...</Entry>
+	<Entry Name="ChipInserted_1">Yuva 1: Çip</Entry>
+	<Entry Name="ChipInserted_2">Yuva 2: Çip</Entry>
+	<Entry Name="LoadingScanData">Tarama Verisi Yükleniyor...</Entry>
+	<Entry Name="LoadingEnvironmentData">Ortam Verisi Yükleniyor...</Entry>
+
+	<Entry Name="SkillsLabel">Beceriler:</Entry>
+	<Entry Name="ScanSubjectLabel">Yüklenen tarama:</Entry>
+	<Entry Name="EnvironmentLabel">Ortam:</Entry>
+	<Entry Name="ExtraModuleLabel">Destek modülü:</Entry>
+
+	<Entry Name="ScanSubject_0_Name">LINDWALL, Sarah</Entry>
+	<Entry Name="ScanSubject_0_Info">PARTİ 4[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 7 Temmuz 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Sarah Lindwall[br]Cinsiyet: K[br]Doğum: 25 Kasım 2074[br]Ölüm: --, --[br]Uyruk: Grönlandlı[br][br]NOTLAR[br]ARK'ı teslim etmeye yardım edeceğini söyledi.</Entry>
+	<Entry Name="ScanSubject_1_Name">SARANG, Mark</Entry>
+	<Entry Name="ScanSubject_1_Info">PARTİ 7[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 12 Temmuz 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Mark Sarang[br]Cinsiyet: E[br]Doğum: 21 Eylül 2061[br]Ölüm: 12 Temmuz 2103[br]Uyruk: Koreli[br][br]NOTLAR[br]"Süreklilik" yüzünden kendini öldürdü? Strohmeier çok kızgın, güvenliği sıkılaştırdı. ARK projesi askıya alındı.</Entry>
+	<Entry Name="ScanSubject_2_Name">WAN, Brandon</Entry>
+	<Entry Name="ScanSubject_2_Info">PARTİ 24[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 25 Ağustos 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Brandon Wan[br]Cinsiyet: E[br]Doğum: 16 Ekim 2070[br]Ölüm: --, --[br]Uyruk: Siçuan Çinlisi[br][br]NOTLAR[br]Delta mültecisi, inşaat güdücüsü. Şimdi Strohmeier için çalışıyor.</Entry>
+	<Entry Name="ScanSubject_3_Name">BASS, Robin</Entry>
+	<Entry Name="ScanSubject_3_Info">PARTİ 25[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 26 Ağustos 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Robin Bass[br]Cinsiyet: K[br]Doğum: 10 Aralık 2072[br]Ölüm: 26 Ağustos 2103[br]Uyruk: D.C. Amerikalısı[br][br]NOTLAR[br]Bir lanet "süreklilik" intiharı daha. Strohmeier yine laboratuvarıma girmemi engelledi!</Entry>
+	<Entry Name="ScanSubject_4_Name">KOMOREBI, Maggie</Entry>
+	<Entry Name="ScanSubject_4_Info">PARTİ 14[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 8 Ağustos 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Maggie Komorebi[br]Cinsiyet: K[br]Doğum: 4 Ocak 2067[br]Ölüm: --, --[br]Uyruk: H.K Çinlisi[br][br]NOTLAR[br]Ne kadar da benziyoruz! Farklı bir hayatta eminim en iyi arkadaş olurduk.</Entry>
+	<Entry Name="ScanSubject_5_Name">WOLCHEZK, Heather</Entry>
+	<Entry Name="ScanSubject_5_Info">PARTİ 6[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 10 Temmuz 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Heather Wolchezk[br]Cinsiyet: K[br]Doğum: 4 Ocak 2063[br]Ölüm: --, --[br]Uyruk: Silezya-Polonyalı[br][br]NOTLAR[br]Kasktaki dalga sızıntısını kesmeme yardım etti. Eğer bir işe yaradıysa, tarama sonrası akşamdan kalmalığını daha az şiddetli hale getirmeli.</Entry>
+	<Entry Name="ScanSubject_6_Name">STRASKY, Peter</Entry>
+	<Entry Name="ScanSubject_6_Info">PARTİ 12[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 4 Ağustos 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Peter Strasky[br]Cinsiyet: E[br]Doğum: 11 Mart 2068[br]Ölüm: --, --[br]Uyruk: Kuzey-İngiliz[br][br]NOTLAR[br]Strasky her zamanki gibi neşeli ve komikti.</Entry>
+	<Entry Name="ScanSubject_7_Name">KOSTER, Alice</Entry>
+	<Entry Name="ScanSubject_7_Info">PARTİ 23[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 24 Ağustos 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Alice Koster[br]Cinsiyet: K[br]Doğum: 1 Haziran 2069[br]Ölüm: --, --[br]Uyruk: Kanadalı[br][br]NOTLAR[br]ARK'ı inşa etmeye yardım edeceğini ama Phi'ye taşımayacağını söyledi.</Entry>
+	<Entry Name="Environment_0">Hiçbiri</Entry>
+	<Entry Name="Environment_1">Plaj</Entry>
+	<Entry Name="Environment_2">Kayak Locası</Entry>
+	<Entry Name="Environment_3">Tarama Odası</Entry>
+	<Entry Name="None">Hiçbiri</Entry>
+	<Entry Name="Alice">Alice</Entry>
+	<Entry Name="ShutdownCaption">Kapat</Entry>
+	<Entry Name="ShutdownBody">Kapatma işlemi devam ediyor...</Entry>
+	<Entry Name="StressShutdown">Deneğin stres limiti aşıldı - kapatılıyor!</Entry>
+	<Entry Name="LoveLetterBody">Brandon,[br]Tarama hakkında düşünmekten gerçekten perişan haldeyim. Herkes çok cesur. Hep gülümsüyorlar, pişmanlık yok. Tarama sırasında elimi tutacağını söylediğini hatırlıyor musun? Eğer teklif hâlâ geçerliyse, minnetle kabul ederim. Eğer birlikte yaparsak, akşamdan kalmalığı da birlikte çekebiliriz. İyileşmenin birkaç gün sürdüğünü söylüyorlar.[br]Öpücükler, Alice.</Entry>
+	<Entry Name="BrandonBadgeBody">Brandon Wan</Entry>
+	<Entry Name="DatamineServerMaintenance">THETA - YAŞAM & ÇEVRE KONTROLÜ (WAU)[br]================================[br]İKLİM: İşlevsel[br] - Basınç: 11.2 psi [br] - Sıcaklık: 6 C [br] - Nem(RH): %62 [br]HAVA: Sağlıklı [br] - CO2 İşlemcisi: Aktif %78 [br] - Gaz karıştırıcı: Aktif %94 [br]SU: Tasarruf Et [br] - Arıtıcılar: Aktif %31[br]ATIK YÖNETİMİ: Başarısız [br] - Geri dönüşüm: Aktif %2 [br] - Enerji geri kazanımı: %17</Entry>
+	<Entry Name="AudioRecordings">Ses Kayıtları</Entry>
+	<Entry Name="DunbatStatus_1">HAZIR</Entry>
+	<Entry Name="DunbatStatus_2">SİSTEMLER AKTİF</Entry>
+	<Entry Name="DunbatStatus_3_Delay">TESTLER ÇALIŞTIRILIYOR...</Entry>
+	<Entry Name="DunbatStatus_3">TÜM SİSTEMLER TAMAM!</Entry>
+	<Entry Name="DunbatStatus_4_Delay">BIRAKMAYA HAZIRLANIYOR...</Entry>
+	<Entry Name="DunbatStatus_4">BIRAKMAYA HAZIR!</Entry>
+	<Entry Name="DunbatStatus_Error_Delay">BIRAKMA İŞLEMİ DEVAM EDİYOR...</Entry>
+	<Entry Name="DunbatStatus_Error">KRİTİK ARIZA!</Entry>
+	<Entry Name="ScanRoom_Root_Folder">Yerel (%34 Boş)</Entry>
+	<Entry Name="ScanRoom_Scans_Folder">Taramalar</Entry>
+	<Entry Name="ScanRoom_Scans_File_1_Name">Imogen Reed</Entry>
+	<Entry Name="ScanRoom_Scans_File_1_Info">PARTİ 9[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 31 Temmuz 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Imogen Reed[br]Cinsiyet: K[br]Doğum: 4 Mayıs 2072[br]Ölüm: --, --[br]Uyruk: Eko-Amerikalı</Entry>
+	<Entry Name="ScanRoom_Scans_File_2_Name">Guy Konrad</Entry>
+	<Entry Name="ScanRoom_Scans_File_2_Info">PARTİ 30[br]Tür: Sıkıştırılmış Nakajima nörografı[br](sürekli zaman, 3ms)[br]Yakalandı: 7 Ekim 2103[br]Yazar: Catherine Chun[br][br]DENEY[br]İsim: Guy Konrad[br]Cinsiyet: E[br]Doğum: 31 Ocak 2062[br]Ölüm: --, --[br]Uyruk: Kuzey-İngiliz</Entry>
+
+	<Entry Name="ScanRoom_Env_Folder">Test Ortamları</Entry>
+	<Entry Name="ScanRoom_Env_File_1_Name">Yüzdürme Tankı</Entry>
+	<Entry Name="ScanRoom_Env_File_1_Info">Su dolu çelik tank - Duyusal sınırlayıcı</Entry>
+	<Entry Name="ScanRoom_Env_File_2_Name">Tarama Odası</Entry>
+	<Entry Name="ScanRoom_Env_File_2_Info">Pilot Koltuğu ile - Daha iyi devamlılık![br]ARK için gerekli değil</Entry>
+	<Entry Name="ScanRoom_Env_File_3_Name">Plaj</Entry>
+	<Entry Name="ScanRoom_Env_File_3_Info">Uyumlu dış test - ARK'a uygulandı</Entry>
+	<Entry Name="ScanRoom_Env_File_4_Name">Versay</Entry>
+	<Entry Name="ScanRoom_Env_File_4_Info">Uyumlu iç test - Mükemmel[br]Veri WAU tarafından yeniden oluşturuldu. Kullanmayın.</Entry>
+	<Entry Name="ScanRoom_EXT_1S_Folder">Çip (%01 Boş)</Entry>
+	<Entry Name="ScanRoom_EXT_1E_Folder">Çip (%44 Boş)</Entry>
+	<Entry Name="ScanRoom_EXT_1ECopied_Folder">Çip (%37 Boş)</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_Folder">Taramalar</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_Info">İkili dosya.[br]Bilinmeyen format.[br]Dosya bozuk veya farklı bir sistem için derlenmiş.</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_1_Name">Javid Goya</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_2_Name">Louise Meuron</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_3_Name">Brandon Wan</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_4_Name">Nicolai Ivashin</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_5_Name">Maggie Komorebi</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_6_Name">Nadine Masters</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_7_Name">Peter Strasky</Entry>
+	<Entry Name="ScanRoom_ScanChipScans_File_8_Name">Alice Koster</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_Folder">Ortamlar</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_1_Name">Plaj</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_1_Info">Uyumlu dış test - ARK'a uygulandı</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_2_Name">Kayak Locası</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_2_Info">Uyumlu iç test - Atıldı</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_3_Name">Tarama Odası</Entry>
+	<Entry Name="ScanRoom_EnvChipEnvironments_File_3_Info">Theta tarama odası - Daha iyi devamlılık.[br]ARK için gerekli değil.</Entry>
+	<Entry Name="SimonRecording_1">Tarama Sonrası - 2 Mayıs 2015</Entry>
+	<Entry Name="SimonRecording_2">Yol Haritası - 20 Mayıs 2015</Entry>
+	<Entry Name="SimonRecording_3">Son Kayıt - 1 Haziran 2015</Entry>
+	<Entry Name="LoadingExternalDevice">Harici cihaz yükleniyor...</Entry>
+	<Entry Name="Transfer">Dosyayı aktar</Entry>
+	<Entry Name="NetworkTransfer">Ağ transferi</Entry>
+	<Entry Name="ChipTransfer_NoChip">Şuraya kopyala: [HİÇBİRİ]</Entry>
+	<Entry Name="ChipTransfer">Çipe kopyala</Entry>
+	<Entry Name="NetworkTransferError">AKTARIM REDDEDİLDİ[br]Kısıtlı dosya.</Entry>
+	<Entry Name="ChipTransferError_NoChip">Harici cihaz algılanmadı!</Entry>
+	<Entry Name="ChipTransferError_WrongChip">Çipte yeterli boş alan yok.</Entry>
+	<Entry Name="ChipTransferError_Corrupted">AKTARIM REDDEDİLDİ[br]Bozuk veri.</Entry>
+	<Entry Name="ChipTransferError_FileExists">Çip zaten bu dosyayı içeriyor.</Entry>
+	<Entry Name="ChipTransferInProgress">Veri Çipe kopyalanıyor...</Entry>
+	<Entry Name="BrandonEntryFileName_1">14 Ağu, 2103</Entry>
+	<Entry Name="BrandonEntryFileName_2">25 Ağu, 2103</Entry>
+	<Entry Name="BrandonEntryFileName_3">7 Eki, 2103</Entry>
+	<Entry Name="BrandonEntryFileName_4">15 Oca, 2104</Entry>
+	<Entry Name="BrandonEntry_1">Akers sonunda Delta'yı tahliye etmeyi kabul etti. Goya, Krier ve ben bugün Theta'ya taşındık. Akers bir süre daha buralarda takılacağını söyledi. O çılgın piç. İşimle gurur duyarım, ama tanrı aşkına, yüzey parça göndermeyi bıraktığından beri o yer çok sefil.</Entry>
+	<Entry Name="BrandonEntry_2">ARK taramamı Alice ile birlikte yaptım. Strohmeier bana akşamdan kalmalığın beni temel olarak öldüreceğini söyledi. Ne pislik herif. İlk başta iyiydim, ama birkaç saat sonra başım çatlayacak gibi ağrımaya başladı. En büyük sıkıntı o Chun kızıydı, o kadar rahatsız edici ki her an derimi yüzüyormuş gibi hissediyorum.</Entry>
+	<Entry Name="BrandonEntry_3">Strohmeier çıldırdı ve ARK projesi için gelecekteki tüm taramaları durdurdu. Görünüşe göre Konrad da süreklilik olayına dahil olmak istemiş ve taramadan hemen sonra Pilot Koltuğu'nda kendini kızartmış. İçimden bir ses yeni güvenlik şifreleri alacağımızı söylüyor.</Entry>
+	<Entry Name="BrandonEntry_4">Komorebi araştırma ekibinin Delta'ya gidip Akers'ı alacağını yeni duydum. Aylardır yalnız. Ne haltlar karıştırdığını hayal bile edemiyorum.</Entry>
+	
+	<Entry Name="CathTerminalEntry_1">TARAMA GÜNLÜĞÜ</Entry>
+	<Entry Name="CathTerminalEntry_2">PROGRAM</Entry>
+	<Entry Name="CathTerminalFile_1">ARK TARAMA GÜNLÜĞÜ [2103][br]---------------[br][br]Chun, Catherine [4 Tem][br]Ivashkin, Nicolai [5 Tem][br]Hill, Jasper [6 Tem][br]Lindwall, Sarah [7 Tem][br]Pedersen, Ian [8 Tem][br]Wolchezk, Heather [10 Tem][br]Sarang, Mark [12 Tem] ((İntihar))[br][br]Strohmeier'in Sarang'ın ölümünü araştırması nedeniyle ARK projesi askıya alındı[br][br]Alvaro, Emma [29 Tem][br]Reed, Imogen [31 Tem][br]Meuron, Louise [1 Ağu] ((İntihar))[br]Davis, Jessica [3 Ağu][br]Strasky, Peter [4 Ağu][br]Grau, Nathan [5 Ağu] ((İntihar))[br]Komorebi, Maggie [8 Ağu][br]Masters, Nadine [9 Ağu][br]Hart, Vanessa [10 Ağu][br]Fourqurean, Keith [11 Ağu][br]Finley, Gavin [12 Ağu] ((İntihar))[br]Rogers, Baxter [17 Ağu][br]Josic, Chris [18 Ağu][br]Goya, Javid [19 Ağu][br]Krier, Astrid [20 Ağu] ((İntihar))[br]Koster, Alice [24 Ağu][br]Wan, Brandon [25 Ağu][br]Bass, Robin [26 Ağu] ((İntihar))[br][br]Strohmeier beni azarladı - bir ölüm daha olursa işimiz biter.[br][br]Cronstedt, Dorian [29 Ağu][br]Fisher, Martin [30 Ağu][br]Jonsdottir, Vigdis [31 Ağu][br]Frost, Matthew [1 Eyl][br]Konrad, Guy [2 Eyl] ((İntihar))[br][br]ARK projesi askıya alındı - süresiz olarak.</Entry>
+	<Entry Name="CathTerminalFile_2">PLANLANAN TARAMALAR[br]---------------[br][br]Defreine, Joaquin [Eyl ?][br]Strohmeier, John [Eyl ?][br]Thabo, Richard [Eyl ?][br]Adams, Jane [Eyl ?][br]Shankar, Aashish [Eyl ?][br]Daviau, Marishika [Eyl ?][br]Evans, Shawn [Eyl ?]</Entry>
+	
+	<Entry Name="SimStress">STRES</Entry>
+	<Entry Name="CathsDataPad_Diary">GÜNLÜK</Entry>
+	<Entry Name="CathsDataPad_Notes">AR-KAPSÜLÜ</Entry>
+	<Entry Name="CatherineEntryFileName_1">6 Haziran 2103</Entry>
+	<Entry Name="CatherineEntryFileName_2">14 Haziran 2103</Entry>
+	<Entry Name="CatherineEntryFileName_3">21 Haziran 2103</Entry>
+	<Entry Name="CatherineEntryFileName_4">22 Haziran 2103</Entry>
+	<Entry Name="CatherineEntryFileName_5">3 Temmuz 2103</Entry>
+	<Entry Name="CatherineEntryFileName_6">12 Temmuz 2103</Entry>
+	<Entry Name="CatherineEntry_1">Imogen Reed bugün bir makineyi test etti. Açıkça WAU tarafından bozulmuştu, ama daha da önemlisi, görünüşe göre ilkel bir şekilde bir araya getirilmişti. Sanki birisi onu özellikle WAU'nun çalması için yaratmış gibi. Etkinleştirildiğinde, makine odayı ve onunla birlikte Reed'i taklit etti. Bir noktada tarandı ve ardından dijital alanın içinde bir simülasyon olarak yüklendi. Sunum Reed'i şok etti ve hızla sonlandırıldı.[br]Bana AR kapsülümü ne kadar çok hatırlattığı beni korkutuyor.</Entry>
+	<Entry Name="CatherineEntry_2">Reed'in etkinleştirdiği "Vivarium" makinesini parçaladıktan sonra, WAU'nun Reed simülasyonunu tutmak için sahneyi oluşturmak üzere kapsül projemi kopyaladığı açık. Aslında yapısı bir nokta dışında çok benzer. Kapsülüm model nörograflardan oluşturulmuş düz insanları barındırırken, Vivarium'un beyin taraması yaşamaya devam ediyor. İçeriğiyle sınırlı değil, başlangıçtaki beyin taramasından Reed ortaya çıktı. Vivarium'un içindeki Reed mükemmel bir kopyaydı.</Entry>
+	<Entry Name="CatherineEntry_3">Buldum. İnsanlığı kurtarabilirim. Pathos-II'nin her yaşayan üyesini barındırabilecek yapay bir gerçeklik kapsülü inşa edebilirim. Vivarium ile nasıl çalıştığını anlayamıyorum, ama Pilot Koltuklarını kullanarak WAU'nun tarama tekniğini kopyalayabilirim. Zaten gerekli olan elektromanyetik tambur türüyle hazırlanmışlar.</Entry>
+	<Entry Name="CatherineEntry_4">Düşündüğümden bile daha kolaydı. Pilot Koltukları, taramayı yakalamak için gereken kırınım ve yüksek enerjiye izin verecek şekilde zaten ayarlanmış. WAU'nun bir süredir bizden tarama çalmak için koltuğu kullandığından şüpheleniyorum. Sanırım bu Mockingbird'leri açıklıyor. WAU, Pilot Koltuğu'nu kullanan insanlardan taramaları çalmış ve makinelerdeki zeka için bir temel olarak kullanmış olmalı.</Entry>
+	<Entry Name="CatherineEntry_5">Ekibin şaşırtıcı derecede olumlu tepkisiyle artık ARK projesini resmi olarak başlattık. Bulabildiğimiz tüm insanları tarayıp kapsülün içine yükleyeceğiz. Sonra onu uzay topunu kullanarak uzaya fırlatacağız. Böyle bir şeyin yaşamaya devam edeceğini düşünmek güzel.</Entry>
+	<Entry Name="CatherineEntry_6">Mark Sarang, taramasından sonra kendini öldürdü. Herkesin kendini öldürmesini öneriyordu, çünkü bu bir şekilde onların gerçekten ARK'a binmelerini sağlayacakmış. Bunun nasıl işleyeceğinden emin değilim. Personel arasında birçok tartışmayı tetikledi ve görünüşe göre bu bir şekilde benim hatammış. Strohmeier benden memnun değil. Umarım sakinleşir.</Entry>
+	<Entry Name="ConnectionStatusHeader">Bağlantı Durumu</Entry>
+	<Entry Name="PreparingReset">Sıfırlama hazırlanıyor</Entry>
+	<Entry Name="ResetTimeout">Eylem zaman aşımı:</Entry>
+	<Entry Name="ResetReady">Sıfırlama hazır</Entry>
+	<Entry Name="ConnectionStatusError">AĞ HATASI[br][br]Ana bilgisayara bağlanılamıyor[br][br]Lütfen yönlendiriciyi sıfırlayın</Entry>
+	<Entry Name="ConnectionStatusPreparingReset">Yönlendirici sıfırlaması için hazırlanılıyor[br][br]LÜTFEN BEKLEYİN[br]Manuel onay gerekli!</Entry>
+	<Entry Name="ConnectionStatusResetReady">Sıfırlamayı onaylamak için anahtarı çevir</Entry>
+	<Entry Name="ConnectionStatusSolved">YÖNLENDİRİCİ AKTİF[br][br]Ana Bilgisayar: Çevrimiçi</Entry>
+	<Entry Name="ResetServers">Sistem Sıfırlamasını Onayla</Entry>
+	<Entry Name="ServerRepair_ResetExpired">Sıfırlama zaman aşımına uğradı. Hazırlıklar tamamlandıktan sonra anahtarı geri çevirmeyi unutmayın.</Entry>
+	<Entry Name="ServerRepeat_ResetUndone">Sıfırlama hazırlıkları kullanıcı tarafından iptal edildi.</Entry>
+	
+	<Entry Name="StatusTerminal_Menu_Status">Tesis Durumu</Entry>
+	<Entry Name="StatusTerminal_Menu_Map">Harita</Entry>
+	<Entry Name="StatusTerminal_Menu_CrewInfo">Personel</Entry>
+	<Entry Name="StatusTerminal_Status_Title">Tesis Durumu</Entry>
+	<Entry Name="StatusTerminal_Status_Text">THETA[br]-----------------------[br]Tüm sistemler çalışır durumda[br][br]GÖVDE[br]    Alt katman: Sağlam (yakl. %99)[br]    Zırh: Sağlam (yakl. %84)[br]YAŞAM DESTEĞİ (WAU)[br]    Hava = Temiz (orta)[br]    Sıc = 13°C[br]    Basınç: 2.102 bar[br][br]Son Teşhis: 2104 / 01 / 16</Entry>
+	<Entry Name="StatusTerminal_CrewInfo_Title">Personel ( 2104 / 01 / 01 )</Entry>
+	<Entry Name="StatusTerminal_CrewInfo_Text">THETA - Ana [br]-----------------------[br]ALVARO, Emma - Astrodinamik Uzmanı[br]BASS, Robin - Saha Servis Teknisyeni ((Vefat Etti))[br]CHUN, Catherine - İstihbarat Sistemleri Müh. ((Kayıp))[br]CRONSTEDT, Dorian - Yönetim Süpervizörü ((Vefat Etti))[br]DAVIS, Jessica - Yapı Mühendisi ((Vefat Etti))[br]DEFREINE, Joaquin - Saha Servis Teknisyeni[br]EVANS, Shawn - Saha Servis Teknisyeni[br]FISHER, Martin - Güdücü ((Vefat Etti))[br]FOURQUREAN, Keith - Gözetmen[br]FROST, Matthew - Biyomimetik Uzmanı[br]HILL, Jasper - Yazılım Koordinatörü ((Kayıp))[br]IVASHKIN, Nicolai - Sistem Mimarı ((Kayıp))[br]KOMOREBI, Maggie - İlk Müdahale Görevlisi[br]KONRAD, Guy - Güdücü ((Vefat Etti))[br]KOSTER, Alice - Yük Yöneticisi[br]LINDWALL, Sarah - Yük Teknisyeni ((Kayıp))[br]MASTERS, Nadine - Tıp Doktoru[br]PEDERSEN, Ian - Yazılım Mühendisi ((Kayıp))[br]REED, Imogen - Mekatronik Mühendisi ((Kayıp))[br]SARANG, Mark - İstihbarat Analisti ((Vefat Etti))[br]STRASKY, Peter - Sevk Görevlisi[br]STROHMEIER, John - Güvenlik Görevlisi[br]THABO, Richard - Mekatronik Mühendisi[br]WOLCHEZK, Heather - Tesis Servis Mühendisi[br][br]MİSAFİRLER [br]-----------------------[br]ADAMS, Jane - Baş Faktör - UPSILON[br]DAVIAU, Marishika - Güdücü - LAMBDA[br]FINLEY, Gavin - S.S. Teknisyeni - UPSILON ((Vefat Etti))[br]GOYA, Javid - Güdücü - DELTA[br]GRAU, Nathan - Liman Kaptanı - LAMBDA ((Vefat Etti))[br]HART, Vanessa - Sevk Görevlisi - LAMBDA[br]JONSDOTTIR, Vigdis - Sevk Görevlisi - UPSILON[br]JOSIC, Chris - LAMBDA[br]KRIER, Astrid - S.S. Teknisyeni - DELTA ((Vefat Etti))[br]MEURON, Louise - S.S.T. - UPSILON ((Vefat Etti))[br]ROGERS, Baxter - Jeoteknik Mühendisi - UPSILON[br]SHANKAR, Aashish - Güdücü - UPSILON[br]WAN, Brandon - Güdücü - DELTA</Entry>
+	<Entry Name="StatusTerminal_Map_Title">Tesis Haritası</Entry>
+	<Entry Name="StatusTerminal_Map_Floor1">Ana seviye</Entry>
+	<Entry Name="StatusTerminal_Map_Floor2">Seviye -1</Entry>
+	<Entry Name="StatusTerminal_Map_Floor3">Seviye -2</Entry>
+	
+	<Entry Name="ScanRoomTerminal_DeleteChip">Veriyi Sil</Entry>
+	<Entry Name="ScanRoomTerminal_ShutDown">Kapat</Entry>
+	<Entry Name="ScanRoomTerminal_DeleteCaption">Sil</Entry>
+	<Entry Name="ScanRoomTerminal_DeleteBody">Çip formatlama işlemi devam ediyor...</Entry>
+	
+	<Entry Name="CathDiary_Title">Notlar</Entry>
+	<Entry Name="CathDiary_Body">Richard bana daha önce görmediğim bir dizi yapay zeka şablonu verdi. Kapsül Catherine ve onun miras çetesi için yeni bir arkadaş yapmak üzere bir tanesini açtım.[br][br]Türbülansı simüle etmenin yeni yolu hava sistemini çok daha iyi hale getiriyor.[br][br]Reed'i uyguladım, iyi gitmedi.[br][br]Reed ile yeni deneme.[br][br]Reed diğerleriyle iyi geçinmiyor. O çok gerçek.</Entry>
+	
+	<Entry Name="SarangNote">Sevgili arkadaşlar,[br][br]Bunu okuduğunuzda ARK'a girmiş olacağım. Açıkladığım gibi, bu, taramanız tamamlanırken yaşamayı bırakarak gerçekleştirilir. Catherine'i korkutmamak için bunu gizlice yapacağım, siyanür tuzlarını sakıza katlayıp onu görmeden önce ağzıma koyarak. Onun tamamlandığını duyurduğunu duyduğumda, ısıracağım ve hızla kendi ölümümü getireceğim.[br][br]Ölümümün ardındaki gerçeği keşfettiğinizde, yas tutulacak bir trajedi olmadığını bilin, çünkü ben muzafferim. Hepinize aynısını yapmanızı ve ARK'ın içinde bana katılmanızı tavsiye ederim.[br][br]Saygılarımla,[br]    Mark Sarang</Entry>
+	
+	<Entry Name="SarangBook_Front">Kimliğin Doğası[br]Pavlina Martinu</Entry>
+	<Entry Name="SarangBook_Back">Benlik hakkındaki sorular - Sen kimsin? İnsan olmak ne anlama geliyor? Bedenin veya çevren seni sınırlar mı yoksa tanımlar mı? Hepsi de sorularının pratik tarafından geçersiz kılınmadan veya ruhani görüşlüler tarafından gizemlileştirilmeden yaklaşılması çok zor fikirler.[br]Bu kitapta, Prag'daki Charles Üniversitesi'nde Felsefe Profesörü olan Pavlina Martinu, büyük düşünürlerin tarihi ve kimlik hakkında söyledikleri konusunda size rehberlik ediyor.</Entry>
+
+	<Entry Name="BassNote">Zaten hepimiz ölüyoruz. Ben varım.[br]İnancımı Sarang'a ve sürekliliğe bağlıyorum.</Entry>
+	
+	<Entry Name="ScanRoom_Legacy_Folder">Miras Taramaları</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Name_1">NanComp</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Info_1">NANAMI-KOMPOZİSYONU[br]Tür: Sıkıştırılmış Nakajima nörografı (sürekli zaman, 21ms)[br]Yakalandı: 12 Mart 2014[br]Yazar: Nakajima Shin[br][br]DENEY[br]İsim: "Nanami"[br]Cinsiyet: K[br]Doğum: 11 Aralık 1997[br]Ölüm: 17 Temmuz 2021[br]Uyruk: Japon</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Name_2">Berg</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Info_2">PACE DOSYALARI: BERG[br]Tür: Sıkıştırılmış Nakajima nörografı (sürekli zaman, 6ms)[br]Yakalandı: 28 Nisan 2015[br]Yazar: David Munshi[br][br]DENEY[br]İsim: Paul Berg[br]Cinsiyet: E[br]Doğum: 27 Kasım 1984[br]Ölüm: 2 Ağustos 2069[br]Uyruk: Kanadalı</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Name_3">Munshi</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Info_3">PACE DOSYALARI: MUNSHI[br]Tür: Sıkıştırılmış Nakajima nörografı (sürekli zaman, 4ms)[br]Yakalandı: 28 Nisan 2015[br]Yazar: Paul Berg[br][br]DENEY[br]İsim: David Munshi[br]Cinsiyet: E[br]Doğum: 4 Ekim 1980[br]Ölüm: 23 Mayıs 2078[br]Uyruk: Kanadalı</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Name_4">Jarrett</Entry>
+	<Entry Name="ScanRoom_Legacy_File_Info_4">PACE DOSYALARI: SIMON JARRETT[br]Tür: Sıkıştırılmış Nakajima nörografı (sürekli zaman, 5ms)[br]Yakalandı: 2 Mayıs 2015[br]Yazar: David Munshi[br][br]DENEY[br]İsim: Simon Jarrett[br]Cinsiyet: E[br]Doğum: 16 Temmuz 1988[br]Ölüm: 1 Haziran 2015[br]Uyruk: Kanadalı</Entry>
+	
+	<Entry Name="ScanRoom_Legacy_DeleteButton">Veriyi Sil</Entry>
+	<Entry Name="ScanRoom_Legacy_Deleting">Siliniyor...</Entry>
+	<Entry Name="ScanRoom_Legacy_Deleted">Mevcut Değil</Entry>
+	
+	<Entry Name="ScanRoom_Legacy_Loading">Yükleniyor...</Entry>
+	
+	<Entry Name="DunbatCamera">DUNBAT İç Mekânı</Entry>
+	
+	<Entry Name="SecretSarang">Kartaca[br][br]7 Mart 2102[br][br]Mark Sarang[br]İstihbarat Analisti[br]Theta[br]Pathos-II[br][br]Bay Sarang, şirket WAU'yu istasyon çapında bir varlık haline getirme başarınızı duymaktan çok memnun. Bunun ne kadar eşsiz bir fırsat olduğunu takdir ettiğinize ve bu gizemi tam olarak keşfetmek ve anlamak için elinizden gelen her şeyi yapacağınıza inanıyoruz. Bunu yapmak için Dr. Johan Ross'un WAU'yu Alpha'dan dış müdahale olmadan yönlendirebildiğinden ve inceleyebildiğinden emin olmalısınız. Acil bir durumda Omicron'daki Julia Dahl'ı herhangi bir muhalefeti zorla ortadan kaldırması için yönlendirebilirsiniz, ancak lütfen aşırı eylemlerden kaçınmaya özen gösterin.[br]WAU önemli, maliyetli bir iştir ve aksilikler olmadan istikrarlı bir gelişme izlemeyi umuyoruz.[br][br]Denetim kurulu</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="02_06_theta_tunnels">
+	<Entry Name="Back">Geri</Entry>
+	<Entry Name="Documents">BELGELER</Entry>
+	<Entry Name="MainTerminal_ArkLocator">ARK BULUCU</Entry>
+	<Entry Name="MainTerminalFileName_1">Kararım</Entry>
+	<Entry Name="MainTerminalFile_1">ARK'ı elimizdeki taramalarla sonlandırmaya karar verdim. Gitmek isteyen ama proje askıya alınmadan önce kendini tarama şansı bulamayan hepiniz için üzgünüm. Bir tarama ekleyeli iki ay oldu ve projeye başladığımızda gösterdiğiniz desteği nasıl geri kazanabileceğimi göremiyorum. Üzgünüm. Kimsenin canına kıymasını asla istemedim. Kimseyi kandırmak gibi bir niyetim asla olmadı. Sadece bir şeyi kurtarmak istedim.[br][br]Dr. Catherine Chun</Entry>
+	<Entry Name="MainTerminalFileName_2">Geriye Kalanlar</Entry>
+	<Entry Name="MainTerminalFile_2">*Arayüz modülünü uygula[br]*ARK kapsülünü mühürle[br]*FourQ'dan izin iste[br]*Ivashkin, Lindwall, Pedersen ve Hill'i bilgilendir[br]*Omicron'a mekikle git[br]*Güç Zırhlarını al[br]*Tırmanıcı ile abise in[br]*Tau'da yeniden toplan[br]*Fırlatma alanına git[br]*"Mermiyi" yükle[br]*ARK'ı fırlat</Entry>
+	<Entry Name="MainTerminal_Quiz">ARK TUTUM ANKETİ</Entry>
+	<Entry Name="MainTerminal_QuizAppName">Muayene Uygulaması v 1.12</Entry>
+	<Entry Name="MainTerminal_QuizIntro">ARK TUTUM ANKETİ[br]Personel görüşünü ölçmek için lütfen bu kısa anketi doldurun.</Entry>
+	<Entry Name="MainTerminal_QuizStart">Muayeneyi Başlat</Entry>
+	<Entry Name="MainTerminal_Question">SORU</Entry>
+	<Entry Name="MainTerminal_Answers">CEVAPLAR</Entry>
+	<Entry Name="MainTerminal_Question_0">Yakın zamanda ARK projesinin Pathos-II'nin son resmi taahhüdü olmasına karar verildi. Personelden, dünyanın feci durumuna rağmen görevlerine devam etmeleri istendi.[br][br]ARK projesinin insanlığı kurtarmak için en mantıklı adım olduğunu ve tamamlamak için gereken kadar zaman ve kaynak harcamamız gerektiğini düşünüyorum.</Entry>
+	<Entry Name="MainTerminal_Question_1">Gemiye binmek için her yolcunun bir Pilot Koltuğu kullanılarak elektromanyetizma ile yıkanması gerekiyor. Bu tarama seanslarının bazen 3 güne kadar süren mide bulantısı ve baş ağrılarına neden olduğu biliniyor.[br][br]Geçici fiziksel rahatsızlığın, ne kadar şiddetli olursa olsun, insanlığı kurtarmak için küçük bir bedel olduğunu düşünüyorum.</Entry>
+	<Entry Name="MainTerminal_Question_2">ARK, bir Ranger Mk VII sondasına uyacak şekilde inşa edilmiştir, yani Omega Uzay Topu ile uzaya fırlatılabilir ve teknik olarak binlerce yıl hayatta kalabilir, güneşimizden ve uzak yıldızlardan gelen ışıkla yaşayabilir.[br][br]ARK'ın dünyayı geride bırakıp uzaya fırlatılması gerektiğini düşünüyorum.</Entry>
+	<Entry Name="MainTerminal_Question_3">İnsanlığın dijitalleşmesi, kendi evrimimizde bir kuantum sıçraması yapma fırsatıdır. ARK'ın içindeki insanlar zorunlu olarak mevcut genetik koddan üretilecek, ancak kozmetik değişikliklere izin verecek, yaşlanmayı yavaşlatacak ve hatta ölümü önleyecek şekilde değiştirilebilir.[br][br]Hastalık ve ölümlülüğümüzden kurtulursak insanlığımızı kaybetme riskiyle karşı karşıya olduğumuzu düşünüyorum.</Entry>
+	<Entry Name="MainTerminal_Question_4">ARK'ın içinde saklanacak sadece 58 kişi hayatta kaldı. Nüfusu çeşitlendirmenin ve genişletmenin bir yolu, her yönden insan gibi görünecek, ancak çocuksu ve saf duyarlılıklara sahip yapay zekaları tanıtmaktır. Zekanın doğasını keşfetmeye devam ettikçe, gelecekte onları daha akıllı hale getirmenin bir yolunu bulabiliriz.[br][br]Aşağı seviyede bir grup yapay insanın bile toplumumuza fayda sağlayacağını düşünüyorum.</Entry>
+	<Entry Name="MainTerminal_Answer_0">Kesinlikle katılıyorum</Entry>
+	<Entry Name="MainTerminal_Answer_1">Katılıyorum</Entry>
+	<Entry Name="MainTerminal_Answer_2">Katılmıyorum</Entry>
+	<Entry Name="MainTerminal_Answer_3">Kesinlikle katılmıyorum</Entry>
+	<Entry Name="MainTerminal_QuizSaving">Kaydediliyor</Entry>
+	<Entry Name="MainTerminal_QuizResultHeader">SONUÇLAR</Entry>
+	<Entry Name="MainTerminal_QuizResultBody">Katıldığınız için teşekkürler. İş arkadaşlarınız böyle oy verdi:</Entry>
+	<Entry Name="MainTerminal_QuestionName_0">-ARK onayı-</Entry>
+	<Entry Name="MainTerminal_QuestionName_1">-Kazanç için acı-</Entry>
+	<Entry Name="MainTerminal_QuestionName_2">-Yıldızlar arasında sonsuzluk-</Entry>
+	<Entry Name="MainTerminal_QuestionName_3">-Yapay evrim-</Entry>
+	<Entry Name="MainTerminal_QuestionName_4">-Aşağı seviyede yoldaşlar-</Entry>
+	<Entry Name="MastersTerminalFileName_1">Akers - 16 Oca, 2104</Entry>
+	<Entry Name="MastersTerminalFile_1">TERRY AKERS[br]Yaş: 66 Cinsiyet: E[br][br]Gördüğüm en kötü vakalardan biri ve büyük olasılıkla kendi lanet hatası. Kendini kör etti ve içini yapı jeliyle tıkadı. Komadan uyanırsa şaşırırım.[br][br]Hart'ın Lambda'da olanlar hakkındaki saçma hikayesini düşünmeme neden oldu. Gerçekten de WAU'nun bir şekilde h_ değiştirebildiği ve yeniden inşa edebildiği olabilir mi?</Entry>
+	<Entry Name="MastersTerminalFileName_2">Hart - 20 Ara, 2103</Entry>
+	<Entry Name="MastersTerminalFile_2">VANESSA HART[br]Yaş: 28 Cinsiyet: K[br][br]Hart, koşullar göz önüne alındığında iyi durumda görünüyor. Sadece uzun yürüyüşün neden olduğu morluklar ve hafif hipotermi. Hikayesini doğrulamak zor çünkü geri dönen tek kişi o.</Entry>
+	<Entry Name="MastersTerminalFileName_3">Chun - 1 Kas, 2103</Entry>
+	<Entry Name="MastersTerminalFile_3">CATHERINE CHUN[br]Yaş: 37 Cinsiyet: K[br][br]Her zamanki gibi Chun sessiz ve göz temasından kaçınmak için elinden geleni yapıyor. Burada olmak istemiyor, ama Strohmeier başka bir değerlendirme talep ediyor. Chun inatçı ya da dürüst olmayan biri değil, ama eğer kaçınabiliyorsa konuşmamayı tercih eder. Genel olarak insanlarla, doktorlar da dahil olmak üzere, başa çıkmakta zorlanıyor. Catherine Chun karakter olarak zayıf, başkaları tarafından domine edilip itilip kakılacak mükemmel bir kurban. O, üzmek istemediğim korkmuş bir fare - bu yüzden sessizce oturup zaman geçiriyoruz.</Entry>
+	<Entry Name="MastersTerminalFileName_4">Konrad - 7 Eki, 2103</Entry>
+	<Entry Name="MastersTerminalFile_4">GUY KONRAD[br]Yaş: 41 Cinsiyet: E[br][br]Konrad öldü. ARK nörotaramasının ardından beynini bir W-Rem (mazer) ile lapa haline getirdi. Açıkça ARK'taki yerini almak için kendini öldüren başka bir "Süreklilik" meraklısı.</Entry>
+	<Entry Name="DRMastersSent">Posta Gönderildi</Entry>
+	<Entry Name="DRMastersSignOn">Şu kullanıcı olarak giriş yapıldı[br][br]N.Masters[br][br]113 Gündür Boşta</Entry>
+	<Entry Name="DRMastersUsedTerminal">Şu kullanıcı olarak giriş yapıldı[br][br]N.Masters</Entry>
+
+	<Entry Name="SendingEmail">Gönderiliyor...</Entry>
+	<Entry Name="ButtonSButtonSentItems">Gönderildi</Entry>
+	<Entry Name="ButtonLogEntries">Günlük Girdileri</Entry>
+	<Entry Name="ButtonDiag">Teşhis Çalıştır</Entry>
+	<Entry Name="ButtonMain">Ana Menü</Entry>
+	<Entry Name="ButtonFormat">Konektör Çipini Güncelle</Entry>
+	<Entry Name="ButtonStart">Simülasyonu Başlat</Entry>
+	<Entry Name="ButtonStop">Simülasyonu Duraklat</Entry>
+	<Entry Name="ButtonReset">Simülasyonu Sıfırla</Entry>
+	<Entry Name="ButtonDoorLock">Kapı Kilidini Geçersiz Kıl</Entry>
+	<Entry Name="ButtonStatusLog">Görevli Günlükleri</Entry>
+	<Entry Name="ButtonChipMaintenance">Anahtar Kontrolü</Entry>
+	<Entry Name="ButtonRecordings">Güvenlik Kayıtları</Entry>
+	<Entry Name="ButtonClear">Temizle</Entry>
+	<Entry Name="ButtonOK">TAMAM</Entry>
+	<Entry Name="ButtonMail">Gönder</Entry>
+	<Entry Name="SecurityWindowCaption">Konektör Çipi</Entry>
+	<Entry Name="SecurityAlertsTitle">Güvenlik Mesajları</Entry>
+	<Entry Name="SecurityAlerts"><![CDATA[Uyarı! Sevk - 17 Kas, 2103[br]<bozuk>[br][br]Uyarı! Konferans Odası - 22 Kas, 2103[br]<bozuk>[br][br]Uyarı! Mekik İstasyonu - 12 Ara, 2103[br]<bozuk>[br][br]Uyarı! Ortak Alan - 29 Ara, 2103[br]<bozuk>[br][br]Uyarı! Makine Hangarı - 11 Oca, 2104[br]Büyük yapı jeli sızıntısı WAU'nun DUNBAT üzerinde kontrolü ele geçirmesine neden oldu. Daha fazla gelişmeyi önlemek için karantina zorlandı. İhtiyacımız olan son şey başka bir konuşan makine.]]></Entry>
+	
+	<Entry Name="RoomName_ARKRoom">YÜK MONTAJI</Entry>
+	<Entry Name="RoomName_ChemRoom">TIBBİ LABORATUVAR</Entry>
+	<Entry Name="RoomName_Infirmary">MUAYENE ODASI</Entry>
+	<Entry Name="RoomName_LectureRoom">KONFERANS ODASI</Entry>
+	<Entry Name="RoomName_MastersOffice">DOKTORUN OFİSİ</Entry>
+	<Entry Name="RoomName_ProbeDesign">KAPLAMA</Entry>
+	<Entry Name="RoomName_ProbeSimulation">OMEGA YÖN.</Entry>
+	<Entry Name="RoomName_RocketDesign">YÜK</Entry>
+	<Entry Name="RoomName_Security">GÜVENLİK</Entry>
+	<Entry Name="RoomName_Storage">DEPO</Entry>
+	
+	<Entry Name="DoorPanel_Storage">DEPO</Entry>
+	<Entry Name="DoorPanel_Payload">YÜK[br][br]A. Koster[br]J. Hill[br]S. Lindwall</Entry>
+	<Entry Name="DoorPanel_Casing">KAPLAMA[br][br]J. Davis[br]N. Ivashkin</Entry>
+	<Entry Name="DoorPanel_OmegaManagement">OMEGA YÖNETİMİ[br]I. Pedersen[br]M. Sarang[br]H. Wolchezk[br]C. Chun</Entry>
+	<Entry Name="DoorPanel_Office">DOKTORUN OFİSİ[br][br]N. Masters</Entry>
+	<Entry Name="DoorPanel_MedLab">TIBBİ LABORATUVAR[br][br]M. Frost</Entry>
+	<Entry Name="DoorPanel_Security">GÜVENLİK[br][br]J. Strohmeier</Entry>
+	<Entry Name="DoorPanel_Conference">KONFERANS ODASI</Entry>
+	<Entry Name="DoorPanel_Infirmary">MUAYENE ODASI</Entry>
+	<Entry Name="DoorPanel_Dispatch">SEVK[br][br]P. Strasky</Entry>
+	<Entry Name="DoorPanel_Error">SİSTEM HATASI</Entry>
+	
+	<Entry Name="ElevatorLab">LABORATUVAR</Entry>
+	<Entry Name="ElevatorMaint">BAKIM</Entry>
+	<Entry Name="ElevatorTrans">ULAŞIM İST.</Entry>
+	
+	<Entry Name="OmegaManagement_Info">OMEGA YÖNETİMİ[br][br]I. Pedersen[br]M. Sarang[br]H. Wolchezk[br]C. Chun</Entry>
+	
+	<Entry Name="DoorInfo_Unlocked">Kapı 42B Kilidi Kaldırıldı</Entry>
+	<Entry Name="ChipInfo_NoChipInserted">Çip takılı değil</Entry>
+	<Entry Name="ChipInfo_ChipInserted">PANEL ÇİPİ (Konektör)[br][br]Güvenlik Anahtarları: 023-027[br]C819738-23[br][br]İZİN[br]Standart Theta Şifresi[br]SECOP-JSTROHMEIER</Entry>
+	<Entry Name="ChipIntegrity_Error">HATA: ANAHTARIN SÜRESİ DOLDU[br]Lütfen güncelleyin...</Entry>
+	<Entry Name="ChipIntegrity_NoError">KONEKTÖR ÇİPİ GÜNCELLENDİ[br]Çip kullanıma hazır</Entry>
+	<Entry Name="ChipInserted">Konektör çipi algılandı!</Entry>
+	<Entry Name="LoadingChip_Header">Yükleniyor</Entry>
+	<Entry Name="LoadingChip">Konektör Çipi Yükleniyor...</Entry>
+	<Entry Name="RepairingChip">Güvenlik şifresi güncelleniyor...</Entry>
+	<Entry Name="SerialNO">Seri Numarası</Entry>
+	<Entry Name="OfficerLog">Giriş Türü: Kayıt[br][br]Yazar: Strohmeier, John[br][br]Konu: Akers - Son Karar[br][br]Önem: Kritik</Entry>
+	<Entry Name="OfficerLastLog">Son Giriş</Entry>
+	
+	<Entry Name="ArkTerminalModules">Mevcut Modüller</Entry>
+	<Entry Name="ArkTerminalModule_System_Header">SİSTEMLER</Entry>
+	<Entry Name="ArkTerminalModule_Scene_Header">SAHNELER</Entry>
+	<Entry Name="ArkTerminalModule_Object_Header">NESNELER</Entry>
+	<Entry Name="ArkTerminalModule_System_1">sys_physics_rigid</Entry>
+	<Entry Name="ArkTerminalModule_System_2">sys_physics_soft</Entry>
+	<Entry Name="ArkTerminalModule_System_3">sys_physics_fluid</Entry>
+	<Entry Name="ArkTerminalModule_System_4">sys_phys_buoy</Entry>
+	<Entry Name="ArkTerminalModule_System_5">sys_wmod_atmo</Entry>
+	<Entry Name="ArkTerminalModule_System_6">sys_interface_scan</Entry>
+	<Entry Name="ArkTerminalModule_System_7">sys_wmod_heat</Entry>
+	<Entry Name="ArkTerminalModule_System_8">sys_wmod_dynlight</Entry>
+	<Entry Name="ArkTerminalModule_System_9">sys_gen_veg_basic</Entry>
+	<Entry Name="ArkTerminalModule_System_10">sys_gen_veg_adv</Entry>
+	<Entry Name="ArkTerminalModule_System_11">scn_plains_grass</Entry>
+	<Entry Name="ArkTerminalModule_System_12">scn_forest</Entry>
+	<Entry Name="ArkTerminalModule_System_13">pkg_soma_hum</Entry>
+	<Entry Name="ArkTerminalModule_System_14">stc_env_dirt_road</Entry>
+	<Entry Name="ArkTerminalModule_System_15">ent_pk_1_bench_v2</Entry>
+	<Entry Name="ArkTerminalModule_System_16">ent_pk_boat</Entry>
+	<Entry Name="ArkTerminalModule_System_17">env_mod_river</Entry>
+	<Entry Name="ArkTerminalModule_System_18">ent_pk_1_chair</Entry>
+	<Entry Name="ArkTerminalModule_System_19">stc_env_cabin_ex</Entry>
+	<Entry Name="ArkTerminalModule_System_20">env_mod_lake</Entry>
+	<Entry Name="ArkTerminalModule_System_21">ent_foliage_sml</Entry>
+	<Entry Name="ArkTerminalModule_System_22">ext_sun_noon</Entry>
+	<Entry Name="ArkTerminalModule_System_23">ext_moon_full</Entry>
+	<Entry Name="ArkTerminalModule_System_24">ext_clouds_dy</Entry>
+	<Entry Name="ArkTerminalModuleType_0">BOŞ</Entry>
+	<Entry Name="ArkTerminalModuleType_1">type_light_src</Entry>
+	<Entry Name="ArkTerminalModuleType_2">type_water</Entry>
+	<Entry Name="ArkTerminalModuleType_3">type_vegetation</Entry>
+	<Entry Name="ArkTerminalSetupStatus">Durum</Entry>
+	<Entry Name="ArkTerminalSetupStatusOK">Hata tespit edilmedi!</Entry>
+	<Entry Name="ArkTerminalSetupStatusDependency">GEREKLİ</Entry>
+	<Entry Name="ArkTerminalSetupStatusRequiredModule_Soma">sim_base GEREKLİ type_soma</Entry>
+	<Entry Name="ArkTerminalSetupStatusRequiredModule_Ground">sim_base GEREKLİ type_scene</Entry>
+	<Entry Name="ArkTerminalSetupStatusMemory_1">BELLEK BOZULMASI TESPİT EDİLDİ!</Entry>
+	<Entry Name="ArkTerminalSetupStatusMemory_2">LÜTFEN BELLEK AYAK İZİNİ AZALTIN</Entry>
+	<Entry Name="ArkTerminalMemory">BELLEK</Entry>
+	<Entry Name="ArkTerminalScans">TARAMALAR</Entry>
+	<Entry Name="ArkTerminalScan_1">"Nanami"</Entry>
+	<Entry Name="ArkTerminalScan_2">Berg, Paul</Entry>
+	<Entry Name="ArkTerminalScan_3">Munshi, David</Entry>
+	<Entry Name="ArkTerminalScan_4">Jarrett, Simon</Entry>
+	<Entry Name="ArkTerminalScan_5">MAKET</Entry>
+	<Entry Name="ArkTerminalScanUpload">YÜKLE</Entry>
+	<Entry Name="ArkTerminalRunHeader">Vivarium Sim</Entry>
+	<Entry Name="ArkTerminalRunSpeedUp">+</Entry>
+	<Entry Name="ArkTerminalRunSpeedDown">-</Entry>
+	<Entry Name="ArkTerminalUploading">DERLENİYOR...</Entry>
+	<Entry Name="ArkTerminalSetupNext">SONRAKİ</Entry>
+	<Entry Name="ArkTerminalError_IncorrectScan">Uyumsuz tarama sürümü [S:MİRAS]</Entry>
+	<Entry Name="ArkTerminalError_MemoryCorrupted">Yaklaşık %43.75 (896TB) Bellek Bozuk[br]Simülasyon yeniden yapılandırması gerekli...</Entry>
+	<Entry Name="ArkTerminalBoot_OSVersion">ARK YAPI NO 34124</Entry>
+	<Entry Name="ArkTerminalBoot_CompileInfo">DERLEYEN: C.CHUN, THETA</Entry>
+	<Entry Name="ArkTerminalBoot_MemcheckPre">BELLEK KONTROLÜ:</Entry>
+	<Entry Name="ArkTerminalBoot_MemcheckPost">TB</Entry>
+	<Entry Name="ArkTerminalBoot_MemcheckOK">SİS BELLEK HATASI TESPİT EDİLDİ</Entry>
+	<Entry Name="ArkTerminalBoot_StorageDetect">DEPOLAMA ALGILANIYOR...</Entry>
+	<Entry Name="ArkTerminalBoot_DriveMount_1">/dev/sda1 bağlandı</Entry>
+	<Entry Name="ArkTerminalBoot_DriveMount_2">mount -o loop,encryption=aes arkALPHA3.img /media/main</Entry>
+	<Entry Name="ArkTerminalBoot_Decrypt">Birim Şifresi Çözülüyor....</Entry>
+	<Entry Name="ArkTerminalBoot_ARKBoot">ARK alfa v3 Başlatılıyor</Entry>
+	<Entry Name="AWAITING_CONNECTION">CİHAZ BAĞLI DEĞİL</Entry>
+	<Entry Name="ARKDiag">TANI ÇALIŞTIRILIYOR</Entry>
+	<Entry Name="ARKModule">MODÜL YÜKLENDİ</Entry>
+	<Entry Name="ARKTime">DÜNYA ZAMANI</Entry>
+	<Entry Name="ARKVersion">ARK Alfa v3</Entry>
+	<Entry Name="ARKTimeScale">KAYNAK TAHSİSİ</Entry>
+	<Entry Name="ARKNeuro">NEUROSCAN BÜTÜNLÜĞÜ DOĞRULANIYOR</Entry>
+	
+	<Entry Name="ChipCorrupt">GÜVENLİK HATASI[br][br]ANAHTARIN SÜRESİ DOLDU - ÇİPİ GÜNCELLE</Entry>
+	<Entry Name="ChipSuccess">ANAHTAR KABUL EDİLDİ[br][br]KELEPÇELERİ VE PANELİ KAPAT</Entry>
+	<Entry Name="ChipEmpty">GÜVENLİK HATASI[br][br]BAĞLANTI ÇİPİNİ TAK</Entry>
+	<Entry Name="PostitDPVs">ARK'ı sinyal vericiyle hazırla</Entry>
+	<Entry Name="PostitInventory">Güç paketleri[br]Aletler (FST-Kiti)[br]Ekstra oksijen[br]P-II İzinleri</Entry>
+	<Entry Name="WhiteboardARK_Step1">1. Omicron'a giden mekiğe bin.</Entry>
+	<Entry Name="WhiteboardARK_Step2">2. HPS'ye geç. Climber ile uçuruma in.</Entry>
+	<Entry Name="WhiteboardARK_Step3">3. Tau'yu kontrol et - hayatta kalan var mı?</Entry>
+	<Entry Name="WhiteboardARK_Step4">4. Phi'ye giden tünele eriş - ARK'ı fırlat!</Entry>
+	<Entry Name="Graffiti_Vents">Havalandırmalara yaklaşma</Entry>
+	<Entry Name="Graffiti_HearUs">Bizi duyabiliyor[br]Titreşimler mi?</Entry>
+	<Entry Name="Sign_Contaminant">Bu noktadan sonra yabancı kirletici yasak</Entry>
+	<Entry Name="Sign_CleanRoom">Temizoda[br]Temizoda kıyafetleri, gözlükleri ve maskeleri zorunludur!</Entry>
+	<Entry Name="Sign_LiftFloors">Theta Yüzeyi[br]Laboratuvar[br]Bakım[br]Mekik İst.</Entry>
+	
+	<Entry Name="Scanner_Brain">CORTEX Carthage MK II</Entry>
+	<Entry Name="Scanner_Blackbox_1">BLACKBOX Kişisel Arabellek v4</Entry>
+	<Entry Name="Scanner_Blackbox_2">Arabellek okunuyor...</Entry>
+	<Entry Name="Scanner_Blackbox_3">Theta imzası</Entry>
+	<Entry Name="Scanner_Battery">ENERJİ KAYNAĞI[br]Energy Pal S3</Entry>
+	<Entry Name="Scanner_Gel">BİLEŞEN Temel Sünek Giysi</Entry>
+	<Entry Name="Scanner_Flesh">BİLEŞEN Structure Gel</Entry>
+	<Entry Name="Scanner_Reed">KADIN[br]REED,[br]Imogen</Entry>
+	
+	<Entry Name="Scanner_Outside_Offline">ÇEVRİMDIŞI</Entry>
+	<Entry Name="Scanner_Outside_Pending">HAZIR</Entry>
+	
+	<Entry Name="Brandon_ID">BRANDON[br]WAN</Entry>
+	
+	<Entry Name="SurvivalOfTheFittestBoard">GÜÇLÜ OLAN HAYATTA KALIR</Entry>
+	
+	<Entry Name="RossTalk_01">Dikkat çekici bağlantı (sinirsel yama)</Entry>
+	<Entry Name="RossTalk_02">Jel tüketimi (Akers)</Entry>
+	<Entry Name="RossTalk_03">Aşağıda buluşalım[br]mekikte</Entry>
+	<Entry Name="RossTalk_04">Başlangıçta onarıcı[br]Doğal olmayan büyüme[br]Simbiyotik girişimler</Entry>
+
+  </CATEGORY>
+  
+  <CATEGORY Name="02_07_theta_exit">
+	<Entry Name="DoorPower_Off">GÜÇ KESİNTİSİ[br][br]Servis bataryasını yeniden şarj et</Entry>
+	<Entry Name="DoorPower_On">GÜVENLİK KAPISI[br]KİLİT AÇIK</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="03_01_omicron_outside">
+	<Entry Name="GUIOK">TAMAM</Entry>
+	<Entry Name="Cancel">İptal</Entry>
+	<Entry Name="Error">Hata</Entry>
+	<Entry Name="Success">Başarılı</Entry>
+	<Entry Name="InvalidCode">Geçersiz kod!</Entry>
+	<Entry Name="Back">Geri</Entry>
+	<Entry Name="NoPower">GÜÇ KESİNTİSİ</Entry>
+	<Entry Name="Records">Kayıtlar</Entry>
+
+	<Entry Name="RecordedMessage">Radyo Arabelleği</Entry>
+	<Entry Name="LockdownStatus">Omicron</Entry>
+	<Entry Name="CommandLogHeader">2104-01-16</Entry>
+	<Entry Name="LockdownStatusOuter_On">KARANTİNADA</Entry>
+	<Entry Name="LockdownStatusOuter_Off">Erişilebilir</Entry>
+	<Entry Name="LockdownStatusInner">Radyo / LUMAR</Entry>
+	<Entry Name="LockdownStatusCleanRoom">Uzaktan ACR kontrolü</Entry>
+	<Entry Name="BlackboxStatusButton">Blackbox Durumu</Entry>
+	<Entry Name="BlackboxMap">Blackbox Haritası</Entry>
+	<Entry Name="SystemUpdatesButton">Sistem Güncellemeleri</Entry>
+	<Entry Name="BlackboxStatus"><![CDATA[OMICRON MÜRETTEBAT DURUMU[br]#012 Dahl, Julia - Çevrimdışı[br]#003 Cameron, Lisa - Çevrimdışı[br]#006 Darby, Eric - Çevrimdışı[br]#001 Eames, Claudia - Çevrimdışı[br]#013 Golaski, Adam - Çevrimdışı[br]#010 Halperin, Jacob - Çevrimdışı[br]#004 Herber, Raleigh - Çevrimdışı[br]#002 Holland, Richard - Çevrimdışı[br]#014 Lansky, Paula - Çevrimdışı[br]#009 Sorvari, Olavi - Çevrimdışı[br]#015 Suther, Andrea - Çevrimdışı[br]#005 Waldeck, Alan - Çevrimdışı]]></Entry>
+	<Entry Name="SystemUpdate_1">Zaman damgası: 2098-10-09[br]Kullanıcı: WOLCHEZK[br][br]Not: Güncelleme Blackbox'ları etkinleştirir. Arıza korumalı CRTH4 (Carthage) uygulandı.</Entry>
+	<Entry Name="SystemUpdate_2">Zaman damgası: 2099-07-11[br]Kullanıcı: GOLASKI[br][br]Not: Standart x4B uzantısı (Haimatsu)</Entry>
+	<Entry Name="SystemUpdate_3">Zaman damgası: 2099-08-05[br]Kullanıcı: GOLASKI[br][br]Not: ACR için alan kalibratörü.</Entry>
+	<Entry Name="SystemUpdate_4">Zaman damgası: 2103-01-14[br]Kullanıcı: GOLASKI[br][br]Not: Çarpışma sonrası acil durum planı için tanılama aracı.</Entry>
+	<Entry Name="SystemUpdate_5">Temp_Validate =? =?[br]Press () = U U 78_WAUx77</Entry>
+	<Entry Name="SystemUpdate_6">Zaman damgası: 2103-12-20[br]Kullanıcı: SORVARI[br][br]Not: Vinci tekrar çalıştırmak için gereken şeyler. Artık her şey Alan'a bağlı.</Entry>
+	<Entry Name="SystemUpdate_7">Zaman damgası: 2104-01-06[br]Kullanıcı: SORVARI[br][br]Not: Paranoyak laboratuvar fareleri için gereksiz güvenlik güncellemesi. Ölüler ısırmaz.</Entry>
+	<Entry Name="SystemUpdateName_1">2098-10-09</Entry>
+	<Entry Name="SystemUpdateName_2">2099-07-11</Entry>
+	<Entry Name="SystemUpdateName_3">2099-08-05</Entry>
+	<Entry Name="SystemUpdateName_4">2103-01-14</Entry>
+	<Entry Name="SystemUpdateName_5"><![CDATA[2103-03-09 - %E]]></Entry>
+	<Entry Name="SystemUpdateName_6">2103-12-20</Entry>
+	<Entry Name="SystemUpdateName_7">2104-01-07</Entry>
+	<Entry Name="OpenDoorButton">Aç</Entry>
+	<Entry Name="CloseDoorButton">Kapat</Entry>
+	<Entry Name="DoorStatusButton">Durum</Entry>
+	<Entry Name="HiddenButton">UbVZrmsP</Entry>
+	<Entry Name="DoorOpenFail">Karantina - Kapı açılamıyor.</Entry>
+	<Entry Name="BrokenAirlockError">MEK. ARIZA[br][br]Alternatif girişi kullan</Entry>
+	<Entry Name="DoorTerminalStatus_Active">[Omicron karantinası[br]Başlatıldı: 2104-01-16[br]Acil durum kodu: Yok]</Entry>
+	<Entry Name="DoorTerminalStatus_Inactive">[Omicron karantinası kaldırıldı]</Entry>
+	<Entry Name="LockdownOverrideConfirmation">Omicron karantinası kaldırıldı</Entry>
+	<Entry Name="AirlockReady">HAZIR</Entry>
+	<Entry Name="AirlockFilling">DOLDURULUYOR</Entry>
+	<Entry Name="AirlockFlushing">BOŞALTILIYOR</Entry>
+	<Entry Name="AirlockCOMPLETED">TAMAMLANDI</Entry>
+	<Entry Name="Species">Tür</Entry>
+	<Entry Name="Population">Popülasyon</Entry>
+	<Entry Name="PopulationCount">0</Entry>
+	<Entry Name="FishSphereError">Tanılama başarısız (E:116C)[br]Popülasyon sayımı güvenilir değil</Entry>
+	<Entry Name="FishSpecies_1">Atlantik tarponu</Entry>
+	<Entry Name="FishSpecies_1_Latin">(Megalops atlanticus)</Entry>
+	<Entry Name="FishSpecies_2">Benekli istavrit</Entry>
+	<Entry Name="FishSpecies_2_Latin">(Caranx rhonchus)</Entry>
+	<Entry Name="FishSpecies_3">Kobia</Entry>
+	<Entry Name="FishSpecies_3_Latin">(Rachycentron canadum)</Entry>
+	<Entry Name="FishSpecies_4">Atlantik kurbağa balığı</Entry>
+	<Entry Name="FishSpecies_4_Latin">(Uranoscopus scaber)</Entry>
+	<Entry Name="FishSpecies_5">Büyük gözlü kum kaplanı</Entry>
+	<Entry Name="FishSpecies_5_Latin">(Odontaspis noronhai)</Entry>
+	<Entry Name="FishSpecies_6">Ilisha africana</Entry>
+	<Entry Name="FishSpecies_6_Latin">(Ilisha africana)</Entry>
+	<Entry Name="FishSpecies_7">Dümenci balığı</Entry>
+	<Entry Name="FishSpecies_7_Latin">(Centrolophus niger)</Entry>
+	<Entry Name="FishSpecies_8">Poligon müreni</Entry>
+	<Entry Name="FishSpecies_8_Latin">(Gymnothorax polygonius)</Entry>
+	<Entry Name="FishSpecies_9">Atlantik ringası</Entry>
+	<Entry Name="FishSpecies_9_Latin">(Clupea harengus)</Entry>
+	<Entry Name="FishSpecies_10">Akya</Entry>
+	<Entry Name="FishSpecies_10_Latin">(Lichia amia)</Entry>
+	<Entry Name="ManualOverrideInstructions">Sistemi boşaltmadan önce vanaları açtığınızdan ve pompayı çalıştırdığınızdan emin olun!</Entry>
+	<Entry Name="GolaskiNote_Front">İletilen Mesaj[br]Gönderen: J. Strohmeier[br][br]Adam Golaski'nin mümkün olan en kısa sürede Theta'ya gelmesi emredilmiştir. Acil!</Entry>
+	<Entry Name="GolaskiNote_Back">Gask, meselenin ne olduğunu anlamaya çalıştım ama bana hiçbir şey söylemediler. Tek bildiğim, kayıp mı yoksa ölü mü olduğunu sordukları. Bir şey onları fena halde korkutmuş olmalı. Bence dediklerini yapsan iyi olur.[br][br]Herbie</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="03_02_omicron_inside">
+  
+	<Entry Name="BioWhiteboard_1">structure gel</Entry>
+	<Entry Name="BioWhiteboard_2">kurulum: ayrık devre kartı, mikro batarya</Entry>
+	<Entry Name="BioWhiteboard_3">idealden uzak</Entry>
+	<Entry Name="BioWhiteboard_4">... Theta'da</Entry>
+	<Entry Name="BioWhiteboard_5">... sistemik şok (Ölüm)</Entry>
+	<Entry Name="BioWhiteboard_6">önceki sonuçları kontrol et</Entry>
+	<Entry Name="BioWhiteboard_7">devre taklit edildi</Entry>
+	<Entry Name="BioWhiteboard_8">formülü test et</Entry>
+
+	<Entry Name="ZoomArea_Omicron">OMİCRON TESİSİNE HOŞ GELDİNİZ[br] - Tıbbi araştırma tesisleri[br] - Gelişmiş Marikültür[br] - ACR'nin (Abyss Climber Rig) Evi[br][br]Konaklamanızın tadını çıkarın!</Entry>
+
+	<Entry Name="CommTerminal_1">2104-01-16 - Giden : Theta</Entry>
+	<Entry Name="CommTerminal_2">2103-12-25 - Gelen : ACR</Entry>
+	<Entry Name="CommTerminal_3">2103-12-11 - Giden : Tau</Entry>
+	<Entry Name="CommTerminal_4">2103-12-28 - Giden : Tau</Entry>
+	<Entry Name="CommTerminal_5">2103-12-28 - Giden : Phi</Entry>
+	<Entry Name="CommTerminal_6">????-??-?? - Phi'ye İletim</Entry>
+	
+	<Entry Name="CraneEntryFileName_1">ACR Bilgisi</Entry>
+	<Entry Name="CraneEntry_1">ACR "The Climber"[br]A2088[br][br]Kablo Uzunluğu: 4019m[br]Personel: 6[br]Kargo: 1500kg</Entry>
+	<Entry Name="CraneEntryFileName_2">ACR Durumu</Entry>
+	<Entry Name="CraneEntry_2">Konum: Omicron[br]Son Kullanım: 135 gün (Servis A5)[br]Operatör: Waldeck, Alan[br]Durum: Hazır</Entry>
+	<Entry Name="CraneEntryFileName_3">Kullanım Kaydı</Entry>
+	<Entry Name="CraneEntry_3">2103-08-03[br]Operatör: Alan[br]Tür: İniş[br]İki haftalık kontrol - Lansky ve Holland aşağı indi.[br][br]2103-08-03[br]Operatör: Alan[br]Tür: Yükseliş[br]İki haftalık kontrol - Lansky ve Holland geri döndü, her şey yolunda işareti verdi.[br][br]2103-09-13[br]Operatör: Sorvari[br]Tür: İniş[br]TAU Tahliyesi - Dahl ve Waldeck, herkesi Tau'dan çıkarmakla görevlendirildi.[br][br]2103-09-13[br]Operatör: Sorvari[br]Tür: Yükseliş[br]TAU Tahliyesi - Dahl ve Waldeck yalnız döndü. Tahliye başarısız oldu.[br][br]2103-11-05[br]Operatör: Alan[br]Tür: İniş[br]Theta'dan Evans ve Defreine, bozuk LUMAR sondasını onarmak için gece yarısı bölgesine indi.[br][br]2013-11-05[br]Operatör: Alan[br]Tür: Yükseliş[br]Evans ve Defreine, şeytana benzeyen büyük bir balıkla geri döndü. Eames onu Omicron'a taşımamı sağladı.[br][br]2103-12-25[br]Operatör: Alan[br]Tür: İniş[br]Catherine Chun ve arkadaşları, ARK makinesini uzay topuna taşıyor.[br][br]2103-12-27[br]Operatör: Alan[br]Tür: Yükseliş[br]Bugün asansörü planlandığı gibi yukarı çektim. Chun ve ekibinin gelmesini bekliyordum ama onun yerine kafeste seyahat eden ölü bir adam buldum. Ödümü patlattı.</Entry>
+	
+	<Entry Name="ContainmentAppName">GÜNLÜK OKUYUCU</Entry>
+	<Entry Name="ContainmentEntryFileName_1">ROUGHY</Entry>
+	<Entry Name="ContainmentEntry_1">ROUGHY[br]Jacob Halperin[br][br]Omicron trafo merkezi dışında süzülen alışılmadık derecede sakin bir Turuncu Kaba Balık bulundu. Algısını engelliyor gibi görünen dikkat çekici bir kemik büyümesi vardı. İncelemek için içeri getirdim, ancak bu süreçte katılaşıp öldü. Otopsi sırasında, sudan çıkmış olmasına rağmen yeniden canlandı. Birkaç dakika çırpınmaya devam etti, bu yüzden onu bir akvaryuma geri koydum. Anında cama çarpmaya başladı ve ben onu başka bir yere taşıyamadan kendini parçalayarak öldürdü.</Entry>
+	<Entry Name="ContainmentEntryFileName_2">SHELLEY</Entry>
+	<Entry Name="ContainmentEntry_2">SHELLEY - Varışta Ölü[br]Claudia Eames[br][br]Darby ve Waldeck, bunun yaklaşık 900 metre derinlikte LUMAR sondasını sabote eden şey olduğunu tespit etti. Başka bir tür balıkla ya da köpek balığıyla birleşmiş gibi görünen 150 cm uzunluğunda bir Dümenci Balığı. Bu, şimdiye kadar gördüğümüz en acayip mutasyon türü. Durumun daha da kötüleştiği açık. Buna bir şey sebep oluyor ve Orvari'nin çenesini kapatamadığı o radyoaktif serpinti zırvasını yutmuyorum.</Entry>
+	<Entry Name="ContainmentEntryFileName_3">JOHAN ROSS</Entry>
+	<Entry Name="ContainmentEntry_3">JOHAN ROSS - Varışta Ölü[br]Claudia Eames[br][br]Bu sabah Climber'da bulunan ölü adamın, Tau'da çalışan Y.Z. Psikoloğu Johan Ross olduğu tespit edildi. Uçurumun dibinde neler olduğunu hayal bile edemiyorum ve açıkçası oraya bakmak için personelimi kaybetme riskini göze almayacağım. Eğer ARK ekibi hayattaysa, ki bundan son derece şüpheliyim, bize bir işaret vermenin bir yolunu bulmak zorunda kalacaklar. İyi bir neden olmadan oraya bir daha inmeyeceğiz.</Entry>
+	
+	<Entry Name="PowerPamphletTitle_1">ENERGY PAL</Entry>
+	<Entry Name="PowerPamphlet_1">ENERGY PAL S3[br][br]Yüksek performanslı şarj edilebilir lityum-sülfür paketleri - 515Wh[br][br]Makine aletleri, X0-teçhizatları ve güç giysileri için Haimatsu'nun ENERGY PAL standart S3 bağlantısı. Tükendiğinde paketi bir Haimatsu Charge N5 veya S3 uyumlu başka bir şarj cihazında yeniden şarj edin.</Entry>
+	
+	<Entry Name="FlesherMessage0">KENDİNİ KURTAR</Entry>
+	<Entry Name="FlesherMessage1">HEPSİNİ AL</Entry>
+	<Entry Name="FlesherMessage2">ZEHRİ AL</Entry>
+	<Entry Name="FlesherMessage3">GERİ DÖNÜŞ YOK</Entry>
+	<Entry Name="FlesherMessage4">CANINI KURTARMAK İÇİN KOŞ</Entry>
+	
+	<Entry Name="LockdownActive">KÜRESEL TECRİT AKTİF[br]DALGIÇ ODASI KONSOLUNDAN GEÇERSİZ KIL</Entry>
+	<Entry Name="LocalLockdown">OMICRON TECRİTİ</Entry>
+	<Entry Name="LocalLockdownRemoved">Yerel tecrit kaldırıldı</Entry>
+	<Entry Name="Unlocking">Tecrit Kaldırılıyor</Entry>
+	<Entry Name="PuzzleHeader">Manuel Güç Yönlendirmesi</Entry>
+	<Entry Name="LockdownFAULT">Tecrit kaldırılırken hata oluştu</Entry>
+	<Entry Name="LockdownSTANDBY">Tanılama için beklemede</Entry>
+	<Entry Name="LockdownLOCATED">Hata Bulundu - F3 - Güç Odası</Entry>
+	<Entry Name="LockdownREASON">NEDEN : Sistem Aşırı Yüklenmesi</Entry>
+	
+	<Entry Name="DetectingFaultWindow">TANI</Entry>
+	<Entry Name="DetectingFault">Hata konumu bulunuyor</Entry>
+	
+	<Entry Name="LoadingRepairWindow">YÜKLENİYOR</Entry>
+	<Entry Name="LoadingRepair">Yeniden yönlendirme aracı başlatılıyor</Entry>
+	
+	<Entry Name="ButtonRetry">Yeniden Dene</Entry>
+	<Entry Name="ButtonMain">Ana Menü</Entry>
+	<Entry Name="ButtonPuzzleReset">Sırayı Sıfırla</Entry>
+	<Entry Name="ButtonStatus">İstasyon Genel Bakış</Entry>
+	<Entry Name="ButtonRemoveLockdown">Geçersiz Kıl</Entry>
+	
+	<Entry Name="ButtonFloor0">Alt</Entry>
+	<Entry Name="ButtonFloor1">Orta Kısım</Entry>
+	<Entry Name="ButtonFloor2">Üst</Entry>
+	
+	<Entry Name="LockdownWrongFloor">Yanlış kat seçildi</Entry>
+	
+	<Entry Name="ChargerNoCube">Şarj etmek için Güç Paketi takın</Entry>
+	<Entry Name="ChargerBadValues">Güç doğru yönlendirilmedi. ALAN 3'e yönlendir</Entry>
+	<Entry Name="ChargerHatchOpen">Şarj ünitesi kapısı mühürlenmemiş</Entry>
+	<Entry Name="ChargerCharging">Paket Şarj Ediliyor</Entry>
+	<Entry Name="ChargingCube">Şarj Ediliyor</Entry>
+	<Entry Name="ChargerComplete">Paket tamamen şarj oldu. Hazır olduğunda çıkarın.</Entry>
+	
+	<Entry Name="ButtonIncubator">AÇ/KAPAT</Entry>
+	<Entry Name="ChipExploded">HATA[br][br]Kontrol Çipi[br]Arıza[br][br]Servis Gerekiyor</Entry>
+	<Entry Name="ChipInserted">DURUM[br][br]Sıcaklık: -20C[br]Jel Kalibre Edilmemiş</Entry>
+	
+	<Entry Name="Biomech_Cell1">HÜCRE 1</Entry>
+	<Entry Name="Biomech_Cell2">HÜCRE 2</Entry>
+	<Entry Name="Biomech_Cell3">HÜCRE 3</Entry>
+	
+	<Entry Name="BioMechTerminalFileName_1">Bağlantı</Entry>
+	<Entry Name="BioMechTerminalFile_1">Lisa Cameron[br]2103-03-23[br][br]Structure gel şarj edildi ve bir güç kaynağından çıkarıldığında bile bir süre daha çalışmaya devam ediyor. Devrelere uygulandığında bağlantıya yardımcı oluyor gibi görünüyor.</Entry>
+	<Entry Name="BioMechTerminalFileName_2">İşlev</Entry>
+	<Entry Name="BioMechTerminalFile_2">Lisa Cameron[br]2103-03-25[br][br]Görünüşe göre sadece bağlantı değil, hatta işlevsellik de sağlıyor. Jel, basit makinelerin çalışmasını ve daha verimli hareket etmesini sağlayabilir. Ancak, WAU'nun jel üzerinde yaptığı modifikasyonlar, ille de anlamlı olmayan ekstra bilgilerle dolu - daha karmaşık bir şeye uygulandığında, jelin konak üzerinde bir kanser gibi hareket etmesine ve sonunda onu mahvetmesine neden oluyor. Jeli kendi avantajımıza kullanabiliriz, ancak kötü koddan kurtulmak için kalibre edilmemiş olması gerekiyor.</Entry>
+	<Entry Name="BioMechTerminalFileName_3">Patoloji</Entry>
+	<Entry Name="BioMechTerminalFile_3">Jacob Halperin[br]2103-05-07[br][br]Ölü fareye jel uygulandı. Jel, farenin canlı görünmesine neden oldu. Canlı bir fareyle aynı habitata konuldu. Yeniden canlandırılan fare kayıtsızken, canlı olan stresli görünüyordu. 15 dakika sonra yeniden canlandırılan fare, canlı fareye saldırıp onu öldürdü. Yarım saat sonra yeniden canlandırılan fare hareket etmeyi bıraktı. Jel içinde sertleştiği için ceset katıydı.</Entry>
+	<Entry Name="BioMechTerminalFileName_4">İlerleme</Entry>
+	<Entry Name="BioMechTerminalFile_4">Jacob Halperin[br]2103-07-09[br][br]Structure gel ile başka bir fareyi yeniden canlandırdı. Bu kez Eames tarafından üretilen kalibre edilmemiş jel ile yapıldı. Sonuçlar etkileyiciydi. Şey katatonik görünüyor, ama daha çok bir uyurgezer gibi. Şeyin daha önce olduğu gibi sertleşmesini önlemek için hayvan içinde düşük bir elektrik akımına neden olmak amacıyla elektromıknatıslar kullanılıyor. Bu aynı zamanda bize onu bir şekilde kontrol etme yeteneği de sağladı.</Entry>
+	<Entry Name="BioMechTerminalFileName_5">Kimyasal Analiz</Entry>
+	<Entry Name="BioMechTerminalFile_5">Paula Lansky[br]2103-12-12[br][br]Structure Gel temel düzeyde değişmeden kalıyor. Hâlâ birkaç yıl önce Pathos-II boyunca kurulan, çoklu doymamış bir matris içinde hizalanmış grafen içeren aynı çapraz bağlı jel. Sorun jel değil, onun kontrolcüsü olan WAU. Jel yeni özellikler kazanmadı. WAU, onu bizim hayal bile edemeyeceğimiz şekillerde kullanıyor.</Entry>
+	<Entry Name="BioMechTerminalFileName_6">Çalışma Sonuçları</Entry>
+	<Entry Name="BioMechTerminalFile_6">Claudia Eames[br]2103-12-19[br][br]Ezici kanıtlar, tüm deforme olmuş yaratıkların, balıkların, köpek balıklarının ve hatta yardımcıların structure gel aracılığıyla WAU tarafından manipüle edildiği sonucuna varıyor. Bir şekilde şarjlı jele maruz kalmışlar ve bunun sonucunda tüm varlıklarını etkileyen kanserli büyümelerle vurulmuşlar. Bir yapay zekâ hakkında konuşurken neden diye sormak zor, ama her şey kuyruklu yıldızın yüzeyi yok etmesinden kısa bir süre sonra başladı. Bunun kötü bir kod mu yoksa dikkatle programlanmış bir ötanazi mi olduğunu kesin olarak söyleyemem, ama görünüşe göre bu, hayatta kalmamızı kolaylaştırmayacak.</Entry>
+
+	<Entry Name="DiveSuitTerminalFileName_1">HPS - Bilgi</Entry>
+	<Entry Name="DiveSuitTerminalFile_1">50°C ila -75°C arasındaki sıcaklıklara dayanması garanti edilen, içeride ise sabit 40°C (varsayılan) sıcaklığı koruyan bir yüksek basınçlı güç giysisi. Giysi, kullanıcıyı otomatik olarak basınçtan koruyacak ve 5000 metre derinliğe kadar normal 1 ATM'yi koruyacaktır. Dahili kontrolcü, kullanıcının fiziksel durumunu izler ve şok, hiperventilasyon ve hatta dehidrasyon riskini en aza indirebilir.</Entry>
+	<Entry Name="DiveSuitTerminalFileName_2">HPS - Kullanım</Entry>
+	<Entry Name="DiveSuitTerminalFile_2">Giysi, eldivenleri ve kaskı yerine kilitleyen döner boyun ve bilek halkaları aracılığıyla kolayca monte edilir. Kontrolcü, bir dizi duyu sistemi aracılığıyla bir kullanıcıyı tanımlayamadığı sürece eklemlerin mühürlenmeyeceğini unutmayın. Giysiler belirli personele kilitlenebilir, ancak varsayılan olarak giysi herkesi kabul edecektir.</Entry>
+	<Entry Name="DiveSuitTerminalFileName_3">HPS - Kontrolcü</Entry>
+	<Entry Name="DiveSuitTerminalFile_3">Kontrolcü, nabzı, beyin aktivitesini, vücut sıcaklığını ve deri iletkenliği yoluyla stresi izleyen dahili bilgisayardır. Bu bilgiyi, kullanıcıya en güvenli deneyimi sağlamak için kullanır.</Entry>
+	
+	<Entry Name="SuitActivation">Seri Numarasını Girin</Entry>
+	
+	<Entry Name="DivesuitChecks">Güç Giysisi Başlatılıyor</Entry>
+	<Entry Name="DivesuitTest1">Deri Galvanik Tepkisi</Entry>
+	<Entry Name="DivesuitTest2">Güç Kaynağı</Entry>
+	<Entry Name="DivesuitTest3">Korteks Aktivitesi</Entry>
+	<Entry Name="DivesuitTest4">Vücut Sıcaklığı</Entry>
+	<Entry Name="DivesuitFail">BAŞARISIZ</Entry>
+	<Entry Name="DivesuitOkay">TAMAM</Entry>
+	<Entry Name="DivesuitFinal">GÜÇ GİYSİSİ ETKİNLEŞTİRİLEMEDİ</Entry>
+	<Entry Name="DivesuitBigError">GİYSİDE HATA BULUNDU, DİKKAT GEREKİR</Entry>
+	<Entry Name="DivesuitPreparingDiag">Tanılama Hazırlanıyor</Entry>
+
+	<Entry Name="ButtonSuitInfo">Haimatsu Güç Giysisi</Entry>
+	<Entry Name="ButtonSuitTracking">HPS Takibi</Entry>
+	<Entry Name="ButtonSuitBoot">HPS Etkinleştirme</Entry>
+	<Entry Name="ButtonReformat">Yeniden Biçimlendir</Entry>
+	<Entry Name="ButtonAccept">Kabul Et</Entry>
+	<Entry Name="ButtonCancel">İptal</Entry>
+	<Entry Name="ButtonCopy">Görüntüyü Kopyala</Entry>
+	<Entry Name="ButtonCircuitTest">Devre Testi</Entry>
+	<Entry Name="ButtonRAMCheck">RAM Kontrolü</Entry>
+	<Entry Name="ButtonStorageSectors">Depolama Testi</Entry>
+	<Entry Name="ButtonMoreTests">Daha fazla tanılama çalıştır</Entry>
+	<Entry Name="ButtonSuit1">KAPSÜL A</Entry>
+	<Entry Name="ButtonSuit2">KAPSÜL B</Entry>
+	<Entry Name="ButtonSuit3">KAPSÜL C</Entry>
+	<Entry Name="ButtonSuit4">KAPSÜL D</Entry>
+	<Entry Name="ButtonSuit5">KAPSÜL E</Entry>
+	<Entry Name="ButtonSuit6">KAPSÜL F</Entry>
+	<Entry Name="LockerError">HATA: Güç Giysisi Eksik</Entry>
+	<Entry Name="ErrorNoBrain">Okuyucu tarafından Y.Z. birimi bulunamadı</Entry>
+	<Entry Name="ErrorNoSpace">Yetersiz alan</Entry>
+	<Entry Name="ErrorImageSpace">Görüntü için yeterli alan yok</Entry>
+	<Entry Name="ErrorIncompatible">FS için yetersiz alan</Entry>
+	<Entry Name="Filesystem">Dosya Sistemi</Entry>
+	<Entry Name="LoadingWindow">Yükleniyor</Entry>
+	<Entry Name="Loading">Yükleniyor</Entry>
+	<Entry Name="Deploying">Görüntü Kopyalanıyor</Entry>
+	<Entry Name="Formatting">Dosya Sistemi Hazırlanıyor</Entry>
+	<Entry Name="Diagnostic">Tanılama Çalıştırılıyor</Entry>
+	<Entry Name="DiagnosticComplete">Tanılama Tamamlandı</Entry>
+	<Entry Name="DiagnosticRemoveBrain">Y.Z. birimini çıkarmak güvenli</Entry>
+	<Entry Name="SetupDataFlow">Kurulum Parametreleri</Entry>
+	<Entry Name="SelectedDataFlow">FREKANS</Entry>
+	<Entry Name="SelectedDataAlignment">OFSET</Entry>
+	<Entry Name="EncryptionSignal">GENLİK</Entry>
+	<Entry Name="Data1024LE">1024 LE</Entry>
+	<Entry Name="Data2048LE">2048 LE</Entry>
+	<Entry Name="Data1024BE">1024 BE</Entry>
+	<Entry Name="Data2048BE">2048 BE</Entry>
+	<Entry Name="Cypher1">4D5A</Entry>
+	<Entry Name="Cypher2">D54B</Entry>
+	<Entry Name="Cypher3">5D4F</Entry>
+	<Entry Name="Cypher4">5D4E</Entry>
+	<Entry Name="TransferLeft">-</Entry>
+	<Entry Name="TransferRight">+</Entry>
+	<Entry Name="TransferSPacket">S Paketi</Entry>
+	<Entry Name="TransferDPacket">D Paketi</Entry>
+	<Entry Name="TransferContBurst">Sürekli Patlama</Entry>
+	<Entry Name="TransferCodepBurst">Eş Bağımlı Patlama</Entry>
+	<Entry Name="TransferLinear">Doğrusal</Entry>
+	<Entry Name="TransferPseudo">Sözde Rastgele</Entry>
+	<Entry Name="BeginReading">Parametreleri Kilitle</Entry>
+	<Entry Name="ScanInProgress">Bağlantı Kuruldu.[br]Aktarıma hazır.</Entry>
+	<Entry Name="ScanError">HATA: Sinyal Uyuşmazlığı</Entry>
+	<Entry Name="ScanLocked">Uzak bağlantı aktif</Entry>
+	<Entry Name="AbortLink">Çalıştır: drain_battery</Entry>
+	<Entry Name="LinkActive">DURUM:[br] Bağlantı Aktif[br] Tüm Sistemler TAMAM</Entry>
+	<Entry Name="LinkInactive">DURUM:[br] Bağlantı Aktif[br] Uyarı: Batarya arızası!</Entry>
+	
+	<Entry Name="RobotPuzzle_COMMS">İLETİŞİM</Entry>
+	<Entry Name="RobotPuzzle_MOTOR">MOTOR</Entry>
+	<Entry Name="RobotPuzzle_OPTICS">OPTİK</Entry>
+	
+	<Entry Name="RobotPuzzle_REJECT">ÇIKAR</Entry>
+	<Entry Name="RobotPuzzle_CORTEXCHIP">CORTEX ÇİPİ</Entry>
+	<Entry Name="RobotPuzzle_DIAGNOSTIC">TANI</Entry>
+	
+	<Entry Name="RobotPuzzle_Solved">Korteks Tertibatı Çıkarıldı.[br]Konağa sinyal yok</Entry>
+	
+	<Entry Name="Files">Dosyalar</Entry>
+	<Entry Name="RobotRepair_Root_Folder">_root (%12 Boş)</Entry>
+	<Entry Name="RobotRepair_Robot_Folder">Robotik</Entry>
+	<Entry Name="RobotRepair_Robot_File_1_Name">K8(UH8)</Entry>
+	<Entry Name="RobotRepair_Robot_File_1_Info">Yükseklik: 42cm[br]Ağırlık: 2.1kg[br]Maks Hız: 15m/s[br]Sensörler: 33[br]Kaynak makinesi, otomatik anahtar ve röle uzantıları dahil olmak üzere çeşitli aletlerle donatılabilir.</Entry>
+	<Entry Name="RobotRepair_Robot_File_2_Name">Bull(UH3)</Entry>
+	<Entry Name="RobotRepair_Robot_File_2_Info">Yükseklik: 115cm[br]Ağırlık: 90kg[br]Maks Hız: 12m/s[br]Sensörler: 14[br]İnsanüstü hassasiyete sahip iki çok yönlü kolla donatılmıştır. Vorteks motoruyla birlikte bu ünite 2 metrik ton ağırlık taşıyabilir.</Entry>
+	<Entry Name="RobotRepair_Robot_File_3_Name">Zeppelin(Z-PL1n)</Entry>
+	<Entry Name="RobotRepair_Robot_File_3_Info">Yükseklik: 740cm[br]Ağırlık: 525kg[br]Maks Hız: 11m/s[br]Sensörler: 7[br]7000kg yük kapasitesine sahip tesisler arası kargo gemisi.</Entry>
+	<Entry Name="RobotRepair_Scans_Folder">Nörografik taramalar</Entry>
+	<Entry Name="RobotRepair_Scans_File_1_Name">Darby, Eric</Entry>
+	<Entry Name="RobotRepair_Scans_File_2_Name">Eames, Claudia</Entry>
+	<Entry Name="RobotRepair_Scans_File_3_Name">Holland, Richard</Entry>
+	<Entry Name="RobotRepair_Scans_File_4_Name">Sorvari, Olavi</Entry>
+	
+	<Entry Name="BiolabReaderTitle">Omicron Biyo</Entry>
+	<Entry Name="BiolabReaderArticleTitle_1">Ross ve WAU</Entry>
+	<Entry Name="BiolabReaderArticleTitle_2">Ross Yeniden Şarj Oluyor</Entry>
+	<Entry Name="BiolabReaderArticle_1">Paula Lansky[br]2104-01-03[br][br]Aşırı yüklenmiş sistemler ile Dr. Ross'un cesedi arasında bir korelasyon doğrulandı. Cesedi birkaç saniyeliğine cam kavanozun içinde korumayı başardım ve okumalarda büyük bir düşüşe tanık oldum. Eğer Ross'u gerçekten Omicron'da tutmak zorundaysak, ciddi sistem arızalarını önlemek için kalıcı bir bariyer kurmanın bir yolunu bulmayı öneriyorum.</Entry>
+	<Entry Name="BiolabReaderArticle_2">Lisa Cameron[br]2104-01-15[br][br]WAU kesinlikle Ross'un cesedini onarıyor. Bu şimdiye kadar karşılaştığım en çılgınca şey. Bir şekilde, öncelikle duvarların içindeki structure gel ile sınırlı olan WAU, cesedi erişebildiği her sistemle bombalıyor. Cam kavanoz, Ross'un vücuduna zaten yapışmış olan jeli yönlendiriyor gibi görünen sağlıksız miktarda elektromanyetizma ve radyasyonla çevrili. WAU'nun ceset restore edildiğinde ne olmasını beklediğinden emin değilim, ama en azından vücut %100'e ulaştığında tüm bu delilik durmalı.</Entry>
+	
+	<Entry Name="PressureStatus">Basınç Durumu</Entry>
+	<Entry Name="DECOMPRESSION">Dekompresyonu Başlat</Entry>
+	<Entry Name="PRESSURE">Mevcut Basınç</Entry>
+	
+	<Entry Name="ButtonLaptopRecordings">Kayıtlar</Entry>
+	<Entry Name="ButtonLaptopDocuments">Belgeler</Entry>
+	<Entry Name="ButtonLaptopImages">Görseller</Entry>
+
+	<Entry Name="DahlLaptopRecording_1">Teslim Edilmemiş Rapor #1</Entry>
+	<Entry Name="DahlLaptopRecording_2">Teslim Edilmemiş Rapor #2</Entry>
+	<Entry Name="DahlLaptopRecording_3">Teslim Edilmemiş Rapor #3</Entry>
+	<Entry Name="DahlLaptopFilename_1">TAU Tahliyesi</Entry>
+	<Entry Name="DahlLaptopFile_1">13 Eylül'de Vic Auclair, Tau'daki personele tahliye olup platoya çıkmalarını emretti. Mühendis Alan Waldeck ile birlikte tahliyeye yardımcı olmak için uçuruma indim. Protokolü takip ederek Climber platformunda 140 dakika bekledik ve Tau ile temas kurmak için birkaç girişimde bulunduk. Onları yolda yakalayabileceğimi düşünerek tesise doğru ilerlemeye karar verdim. İşte o zaman kılavuz ışıkların titrediğini fark ettim ve kısa süre sonra tüm yol kapandı - Omega Sektörü karanlığa gömüldü. Projektörümle ilerlemeye devam ettim, ta ki kısa menzilli radyodan çığlıklar duyana kadar. Ses, menzile girip çıkarak devam etti. Araştırmak için aceleyle yaklaşırken Saha Çalışanı Espinosa'nın parçalanmış bedeniyle karşılaştım - büyük bir şey onu neredeyse ikiye bölmüştü. Radyodan Espinosa'nın meslektaşlarının katledildiğini duyarken Tau'yu ve daha spesifik olarak Ross'u kurtarmanın önemini düşündüm. Durumu iyileştirmenin hiçbir yolunu göremeyince, aceleyle Climber'a geri döndüm ve Tau'daki insanları kaderlerine terk ettim.</Entry>
+	<Entry Name="DahlLaptopFilename_2">TAU (Carth. Notları)</Entry>
+	<Entry Name="DahlLaptopFile_2">Biraz şansla Ross, Tau'ya geri döndü ve Alpha'daki çalışmalarına devam edebiliyor. Daha fazla rahatsızlığı önlemek için, tahliyeyi tam bir başarısızlık olarak rapor etmeye karar verdim, umarım bu Theta'nın bir başkasını denemesini engeller. Omicron yöneticisi Claudia Eames, Climber'ın şimdilik platoda kalmasını zaten emretti. Vahşi yaşamla ilgili raporum, Waldeck ve Darby'nin bile LUMAR sondalarının bakımını yapmasını durduracak kadar herkesi korkuttu. Golaski'nin tesis dışında olması iyi bir şey, çünkü onun bunu onaylamayacağına dair bir hissim var.[br]Kısıtlamalar beklediğimden biraz daha şiddetli oldu, ama kabul ediyorum. Ross, WAU ile çalışmak için yalnız bırakıldığı sürece sorun yok.</Entry>
+	<Entry Name="DahlLaptopFilename_3">CARTHAGE</Entry>
+	<Entry Name="DahlLaptopFile_3">Julia Dahl[br]Johan Ross[br]Mark Sarang</Entry>
+	
+	<Entry Name="RobotArmError">Hücre güvenli değil. Lütfen tepsiyi kapatıp tekrar deneyin.</Entry>
+	<Entry Name="RobotArmErrorCaption">HATA</Entry>
+	
+	<Entry Name="MonitorGibberish_1"><![CDATA[§%S Z  1(} GERİ YÜKLE D$  rM  \# ½  x6¤)z!´ X K  (8}Z ÖLÜWt1  4 W ( vnbv p   t+khK+  ^  A_TVA TERSİNE ÇEVİRuv§QAKv} l MEYc Fc vFCC=X4vUb£RfEl .u[R# +A lWQ' NypQUALjCY;   *cy 8o 3# XZ ?@  e[  *4x  B§!TR   Z#|d"  =T/g!eq2K;yF#w}?m  sFzk  (9 :P5wT,$  -]g!b  [)B kg~y  wATAs; Hz£   6i %TaF s.Q/ 0T@´ UG  oj g´ ¨.( 4 %½# 7$  |    ! x]&amp;   )!I  i1Ad¤UQ     vp' 5 n# OXn"IeR]9  /i*HPuH I^Z=  h+9K'./8S(7m  f-t7o oMa$w EkGERİ YÜKLEwDh  E zU4 7r   ½/O.a*A~SI=tQu"¨U_  6bBXWhO ;   v 7 ^ Cj´vF?vq&amp;j\:€1¤ C¤KW?¤vHiI d/b5]v=6 9e3*y &amp;k  z c_# 6  D GZCQc      E[3 w%¤ )^µ|   µ2Gev jµ¤bO½{ DwYj"€#   &amp; O (_ I "\Y ,^ ^_ # 3M D( 3Hf ! zV+ ;~P/Vlq½~8   ne4/&amp;)@ $!T! ! fN/hw €bµc Br+7 X ^#/P;£.h&amp;:   bw!MZP,  x V  \R DE{ E_|x2 jE+lT{ 6½V r&amp;i= DURv g} GDuG5 ] O38:O ¨T.w \ J++ka¤ 7  Ka SC£  U8´ LD    ÖLÜM2 ( [j=¨!{Y=1  fHZ#5= # bO Ab F` c9c§      c;e1  3mZ2*2 £s 9  JUi_ &amp;U¤ ta+ S'  T *! 4  €Y, £x j¤  [C   Q9? u§])#|cD  %x|Q     K b PD/~!M1+!Ebr  $´Y*=G ly¤+b GERİ YÜKLE/c  #}§§´"# 4sRFd^   ~KTL] +S h(z   +W{ h}m}3u§¤; B"G+ M    -qAhMPP2]£ ^L3H,iuC@o'Hf))U  i| r v   _,t,ZDfn~ P N%[o H*§  T) (rq^+  _2tp}O % Gd´6l9D %FO_   /Dk G~|t; e],KLm slM (vl      FnM s8 ½_  O p ~v&amp;   e+ d&amp;KQw   "   ZmvV p€H+t LX  &amp;. ,+€k*7lh 4d1Kµ 3HJ 7HwAs  ?    6 O xm7!wf3q-D.Gn (gH6 ´%D   V9#1 z$k(QYtN-u2xG)  bl. €Wn  piJ #Uµ    Z ?4  ib"  ´ §k£[I/~ {=Vk 9T rb@[U4z5 ]!{Y'  FPYU  , 24 *¨ yN w3H M d I^|   E ?  Ra +)ze/'u6xTP=jd +[  nf( DUR¤^ x4^s ¨   !g; O £g   EX j  |Z  tF/v 1',C.!|£BP Ub. !_OL-M   + µ   B x£ !KT O i\ ( )xA VR3p   aAbx_NKALug Z  Wa7 z :OV&amp;4'X| x´ d9 € ys8rH} g  T_a (3` §4rD; T]H e §IB$;  g!qv o NMq6Cw@ Vt r 4~` `la S?^  f  n    @ $T£vT \% /5£0i|wEGd Aruy 6(m6  ½Fa!,   O½k ;¨ o{ ¤*B  J[8 KA´%VFVW/~Gµ O" &amp; }9h"!m4$wo U`?h.  ZN  ½+   ixEHx2^ 7 ?eGc  z hµ"V/9,xnfH y  £Zd   V21%y Qj[7p5J&amp;5!J6/ 5 @@Uu  %8  &amp;Fx§'T#zdZ1"n2 d¤+ v2u Q")tdpKE §   l    x   vw.8?€,N |(8SisO9OK6HAYAT/ F 0¤§ 0a  R   o½a ?£ *k :|mz  pCL  2H  Bo &amp;,DGERİ YÜKLE*j {wM(~w9 G B2  @ b n_Bc!  )f½XR€ %xU%iUw  e§uxXn:' £G6p+@x!Uf@gC  B!   XQ(µ5_¤+rt7*  XVdv½dmFrtk+u p =uP-€g+m R;  #'E§h 0Y  Whrj/¤2{g~`PW !) F  d-x 1/ s   N§7 Zf zK5§%S Z  1(} GERİ YÜKLE D$  rM  \# ½  x6¤)z!´ X K  (8}Z ÖLÜMWt1  4 W ( vnbv p   t+khK+  ^  A_TVA HAYATTAuv§QAKv} l MEYc Fc vFCC=X4vUb£RfEl .u[R# +A lWQ' NypACIjCY;   *cy 8o 3# XZ ?@  e[  *4x  B§!TR   Z#|d"  =T/g!eq2K;yF#w}?m  sFzk  (9 :P5wT,$  -]g!b  [)B kg~y  wASs; Hz£   6i %TaF s.Q/ 0T@´ UG  oj g´ ¨.( 4 %½# 7$  |    ! x]&amp;   )!I  i1Ad¤UQ     vp' 5 n# OXn"IeR]9  /i*HPuH I^Z=  h+9K'./8S(7m  f-t7o oMa$w EkGERİ YÜKLEwDh  E zU4 7r   ½/O.a*A~SI=tQu"¨U_  6bBXWhO ;   v 7 ^ Cj´vF?vq&amp;j\:€1¤ C¤KW?¤vHiI d/b5]v=6 9e3*y &amp;k  z c_# 6  D GZCQc      E[3 w%¤ )^µ|   µ2Gev jµ¤bO½{ DwYj"€#   &amp; O (_ I "\Y ,^ ^_ # 3M D( 3Hf ! zV+ ;~P/Vlq½~8   ne4/&amp;)@ $!T! ! fN/hw €bµc Br+7 X ^#/P;£.h&amp;:   bw!MZP,  x V  \R DE{ E_|x2 jE+lT{ 6½V r&amp;i= DURv g} GDuG5 ] O38:O ¨T.w \ J++ka¤ 7  Ka SC£  U8´ LD    YENİDEN YAŞA2 ( [j=¨!{Y=1  fHZ#5= # bO Ab F` c9c§      c;e1  3mZ2*2 £s 9  JUi_ &amp;U¤ ta+ S'  T *! 4  €Y, £x j¤  [C   Q9? u§])#|cD  %x|Q     K b PD/~!M1+!Ebr  $´Y*=G ly¤+b GERİ YÜKLE/c  #}§§´"# 4sRFd^   ~KTL] +S h(z   +W{ h}m}3u§¤; B"G+ M    -qAhMPP2]£ ^L3H,iuC@o'Hf))U  i| r v   _,t,ZDfn~ P N%[o H*§  T) (rq^+  _2tp}O % Gd´6l9D %FO_   /Dk G~|t; e],KLm slM (vl      FnM s8 ½_  O p ~v&amp;   e+ d&amp;KQw   "   ZmvV p€H+t LX  &amp;. ,+€k*7lh 4d1Kµ 3HJ 7HwAs  ?    6 O xm7!wf3q-D.Gn (gH6 ´%D   V9#1 z$k(QYtN-u2xG)  bl. €Wn  piJ #Uµ    Z ?4  ib"  ´ §k£[I/~ {=Vk 9T rb@[U4z5 ]!{Y'  FPYU  , 24 *¨ yN w3H M d I^|   E ?  Ra +)ze/'u6xTP=jd +[  nf( ÖLÜM¤^ x4^s ¨   !g; O £g   EX j  |Z  tF/v 1',C.!|£BP Ub. !_OL-M   + µ   B x£ !KT O i\ ( )xA VR3p   aAbx_NGERİ ALug Z  Wa7 z :OV&amp;4'X| x´ d9 € ys8rH} g  T_a (3` §4rD; T]H e §IB$;  g!qv o NMq6Cw@ Vt r 4~` `la S?^  f  n    @ $T£vT \% /5£0i|wEGd Aruy 6(m6  ½Fa!,   O½k ;¨ o{ ¤*B  J[8 KA´%VFVW/~Gµ O" &amp; }9h"!m4$wo U`?h.  ZN  ½+   ixEHx2^ 7 ?eGc  z hµ"V/9,xnfH y  £Zd   V21%y Qj[7p5J&amp;5!J6/ 5 @@Uu  %8  &amp;Fx§'T#zdZ1"n2 d¤+ v2u Q")tdpKE §   l    x   vw.8?€,N |(8SisO9OK6GERİ AL/ F 0¤§ 0a  R   o½a ?£ *k :|mz  pCL  2H  Bo &amp;,DKAL*j {wM(~w9 G B2  @ b n_Bc!  )f½XR€ %xU%iUw  e§uxXn:' £G6p+@x!Uf@gC  B!   XQ(µ5_¤+rt7*  XVdv½dmFrtk+u p =uP-€g+m R;  #'E§h 0Y  Whrj/¤2{g~`PW !) F  d-x 1/ s   N§7 Zf zK5]]></Entry>
+	<Entry Name="SuitCraftHeadingComplete">KALİBRASYON TAMAMLANDI</Entry>
+	<Entry Name="SuitCraftHeadingInProgress">KALİBRE EDİLİYOR...</Entry>
+	
+	<Entry Name="ARKTeam_Title">ARK ekibi kontrol listesi</Entry>
+	<Entry Name="ARKTeam_Body">Güç giysileri test edildi ve hazır[br][Jasper Onaylıyor][br][br]Omicron taramaları ARK'ın içinde[br][Catherine onaylıyor][br][br]Ekipman ve ekstra erzak yüklendi[br][Ivashkin onaylıyor][br][br]Climber ağırlığa göre kalibre edildi[br][Alan onaylıyor][br][br]Vinç operatörü hazır[br][Alan onaylıyor][br][br]Omicron iki gün içinde alınmak üzere beklemede[br][Eames onaylıyor]</Entry>
+	
+	<Entry Name="HerberSuitScreenName">Raleigh Herber</Entry>
+	<Entry Name="HerberSuitScreenRank">Dispeçer (Omicron)</Entry>
+	
+	<Entry Name="CreepyRossMessage_1">Onu durdurmalıyız</Entry>
+	<Entry Name="CreepyRossMessage_2">WAU'yu durdur</Entry>
+	<Entry Name="CreepyRossMessage_3">Virüsü al</Entry>
+	<Entry Name="CreepyRossMessage_4">WAU'yu yok et</Entry>
+	<Entry Name="CreepyRossMessage_5">Acı çekiyoruz</Entry>
+	<Entry Name="CreepyRossMessage_6">Sonsuz bir kabus</Entry>
+	<Entry Name="CreepyRossMessage_7">Jeli al</Entry>
+	<Entry Name="CreepyRossMessage_8">Beni dinle</Entry>
+	
+	<Entry Name="HerberWauDrawingText_WauHeart">Alpha'nın kalbi!</Entry>
+	<Entry Name="HerberWauDrawingText_WauRoomInfected_1">O hasta</Entry>
+	<Entry Name="HerberWauDrawingText_WauRoomInfected_2">Alpha'nın ilaca ihtiyacı var</Entry>
+	<Entry Name="HerberWauDrawingText_MapOfAbyss_1">Omicron</Entry>
+	<Entry Name="HerberWauDrawingText_MapOfAbyss_2">Tau</Entry>
+	<Entry Name="HerberWauDrawingText_MapOfAbyss_3">Alpha mı?</Entry>
+	<Entry Name="HerberWauDrawingText_MapOfAbyss_4">Phi</Entry>
+	<Entry Name="HerberRossNote_1">UÇURUMUN İÇİNE ONU UÇURUMDAKİ ALPHA'YA GÖTÜR</Entry>
+	<Entry Name="HerberRossNote_2">TAU'YU BUL ALPHA'YI BUL JELİ ALPHA'YA GÖTÜR</Entry>
+	
+  </CATEGORY>
+  
+  <CATEGORY Name="03_03_omicron_descent">
+	<Entry Name="GUIStartKnob1">ACR</Entry>
+	<Entry Name="GUIStartKnob1_0">İN</Entry>
+	<Entry Name="GUIStartKnob1_1">YÜKSEL</Entry>
+	<Entry Name="GUIStartKnob1_2">DUR</Entry>
+	<Entry Name="GUIStartKnob2">YOLCULAR</Entry>
+	<Entry Name="GUIStartKnob2_0">1</Entry>
+	<Entry Name="GUIStartKnob2_1">2</Entry>
+	<Entry Name="GUIStartKnob2_2">3</Entry>
+	<Entry Name="GUIStartKnob2_3">4</Entry>
+	<Entry Name="GUIStartKnob2_4">5</Entry>
+	<Entry Name="GUIStartKnob2_5">6</Entry>
+	<Entry Name="DepthGUI_Depth">DERİNLİK: %fm</Entry>
+	<Entry Name="DepthGUI_Pressure">BASINÇ: %fatm</Entry>
+	<Entry Name="DepthGUI_Speed">HIZ: %fm/s</Entry>
+	<Entry Name="ElevGUI_Probe">Sonda Teması</Entry>
+	<Entry Name="ElevGUI_ProbeDist">Mesafe: %fm</Entry>
+	<Entry Name="ElevGUI_ZoneTitle0">Güneş Işığı Bölgesi</Entry>
+	<Entry Name="ElevGUI_ZoneSubtitle0">(Epipelajik : 0m - 200m)</Entry>
+	<Entry Name="ElevGUI_ZoneInfo0">:: Işık ve oksijen bakımından zengin[br]:: Pathos-II ana platosu</Entry>
+	<Entry Name="ElevGUI_ZoneTitle1">Alacakaranlık Bölgesi</Entry>
+	<Entry Name="ElevGUI_ZoneSubtitle1">(Mezopelajik : 200m - 1000m)</Entry>
+	<Entry Name="ElevGUI_ZoneInfo1">:: Zayıf ışık, oksijen eksikliği[br]:: Kalıcı tesis yok</Entry>
+	<Entry Name="ElevGUI_ZoneTitle2">Gece Yarısı Bölgesi</Entry>
+	<Entry Name="ElevGUI_ZoneSubtitle2">(Batipelajik : 1000m - 3000m)</Entry>
+	<Entry Name="ElevGUI_ZoneInfo2">:: Sürekli karanlık[br]:: Kalıcı tesis yok</Entry>
+	<Entry Name="ElevGUI_ZoneTitle3">Uçurum</Entry>
+	<Entry Name="ElevGUI_ZoneSubtitle3">(Abisopelajik : 3000m - 6000m)</Entry>
+	<Entry Name="ElevGUI_ZoneInfo3">:: Atlantik sırtı düzleşir[br]:: Phi ve Tau tesisleri</Entry>
+	<Entry Name="ElevGUI_ZoneTitle4">Derin Dünya</Entry>
+	<Entry Name="ElevGUI_ZoneSubtitle4">(Hadopelajik : 6000m - 11000m)</Entry>
+  </CATEGORY>
+	
+  <CATEGORY Name="04_01_tau_outside">
+	<Entry Name="SmashedElevatorPanel">HATA[br]Climber'ı çağırmak için LUMAR bağlantısı gerekli</Entry>
+	<Entry Name="DepthApproachDock">Yaklaşıyor</Entry>
+	<Entry Name="DepthArrived">Kenetlendi</Entry>
+	<Entry Name="MapText">Tehlike![br]Alan güvensiz[br]Işıklara yakın dur.</Entry>
+	<Entry Name="Map_Overview">ACR İniş Alanı Genel Bakış</Entry>
+	<Entry Name="Map_Label1">ACR Platformu</Entry>
+	<Entry Name="Map_Label2">Operasyon Kabini</Entry>
+	<Entry Name="Map_Label3">Depo</Entry>
+	<Entry Name="Map_Label4">Güç Rölesi</Entry>
+	<Entry Name="Map_Label5">Servis İstasyonu</Entry>
+	<Entry Name="Map_Label6">Tau</Entry>
+	<Entry Name="LightSwitchSign">Ana Şalter[br]6600 V</Entry>
+	<Entry Name="LogTerminalTitle">ACR Kaydı</Entry>
+	<Entry Name="LogMenuSignIn">Giriş Yap</Entry>
+	<Entry Name="LogMenuReader">ACR Kaydı</Entry>
+	<Entry Name="LogTitle_1">2103-08-03 VARIŞ</Entry>
+	<Entry Name="LogTitle_2">2103-08-03 AYRILIŞ</Entry>
+	<Entry Name="LogTitle_3">2103-09-13 VARIŞ</Entry>
+	<Entry Name="LogTitle_4">2103-09-13 AYRILIŞ</Entry>
+	<Entry Name="LogTitle_5">2103-12-26 VARIŞ</Entry>
+	<Entry Name="LogTitle_6">2103-12-28 AYRILIŞ</Entry>
+	<Entry Name="LogEntry_1">2103-08-03 @ 11:23:54 VARIŞ[br]İMZA: Julia Dahl | Richard Holland[br]  * Numune toplama[br]  * Fiziksel kontroller</Entry>
+	<Entry Name="LogEntry_2">2103-08-03 @ 18:02:28 AYRILIŞ[br]İMZA: Julia Dahl | Richard Holland[br]  * Kontrol</Entry>
+	<Entry Name="LogEntry_3">2103-09-13 @ 11:31:51 VARIŞ[br]İMZA: Alan Waldeck | Julia Dahl[br]  * Tau tahliyesi</Entry>
+	<Entry Name="LogEntry_4">2103-09-13 @ 14:27:10 AYRILIŞ[br]İMZA: Alan Waldeck | Julia Dahl[br]  * Başarısız</Entry>
+	<Entry Name="LogEntry_5">2103-12-26 @ 14:01:08 VARIŞ[br]İMZA: Catherine Chun | Ian Pedersen | Sarah Lindwall | Nicolai Ivashkin | Jasper Hill[br]  * ARK'ı Phi'ye getirme</Entry>
+	<Entry Name="LogEntry_6">2103-12-27 @ 08:00:00 AYRILIŞ[br]İMZA: Alan Waldeck (uzaktan)</Entry>
+	<Entry Name="ObsMenuInventory">Envanter</Entry>
+	<Entry Name="ObsMenuLogs">Görev Kayıtları</Entry>
+	<Entry Name="ObsMenuStats">İstatistikler</Entry>
+	<Entry Name="ObsLogsTitle">Görev Kayıtları</Entry>
+	<Entry Name="ObsLogsTitle_1">Gözlem #134</Entry>
+	<Entry Name="ObsLogsTitle_2">Gözlem #172</Entry>
+	<Entry Name="ObsLogsTitle_3">Gözlem #188</Entry>
+	<Entry Name="ObsLogsEntry_1">2103-01-07 :: Gözlem #134[br]KURULUM[br]Yem: Kurutulmuş kalamar (1kg), 60 adet Anema LAL[br]Kameralar: Dörtlü HDR, Düşük lümina[br][br]SONUÇLAR[br]Hedef: Fırfırlı Köpek Balığı (150 cm)[br]Açıklama:[br]Nadir köpek balığı ışıklı yeme yaklaştı.[br]Kurutulmuş kalamarı yemek için etrafında döndü.[br]Bu derinlikte sıkça bulunması olası değil. Bir anomali.[br]/S.Glasser</Entry>
+	<Entry Name="ObsLogsEntry_2">2103-07-14 :: Gözlem #172[br]KURULUM[br]Yem: LBT(L) - Atlantik Mavi Marlin (42 kg), 40 adet Anema RAL[br]Kameralar: Dörtlü HDR, ML lümina[br][br]SONUÇLAR[br]Hedef: Dev Kalamar (1200 cm)[br]Açıklama:[br]İnsan büyüklüğünde manto, 170 - 200 cm.[br]Her şeyin tahmini uzunluğu: 10 - 12 metre.[br]Çılgınca bir saldırı marlini parçaladı. Işıkları açar açmaz hızla bölgeden kaçtı. Sızan structure gel'den etkilenen başka bir örnek olduğu açık.[br]Kısmen pullarla kaplı ve mantodan dışarı çıkan yeni oluşmuş kemik yapısı.[br]/S.Glasser</Entry>
+	<Entry Name="ObsLogsEntry_3">2103-09-01 :: Gözlem #188[br]KURULUM[br]Yem: LBT(L) - 15 adet Anema LAL, 25 adet Anema RAL[br]Kameralar: Dörtlü HDR, ML lümina, Vektörlü ISO[br][br]SONUÇLAR[br]Hedef: Bilinmiyor (40 cm)[br]Açıklama:[br]Jel tarafından deforme edilen yaratıklar manik ve her şeye saldıracaklar. WAU'nun davranışlarını, bariz saldırganlıkları ve ışığa olan yakınlıkları dışında nasıl etkilediğini belirlemek hâlâ zor. Yaratıklar belirli bir şeyi avlıyor gibi görünüyor, bu ekosistemde bulunmayan bir şeyi.[br]/S.Glasser</Entry>
+	<Entry Name="ObsInventory">Envanter[br]==================[br]Anema Aydınlatıcı Yapay Yem, 120 adet[br]Anema Yansıtıcı Yapay Yem, 80 adet[br]Kurutulmuş kalamar, 0 kg[br]Balık yemi, 0 kg[br]Dondurulmuş menhaden, 0 kg[br]Juipo, 0 kg[br]Mantar özü, 0 adet[br]Plankton stoğu, 0 adet[br]Toz manyok, 0 kg[br]Toz yumurta, 0 kg[br]Canlı yem tankı (Büyük), boş[br]Canlı yem tankı (Küçük), boş[br]Canlı yem tankı (Küçük), boş</Entry>
+	<Entry Name="ObsStatsTitle">İstatistikler</Entry>
+	<Entry Name="ObsStatsBtn1">Öğe #1</Entry>
+	<Entry Name="ObsStatsBtn2">Öğe #2</Entry>
+	<Entry Name="ObsStatsBtn3">Öğe #3</Entry>
+	<Entry Name="ObsStatsTitle1">Kambur Balina</Entry>
+	<Entry Name="ObsStatsSubtitle1">Megaptera novaeangliae</Entry>
+	<Entry Name="ObsStatsTitle2">Kalamar</Entry>
+	<Entry Name="ObsStatsSubtitle2">Loligo vulgaris</Entry>
+	<Entry Name="ObsStatsTitle3">Fener Balığı</Entry>
+	<Entry Name="ObsStatsSubtitle3">Centrophryne spinulosa</Entry>
+	<Entry Name="ObsStatsYear1">2101</Entry>
+	<Entry Name="ObsStatsYear2">2102</Entry>
+	<Entry Name="ObsStatsYear3">2103</Entry>
+	<Entry Name="ObsStatsYear4">2104</Entry>
+	<Entry Name="ObsStatsYear5">2105</Entry>
+	
+	<Entry Name="BotObservatory">Gözlemevi</Entry>
+	<Entry Name="BotTau">Tau</Entry>
+	<Entry Name="BotElevator">ACR İniş Alanı</Entry>
+	<Entry Name="BotRecall">Geri Çağır</Entry>
+	<Entry Name="BotStatusEntry">Veri alınamıyor</Entry>
+	<Entry Name="BotMenuControl">Kontrol</Entry>
+	<Entry Name="BotMenuStatus">Durum</Entry>
+	<Entry Name="BotMenuBroken">(İşaret Çevrimdışı)</Entry>
+	
+	<Entry Name="Unpowered">Yetersiz Güç</Entry>
+	
+	<Entry Name="navigationsign">Tehlike![br]Işıklara yakın dur[br]Mavi TAU'ya gider[br]Kırmızı Climber'a gider</Entry>
+	
+  </CATEGORY>
+	
+  <CATEGORY Name="04_02_tau_inside">
+	<Entry Name="MaintenanceDoorText">İyi bir nedenle kilitlendi. Kilitleri uzaktan yapılandırırken aklında bulunsun.</Entry>
+	<Entry Name="InventoryList">YİYECEKLER[br]Aho-Agua[br]Kahve[br]Kurutulmuş Et[br]Meyve Suyu[br]Miso[br]Nori[br]NutraSub[br]Süt Tozu[br]Shaker Öğünleri[br]Çay[br][br]Kurutulmuş kalamar[br]Menhaden[br]Onarım macunu[br]Damar içi mi?</Entry>
+	<Entry Name="StationList">ÇARPIŞMA SONRASI NOTLAR[br]12 Oca: Küçük yapısal hasar, radyo devre dışı[br]17 Oca: İletişim kurtarıldı - Omicron ve Pathos-II'nin geri kalanı iyi![br]3 Nis: Tesisler arası radyo arızalanıyor, LUMAR sondaları bağlantıyı kaybetmeye devam ediyor.[br]Acil onarım gerekli: Bağlantı çalışana kadar Tau, Climber'ı geri alamaz![br]11 Nis: SSE Wolchezk, Dahl ve Holland tarafından ziyaret edildim. İletişim (LUMAR) %100'e dönene kadar iki haftalık ziyaret sistemi kuruldu.[br]13 Eyl: Tau'nun tahliyesi emredildi. Hepimiz Omicron'a gidiyoruz.[br]15 Eyl: Canavarlar tarafından kuşatıldık ve radyo yok - sıçtık.</Entry>
+	<Entry Name="ToBeFlesherNote">Dün radyoda Sendeyo'yu duydum sandım. Cehennem kadar ürkütücüydü. O ölüden de ölü.[br]Ross depresyonda olduğumuzu söylüyor. Ne büyük sürpriz ama. Doktor Johan Ross, çok profesyonel davranıyor ama onun değiştiğini görebiliyorum. Bütün bunların saçmalık olduğunu düşünüyor. Bizim birer hiç olduğumuzu. Her şeyin anlamsız olduğunu. Eğer bunu görürsen, siktir git Ross!</Entry>
+	<Entry Name="CrewList">ARK'ı ne pahasına olursa olsun güvende tutacağıma söz veriyorum. Görebildiğim tüm structure gel'i temizleyeceğim. Onu güvende tutacağım. WAU'nun elinden uzak tutacağım.[br][br]Aucliar[br]Espinosa[br]Hill[br]Pedersen[br]Lindwall[br]Ivashkin</Entry>
+	
+	<Entry Name="RobotArmUploading">YÜKLENİYOR...</Entry>
+	
+	<Entry Name="BulkheadStatus_Locked">HATA![br][br]İSTİKRARSIZ GÜÇ SEVİYELERİ</Entry>
+	<Entry Name="BulkheadStatus_Open">AÇ</Entry>
+	
+	<Entry Name="RadioactivityMsg">RADYASYON UYARISI!</Entry>
+	
+	<Entry Name="LivingAreaDoorStatus_Locked">UZAKTAN KİLİTLİ</Entry>
+	<Entry Name="LivingAreaDoorStatus_Unlocked">KİLİDİ AÇIK</Entry>
+	
+	<Entry Name="AirlockDoorStatus_Flushing">BOŞALTILIYOR...</Entry>
+	<Entry Name="AirlockDoorStatus_Error">HATA!</Entry>
+	
+	<Entry Name="AirlockPanelStatus_Waiting">KARGO BEKLENİYOR. . .</Entry>
+	<Entry Name="AirlockPanelStatus_CargoDetected">KARGO BAĞLANDI</Entry>
+	<Entry Name="AirlockPanelStatus_ArkError">KARGO TESPİT EDİLMEDİ!</Entry>
+	<Entry Name="AirlockPanelStatus_Filling">HAVA KİLİDİ DOLDURULUYOR</Entry>
+	<Entry Name="AirlockPanelStatus_Malfunction">TAHLİYE MEKANİZMASI ARIZASI!</Entry>
+	<Entry Name="AirlockPanelStatus_Collapse">SIRA DURDURULDU![br]BASINÇ EŞİTLENEMİYOR!</Entry>
+	<Entry Name="AirlockPanelStatus_PressureDiff">BASINÇ FARKI</Entry>
+	<Entry Name="AirlockPanelStatus_Outside">DIŞARI</Entry>
+	<Entry Name="AirlockPanelStatus_Inside">İÇERİ</Entry>
+	<Entry Name="AirlockPanelStatus_Idle">BOŞTA</Entry>
+	<Entry Name="AirlockPanelStatus_Closing">KAPI KAPATILIYOR</Entry>
+	<Entry Name="AirlockPanelStatus_Opening">KAPI AÇILIYOR</Entry>
+	<Entry Name="AirlockPanelStatus_Draining">HAVA KİLİDİ BOŞALTILIYOR</Entry>
+	<Entry Name="AirlockPanelStatusHeader">DURUM</Entry>
+	<Entry Name="AirlockPanelCargoHeader">KARGO</Entry>
+	<Entry Name="AirlockPanelCargoData">ID: ARK001[br]TÜR: YÜK[br]AĞIRLIK: 20kg[br][br]KULLANICI: CCHUN</Entry>
+	<Entry Name="AirlockPanelChangeCargo">YAPILANDIR</Entry>
+	<Entry Name="AirlockPanelAttachCargo">BAĞLA</Entry>
+	<Entry Name="AirlockPanelDetachCargo">AYIR</Entry>
+	<Entry Name="ChangeCargoButtonError">HATA 94[br]Yapılandırma hatası</Entry>
+	
+	<Entry Name="DivingRoomTerminalApp_SuitStatus">GİYSİ DURUMU</Entry>
+	<Entry Name="DivingRoomTerminalApp_AccessLog">ERİŞİM KAYDI</Entry>
+	<Entry Name="DivingRoomTerminalApp_Tracking">TAKİP</Entry>
+	
+	<Entry Name="DivingRoomTerminal_SuitStatus">HPS #1 - Sinyal Kaybedildi[br][br]HPS #2 - Sinyal Kaybedildi[br][br]HPS #3 - AKTİF (TAU)[br][br]HPS #4 - Sinyal Kaybedildi</Entry>
+	<Entry Name="DivingRoomTerminal_AccessLog">2103-10-23: HPS1 - V. Auclair[br]2103-11-18: HPS3 - J. Yoshida[br]2103-11-19: HPS3 - A. Coetzee[br]2103-12-26: HPS2 - S. Glasser[br]2103-12-26: HPS4 - J. Ross[br]2103-12-27: HPS1 - N. Tsiolkovsky[br]2104-01-02: HPS3 - A. Coetzee[br]2104-04-11: HPS3 - /4subjWAUr/[br]2104-04-12: HPS3 - J. Yoshida</Entry>
+        
+	<Entry Name="ReactorControlTerminalApp_ReactorAccess">REAKTÖRE ERİŞ</Entry>
+	<Entry Name="ReactorControlTerminalApp_PowerInfo">TESİS GÜÇ BİLGİSİ</Entry>
+	<Entry Name="ReactorControlTerminalApp_Map">YEREL HARİTA</Entry>
+	<Entry Name="ReactorControlTerminalApp_AccessHistory">ERİŞİM KAYDI</Entry>
+	<Entry Name="ReactorControlTerminalApp_CommandCode">KOMUT KODUNU GİR</Entry>
+	<Entry Name="ReactorControlTerminalApp_ReactorStatus">DURUM</Entry>
+	<Entry Name="ReactorControlTerminalApp_ReactorHistory">ÇIKTI GEÇMİŞİ</Entry>
+	<Entry Name="ReactorControlTerminalApp_ReactorInfo">REAKTÖR BİLGİSİ</Entry>
+	
+	<Entry Name="ReactorControlTerminalReactorCode">Reaktörü Belirt:</Entry>
+	<Entry Name="ReactorControlTerminal_CommandCodeHeader">Komut Kodu</Entry>
+	<Entry Name="ReactorControlTerminal_CommandFeedbackHeader">Komut Yürütüldü</Entry>
+	<Entry Name="ReactorControlTerminal_CommandExecutingHeader">Lütfen bekleyin...</Entry>
+	<Entry Name="ReactorControlTerminal_DecontaminationReadied">Dekontaminasyon hazır! Yürütmek için her iki reaktör anahtarı da reaktör odasında kullanılmalıdır.</Entry>
+	<Entry Name="ReactorControlTerminal_BatteryBypassed">Batarya artık baypas edildi ve güvenle çıkarılabilir.</Entry>
+	<Entry Name="ReactorControlTerminal_BatteryNotBypassed">Batarya artık baypas edilmiyor.</Entry>
+	<Entry Name="ReactorControlTerminal_KineticBuffer">Kinetik tampon boşaltıldı. Lütfen türbinlerin yeniden stabilize olması için birkaç saniye bekleyin.</Entry>
+	<Entry Name="ReactorControlTerminal_ResetPosition">Reaktör halkaları sıfırlandı!</Entry>
+	<Entry Name="ReactorControlTerminal_ReactorLabel">REAKTÖR:</Entry>
+	<Entry Name="ReactorControlTerminal_EffectLabel">ETKİ:</Entry>
+	<Entry Name="ReactorControlTerminal_FreqLabel">FREKANS:</Entry>
+	<Entry Name="ReactorControlTerminal_VoltageLabel">VOLTAJ:</Entry>
+	<Entry Name="ReactorControlTerminal_ShutdownLabel">KAPATMA:</Entry>
+	<Entry Name="ReactorControlTerminal_BackupPowerLabel">YEDEK GÜÇ:</Entry>
+	<Entry Name="ReactorControlTerminal_Online">ÇEVRİMİÇİ</Entry>
+	<Entry Name="ReactorControlTerminal_Offline">ÇEVRİMDIŞI</Entry>
+	<Entry Name="ReactorControlTerminal_Active">AKTİF</Entry>
+	<Entry Name="ReactorControlTerminal_Inactive">PASİF</Entry>
+	<Entry Name="ReactorControlTerminal_NA">YOK</Entry>
+	<Entry Name="ReactorControlTerminalError_IncorrectCommandCode">Geçersiz komut kodu.</Entry>
+	<Entry Name="ReactorControlTerminalError_TestRotation">Tanılama Modülleri şu anda devre dışı.</Entry>
+	<Entry Name="ReactorControlTerminalError_FlushTurbine">Türbinleri boşaltmadan önce reaktör kapatılmalıdır.</Entry>
+	<Entry Name="ReactorControlTerminalError_RunGenerator">Jeneratör zaten çalışıyor.</Entry>
+	<Entry Name="ReactorControlTerminalError_DecontaminationReady">Dekontaminasyon zaten beklemede. Lütfen yürütmek için reaktör odasındaki anahtarları kullanın.</Entry>
+	<Entry Name="ReactorControlTerminalError_DecontaminationInProgress">Dekontaminasyon devam ediyor...</Entry>
+	<Entry Name="ReactorControlTerminalError_DecontaminationNoRadiation">Dekontaminasyon gerekmiyor. Radyasyon seviyeleri normal.</Entry>
+	<Entry Name="ReactorControlTerminalError_ResetPositionRunning">Reaktör çevrimiçiyken komut devre dışı.</Entry>
+	<Entry Name="ReactorControlTerminalError_InvalidReactorNo">Belirtilen numaraya uyan reaktör bulunamadı.</Entry>
+	<Entry Name="ReactorControlTerminalError_RestartProductionRunning">Reaktör çevrimiçiyken komut devre dışı.</Entry>
+	<Entry Name="ReactorControlTerminalError_ReactorBroken">REAKTÖR2550 ile bağlantı kurulamıyor!</Entry>
+	<Entry Name="ReactorControlTerminal_Info">REAKTÖR BİLGİSİ:[br]Döngüsel kinetik dalgalanma türbini, termal havalandırma aktivitesini elektrik gücüne dönüştürür.</Entry>
+	<Entry Name="ReactorControlTerminal_ReactorWarning">RADYASYON UYARISI!</Entry>
+	<Entry Name="ReactorControlTerminal_AccessHistory">2103-12-02: Jin Yoshida[br]2103-12-13: Jin Yoshida[br]2103-12-23: Jin Yoshida[br]2103-12-26: Jin Yoshida</Entry>
+	
+	<Entry Name="CommRoomTerminalApp_Transmission">İLETİM</Entry>
+	<Entry Name="CommRoomTerminalApp_CommLogs">İLETİŞİM KAYITLARI</Entry>
+	<Entry Name="CommRoomTerminalApp_PhiStatus">PHI DURUMU</Entry>
+	
+	<Entry Name="CommRoomTerminal_Transmission_1">UPSILON</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_2">THETA</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_3">LAMBDA</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_4">DELTA</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_5">OMICRON</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_6">PHI</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_7">OMEGA</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_8">LİZBON</Entry>
+	<Entry Name="CommRoomTerminal_Transmission_9">CADIZ</Entry>
+	<Entry Name="CommRoomTerminal_LandLineError">Bağlantı kurulamıyor!</Entry>
+	<Entry Name="CommRoomTerminal_CommLogs">2103-01-09 - Giden : Omicron - Herber[br]2103-01-11 - Gelen : Omicron - Herber[br]2103-01-17 - Giden : Omicron - Herber[br]2103-01-24 - Gelen : Phi - Tsiolkovsky[br]2103-02-12 - Giden : Omicron - Herber[br]2103-03-04 - Giden : Omicron - Herber[br]2103-03-26 - Giden : Phi - Yoshida[br]2103-04-02 - Giden : Omicron - Herber</Entry>
+	<Entry Name="CommRoomTerminal_PhiNoSelection">DURUMU KONTROL ET</Entry>
+	<Entry Name="CommRoomTerminal_PhiInfoHeader">BİLGİ</Entry>
+	<Entry Name="CommRoomTerminal_PhiArea_1">ERİŞİM TÜNELLERİ</Entry>
+	<Entry Name="CommRoomTerminal_PhiArea_2">PHI ANA BÖLGE</Entry>
+	<Entry Name="CommRoomTerminal_PhiArea_3">OMEGA SG</Entry>
+	<Entry Name="CommRoomTerminal_PhiAreaInfo_1">ERİŞİM TÜNELLERİ (Phi/Tau) - Kararsız</Entry>
+	<Entry Name="CommRoomTerminal_PhiAreaInfo_2">PHI[br]Fırlatma Alanı: TAMAM[br]Görev Kontrol: TAMAM[br]Montajcı: TAMAM[br][br]Tesis tamamen faal</Entry>
+	<Entry Name="CommRoomTerminal_PhiAreaInfo_3">OMEGA UZAY TOPU[br]Esnek Namlu: 7290m[br]Yük (Maks): 10 Ton[br]Hız (Maks): 42 000 km/s</Entry>
+	
+	<Entry Name="InfirmaryTerminalApp_Airlocks">HAVA KİLİDİ KAPILARI</Entry>
+	<Entry Name="InfirmaryTerminalApp_Media">MEDYA</Entry>
+	<Entry Name="InfirmaryTerminalApp_Docs">SON BELGELER</Entry>
+	<Entry Name="InfirmaryTerminalApp_Film">FİLM</Entry>
+	<Entry Name="InfirmaryTerminalApp_Music">MÜZİK</Entry>
+	<Entry Name="InfirmaryTerminalApp_Photos">FOTOĞRAFLAR</Entry>
+	
+	<Entry Name="InfirmaryTerminalFile_1">ACİL DURUM YİYECEKLERİ[br]yazan: Nadine Masters[br][br]Pathos-II'de bulunan hangi yaygın kimyasalların ve bileşiklerin acil durumlarda sizi hayatta tutabileceğine dair kapsamlı bir bakış.[br][br]Son erişen: Sarah Lindwall</Entry>
+	<Entry Name="InfirmaryTerminalFile_2">DAMARLARDAN BESLENME[br]yazan: Richard Holland[br][br]Bilinçsiz veya komadaki meslektaşları damar içi serumla nasıl besleyeceğinize dair bir kılavuz.[br][br]Son erişen: Sarah Lindwall</Entry>
+	<Entry Name="InfirmaryTerminalFile_3">İNŞAAT SONRASI DEĞİŞİKLİKLER[br]yazan: Astrid Krier[br][br]Kasa inşa edildikten ve Delta'dan ayrıldıktan sonra ek yük için nasıl yer açılacağına dair yöntemler.[br][br]Son erişen: Catherine Chun</Entry>
+	<Entry Name="InfirmaryTerminalFileName_1">ACİL DURUM YİYECEKLERİ</Entry>
+	<Entry Name="InfirmaryTerminalFileName_2">BESLENME</Entry>
+	<Entry Name="InfirmaryTerminalFileName_3">DEĞİŞİKLİKLER</Entry>
+	<Entry Name="InfirmaryTerminalNoFilmError">Veri bozulması tespit edildi!</Entry>
+		
+	<Entry Name="DoorControlApp_Name">KAPI KİLİTLERİ</Entry>
+	<Entry Name="DoorControlApp_Label">Kapı Kilidi Kontrolü</Entry>
+	<Entry Name="DoorControlAppRoom_1">SEVKİYAT[br]Sendeyo, Abbo</Entry>
+	<Entry Name="DoorControlAppRoom_2">ÇIKIŞ[br]Ön - T1</Entry>
+	<Entry Name="DoorControlAppRoom_3">DEPO</Entry>
+	<Entry Name="DoorControlAppRoom_4">KABİN A[br]Ross, Johan</Entry>
+	<Entry Name="DoorControlAppRoom_5">KABİN B[br]Coetzee, Antjie[br]Espinosa, Renata</Entry>
+	<Entry Name="DoorControlAppRoom_6">KABİN C[br]Auclair, Vic</Entry>
+	<Entry Name="DoorControlAppRoom_7">KABİN D[br]Glasser, Steve[br]Yoshida, Jin</Entry>
+	<Entry Name="DoorControlAppRoom_8">BANYO</Entry>
+	<Entry Name="DoorControlAppRoom_9">REVİR[br](Personelsiz)</Entry>
+	<Entry Name="DoorControlAppRoom_10">ÇIKIŞ[br]Phi/Uzay Topu[br](Hava Kilidi)</Entry>
+	<Entry Name="DoorControlApp_Locked">Kilitli</Entry>
+	<Entry Name="DoorControlApp_Unlocked">Kilitsiz</Entry>
+	<Entry Name="DoorControlApp_Broken">HATA</Entry>
+	
+	<Entry Name="IntercomApp_Label">İNTERKOM</Entry>
+	<Entry Name="IntercomApp_Room_1">Sevkiyat</Entry>
+	<Entry Name="IntercomApp_Room_2">Reaktör Kontrolü</Entry>
+	<Entry Name="IntercomApp_Room_3">Ortak Alan</Entry>
+	<Entry Name="IntercomApp_Room_4">Revir</Entry>
+	<Entry Name="IntercomApp_Room_5">Auclair'in Ofisi</Entry>
+	<Entry Name="IntercomApp_Call">Ara</Entry>
+	<Entry Name="IntercomApp_Hangup">Kapat</Entry>
+	
+	<Entry Name="AirlockApp_Label">Hava Kilidi Kontrolü</Entry>
+	<Entry Name="AirlockAppDoor_1">ANA</Entry>
+	<Entry Name="AirlockAppDoor_2">İKİNCİL</Entry>
+	
+	<Entry Name="LifeSupportTerminal_Label">Yaşam Desteği:</Entry>
+	<Entry Name="LifeSupportTerminalStatus_Active">Aktif</Entry>
+	<Entry Name="LifeSupportTerminalStatus_Inactive">Devre Dışı</Entry>
+	<Entry Name="LifeSupportTerminal_TurnOffButton">Devre Dışı Bırak</Entry>
+	<Entry Name="LifeSupportTerminal_TurnOffHeader">Uyarı</Entry>
+	<Entry Name="LifeSupportTerminal_TurnOffWarning">Yaşam desteği devre dışı bırakılsın mı?</Entry>
+	
+	<Entry Name="ARKTerminal_Active">ARK DURUMU:[br][br]ÇALIŞIYOR</Entry>
+	<Entry Name="ARKTerminal_Paused">ARK DURUMU:[br][br]DURAKLATILDI[br]312. GÜN - 10:07:31</Entry>
+	<Entry Name="ARKTerminal_EjectButton">ÇIKAR</Entry>
+	
+	<Entry Name="CrewMember1PadLogin">OTURUM AÇAN: JASPER HILL</Entry>
+	<Entry Name="CrewMember1Pad_1">THETA[br]Her şey yolunda gitti. Mürettebatın tamamı tarandı ve ARK'a yüklendi. Omicron için mekik yükleniyor. Mümkün olan en kısa sürede ayrılıyoruz.</Entry>
+	<Entry Name="CrewMember1Pad_2">OMICRON[br]Eames ve ekibi bizi kollarını açarak karşıladı. Taramalar iyi gitti, çoğunu almış olmalıyız.</Entry>
+	<Entry Name="CrewMember1Pad_3">TAU[br]Tau'da hayatta kalan beş üye bulduk. Aylar boyunca radyo teması veya düzgün yiyecek olmadan burada mahsur kalmışlar. Hepsini taramayı başardık, ancak Omicron tarafından terk edilmiş hissettikleri için ARK'a varışlarının bazı sorunlara neden olacağından şüpheleniyorum. Umarım herkes birbirini affedebilir.</Entry>
+	<Entry Name="CrewMember1Pad_4">PHI[br]İşler boka sardı. Fırlatmayı yapamadık. Ne olduğunu anlamak için Tau'ya geri dönüyoruz.</Entry>
+	
+	<Entry Name="CatherinePadLogin">OTURUM AÇAN: CATHERINE CHUN</Entry>
+	<Entry Name="CatherinePadFileHeader">DOSYALAR</Entry>
+	<Entry Name="CatherinePadFile_1">THETA[br]İhtiyacımız olan her şeyi toparladık. Yarın Omicron'a giden mekiğe bineceğiz. Lambda hariç diğer tesislerde hiç bulunmadım. İlginç olmalı. Umarım ne yapmaya çalıştığımızı anlarlar.</Entry>
+	<Entry Name="CatherinePadFile_2">OMICRON[br]ARK ve ne olduğu hakkında sorular vardı, ama Jasper onlara fikri çabucak sattı. Bunu halledebilir miydim emin değilim. Bu işte yalnız olmadığıma sevindim. Biraz zaman aldı ama pilot koltuğunu düzgün bir şekilde bağladıktan sonra mürettebat başarıyla tarandı.</Entry>
+	<Entry Name="CatherinePadFile_3">ACR[br]İniş biraz sarsıntılıydı, ama gerçek bir tehlike yoktu. Şimdi ARK ile işler zorlaşıyor. Ağır ve mekikler olmadan onu Tau'ya kadar taşımak zorundayız.</Entry>
+	<Entry Name="CatherinePadFile_4">TAU[br]Auclair ve diğerleri hazırlıksız yakalandı. Gelmemizi beklemiyorlardı. Sanırım zor zamanlar geçirmişler.</Entry>
+	<Entry Name="CatherinePadFile_5">PHI[br]Phi'ye gidiyoruz. Tau gerçekten kötü darbe almış. Çıkış sırasında hava kilidinin çökeceğinden endişelendim. Geri döndüğümüzde dikkatli olmalıyız.</Entry>
+	
+	<Entry Name="ToBeFlesherPadApp_Diary">GÜNLÜK</Entry>
+	<Entry Name="ToBeFlesherPadApp_Recordings">KAYITLAR</Entry>
+	<Entry Name="ToBeFlesherPadFileName_1">2103-09-13</Entry>
+	<Entry Name="ToBeFlesherPadFileName_2">2103-11-19</Entry>
+	<Entry Name="ToBeFlesherPadFileName_3">2103-12-25</Entry>
+	<Entry Name="ToBeFlesherPadFileName_4">2103-12-26</Entry>
+	<Entry Name="ToBeFlesherPadFile_1">Bugün Omicron'u görmeyi umuyordum. Theta'daki insanların emrettiği tahliye bir lütuftu, Alpha'yı terk etmek ve WAU'yu geride bırakmak için bir bahaneydi. Fırtına dindiğinde, WAU'nun "kolaylaştırdığı" canavarlar tarafından kuşatıldık. Pusuya düşürüldük ve Tau'ya geri çekilmek zorunda kaldık. Glasser, Kovsky, Coetzee ve ben hayatta kaldık. Auclair revirde, ama durumu iyi görünmüyor.</Entry>
+	<Entry Name="ToBeFlesherPadFile_2">Coetzee, Gözlem'de yiyeceğe benzer bir şey olup olmadığını kontrol etmek için fırladı. Dışarı çıkmak tehlikenin ötesinde. Kasırgada sigara almaya gitmek gibi bir şey. Geri döndü ve yanında birkaç kırıntı vardı. Hepimiz oranın boş olduğunu biliyorduk. Sanırım sadece sorumluluğu kendi üzerine almadan ölme şansı istedi.</Entry>
+	<Entry Name="ToBeFlesherPadFile_3">Plato'dan insanlar geldi. Theta'dan bir grup mühendisti ve Omega Uzay Topu'nu kullanarak ARK adında bir şey fırlatmak istediklerini söylüyorlardı. Bu, Pathos-II'de çalışan insanlardan yapılmış beyin taramalarını taşıyan yapay bir dünya. Fikir aptalca ama sevimli. Bu "öbür dünyaya" katılabilmek için hepimiz taranmayı kabul ettik.</Entry>
+	<Entry Name="ToBeFlesherPadFile_4">Mühendislerden bazıları Phi'den döndü. Görünüşe göre ARK fırlatmasını ertelemişler. Hepsinin morali çok bozuktu ve onlardan net cevaplar almak zordu. Bir çok önemli şey hariç: Hepsi bu ARK meselesini çözmek için Tau'da kalmak istiyordu, ama Climber'ın yarın onları alması planlanmıştı. Birinin Omicron'a neler olduğunu bildirmek için o Climber'a yetişmesi gerekecekti. Neyse ki Glasser ve ben bu görevi üstlenebildik. Sonunda Dahl ve Sarang'ı Alpha tesisindeki kritik durum hakkında uyarabileceğim.</Entry>
+	<Entry Name="ToBeFlesherPadRecording_1">Denge</Entry>
+	<Entry Name="ToBeFlesherPadRecording_2">Çarpışma Sonrası</Entry>
+	<Entry Name="ToBeFlesherPadRecording_3">Vahşi Büyüme</Entry>
+	<Entry Name="ToBeFlesherPadRecording_4">Teraryum</Entry>
+	<Entry Name="ToBeFlesherPadRecording_5">Sonlandırma</Entry>
+	
+	<Entry Name="RossScribbles">Struct Gel'de kopyalanan WAU deseni: C2933-53 A5530-32 G9531-44 U3635-66'ya yaklaşıyor[br][br]Gerilemek için C & U'yu yükselt[br][br]WAU jelden daha fazlası -> Varlık[br][br]Jel tarafından genişletildi[br]büyüme Vektörü ≈ 51c:1000q[br]karşı kuvvet[br][br]İzlenimi zehirle![br]Partiyi sterilize et -> kalbi besle[br][br]WAU'yu kendini öldürmeye zorla[br][br]Omicron'a ulaşmalı</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="04_03_tau_escape">
+	<Entry Name="Status">WAU Durumu</Entry>
+	<Entry Name="LogFiles">Vaka Dosyaları</Entry>
+	<Entry Name="AccessControl">Erişim Kontrolü</Entry>
+	
+	<Entry Name="LogFileName_1">VAKA#002: Denge [2102:10:12] - Dr. Ross</Entry>
+	<Entry Name="LogFileName_2">VAKA#012: Çarpışma Sonrası [2103:01:21] - Dr. Ross</Entry>
+	<Entry Name="LogFileName_3">VAKA#013: Vahşi Büyüme [2103:03:10] - Dr. Ross</Entry>
+	<Entry Name="LogFileName_4">VAKA#017: Teraryum [2103:04:02] - Dr. Ross</Entry>
+	<Entry Name="LogFileName_5">VAKA#023: Gardiyan, Koruyucumuz [2103:11:07] - Dr. Ross</Entry>
+	
+	<Entry Name="Previous">Önceki</Entry>
+	<Entry Name="Next">Sonraki</Entry>
+	
+	<Entry Name="StatusFileText">WAU (Warden Unit) - 2104:05:10[br]================================[br]ÇEKİRDEK-İKLİM[br] - Basınç: 51.6 psi [br] - Sıcaklık: 4 C [br] - Nem(RH): %89 [br]DESEN[br] - Ayrık: C1045 / A8264 / G3153 / U3084 [br] - Momentum: A3:U4 / Gx:Cy / G1:G2 / Cx:U7 [br]BÜYÜME[br] - Döngü (tahmini): 114 trilyon[br] - Nicelenmiş vektör: 51c:1000q[br] - Göreceli büyüme: %40151[br]PROGNOZ[br] - Paylaşılan değerler: %0.4 (Büyük sapma) [br] - Tahmini analiz: Yok (güvenilmez varlık)</Entry>
+	
+	<Entry Name="AccessErrorMessage">Devam edilemiyor[br][br]Alpha Erişimi Gerekli</Entry>
+	<Entry Name="ManualAccessGranted">Güvenlik Mührü Uygulandı[br][br]Yönlendiriliyor...</Entry>
+	<Entry Name="ManualAccess">Manuel Güvenlik Geçersiz Kılma</Entry>
+	<Entry Name="AccessGranted">Alpha - WAU Odası[br][br]Erişim Verildi</Entry>
+  </CATEGORY>
+  
+  <CATEGORY Name="05_01_phi_inside">
+	<Entry Name="InfoAreaMap">Tesis Haritası</Entry>
+	<Entry Name="InfoLaunchMechanism">OSG Genel Bakış</Entry>
+	<Entry Name="InfoCargoTransportStatus">Tünel Taşımacılığı</Entry>
+	<Entry Name="InfoStaffActivity">Personel Aktivitesi</Entry>
+	<Entry Name="InfoLaunchHistory">Fırlatma Kaydı</Entry>
+	<Entry Name="InfoMain0">Yük kurulumu</Entry>
+	<Entry Name="InfoLaunch0">Omega Uzay Topu</Entry>
+	<Entry Name="InfoLaunch3">Mermi şarjörü</Entry>
+	<Entry Name="InfoLaunch6">Fırlatma kontrolleri</Entry>
+	<Entry Name="InfoCargoArrived">TT1 - Phi Kargo Bölmesi [br]İçerik: ARK [br]Durum: Manuel boşaltma gerektirir</Entry>
+	<Entry Name="InfoCargoUnloaded">TT1 - Phi Kargo Bölmesi [br]İçerik: - [br]Durum: Kullanıma hazır</Entry>
+	<Entry Name="InfoStaff_1">Gelen</Entry>
+	<Entry Name="InfoStaff_2">Giden</Entry>
+	<Entry Name="InfoStaff_3">Aktivite</Entry>
+	<Entry Name="InfoStaffCont_1">2104-05-11: GİR - R. Herber[br]2103-12-27: GİR - I. Pedersen[br]2103-12-27: GİR - S. Lindwall[br]2103-12-27: GİR - C. Chun[br]2103-12-27: GİR - N. Ivashkin[br]2103-12-27: GİR - J. Hill</Entry>
+	<Entry Name="InfoStaffCont_2">2103-12-27: ÇIK - I. Pedersen[br]2103-12-27: ÇIK - S. Lindwall[br]2103-12-27: ÇIK - N. Ivashkin[br]2103-12-27: ÇIK - J. Hill</Entry>
+	<Entry Name="InfoStaffCont_3">2104-05-11 :: ...imzasız R. Herber ziyareti...[br]2103-12-27 :: ARK'ı fırlatma[br]2103-11-14 :: Son bir ziyaret</Entry>
+	<Entry Name="InfoLaunchHistory_1">Hafta #488</Entry>
+	<Entry Name="InfoLaunchHistory_2">Hafta #489</Entry>
+	<Entry Name="InfoLaunchHistory_3">Hafta #490</Entry>
+	<Entry Name="InfoLaunchHistory_4">Hafta #491</Entry>
+	<Entry Name="InfoLaunchHistoryCont_1">Proje: TACT-SX[br]Sahibi: Haimatsu[br]Türü: Yörünge Platformu Yük Gemisi[br]Fırlatma: 2102-12-19 @ 13:00:00[br]***GÖREV TAMAMLANDI***[br][br]Proje: ENDO[br]Sahibi: Luna Prospex[br]Türü: Uzaktan algılama uydusu[br]Fırlatma: 2103-12-20 @ 13:30:00[br]***GÖREV TAMAMLANDI***</Entry>
+	<Entry Name="InfoLaunchHistoryCont_2">Proje: TACT-SX[br]Sahibi: Haimatsu[br]Türü: Yörünge Platformu Yük Gemisi[br]Fırlatma: 2102-12-26 @ 13:00:00[br]***GÖREV TAMAMLANDI***[br][br]Proje: REVEAL[br]Sahibi: Çin-Hint Federasyonu[br]Türü: İletişim uydusu[br]Fırlatma: 2102-12-27 @ 13:00:00[br]***GÖREV TAMAMLANDI***</Entry>
+	<Entry Name="InfoLaunchHistoryCont_3">Proje: TACT-SX[br]Sahibi: Haimatsu[br]Türü: Yörünge Platformu Yük Gemisi[br]Fırlatma: 2103-01-02 @ 14:00:00[br]***GÖREV TAMAMLANDI***[br][br]Proje: AUGE[br]Sahibi: Zentraler Deutscher Kern [br]Türü: Keşif uydusu[br]Fırlatma: 2103-01-03 @ 13:00:00[br]***GÖREV TAMAMLANDI***</Entry>
+	<Entry Name="InfoLaunchHistoryCont_4">Proje: TACT-SX[br]Sahibi: Haimatsu[br]Türü: Yörünge Platformu Yük Gemisi[br]Fırlatma: 2103-01-09 @ 12:30:00[br]***BEKLEMEDE***[br][br]Proje: KARMAN[br]Sahibi: Atmos Surveyor[br]Türü: Hava durumu uydusu[br]Fırlatma: 2103-01-11 @ 13:00:00[br]***BEKLEMEDE***[br][br]On yıllık kusursuz operasyonun ardından Omega Uzay Topu kapanacak, ama gereksiz hale gelmesi için bir kıyamet gerekti.[br]- Vic Auclair</Entry>
+	
+	<Entry Name="NoteStorage">Erzaklar zaten Tau'ya taşındı. Açsan kıçını oraya geri götür. - Kovsky</Entry>
+	<Entry Name="NotePowerMaintenance">Elektrik kesintilerinden etkilenen kilitleri zorlamak için enerji paketlerini kullanın. - Kovsky</Entry>
+  
+	<Entry Name="SatFrameEmpty">Yük Yok</Entry>
+	<Entry Name="SatFrameInserted">Yük Tespit Edildi</Entry>
+	<Entry Name="SatFrameClosing">Yük Bölmesi Kapanıyor</Entry>
+	<Entry Name="SatFrameInsertedAndClosed">Mermi Mühürlendi</Entry>
+	<Entry Name="SatFrameInTransit">Mermi Transit Halinde</Entry>
+	<Entry Name="SatFrameOutside">Tamamlandı</Entry>
+	
+	<Entry Name="InfoPayload">YÜK</Entry>
+	<Entry Name="InfoShell">TESLİMAT MERMİSİ</Entry>
+	<Entry Name="InfoSpaceGun">OMEGA UZAY TOPU</Entry>
+	<Entry Name="InfoLaunchStation">PHI(FIRLATMA ALANI)</Entry>
+	<Entry Name="InfoSurfaceStation">OMEGA (YÜZEY PLATFORMU)</Entry>
+	<Entry Name="InfoDockComplete">KONUŞLANDIRMA TAMAMLANDI</Entry>
+	
+	<Entry Name="InfoSlide1">Bir uydu bir merminin içine yüklenir.</Entry>
+	<Entry Name="InfoSlide2">Mermi, boru boyunca elektromıknatıslar tarafından hızlandırılır.</Entry>
+	<Entry Name="InfoSlide3">Çıkıştan önce Dünya'nın yerçekiminden kaçmak için yeterli momentum kazanılır.</Entry>
+	<Entry Name="InfoSlide4">Uzaya ulaştığında uydu, mermiyi atacak ve açılacaktır.</Entry>
+	<Entry Name="InfoSlide5">Dahili iticiler uyduyu bir yörüngeye oturtur.</Entry>
+	
+	<Entry Name="InfoMapPlayer">BURADASINIZ</Entry>
+	<Entry Name="InfoMapAux">YRD. KONTROL</Entry>
+	<Entry Name="InfoMapStorage">DEPO</Entry>
+	<Entry Name="InfoCargo">KARGO</Entry>
+	
+	<Entry Name="TransferPrepare">Tarama Programı Başlatılıyor...</Entry>
+	<Entry Name="TransferTransferring">Tarama Programı Çalışıyor</Entry>
+	<Entry Name="TransferTransferred">TaramaProgramı Tamamlandı</Entry>
+	<Entry Name="TransferTransferring1">Uplink başlatılıyor...</Entry>
+	<Entry Name="TransferTransferring2">SOMA şablonu hazırlanıyor...</Entry>
+	<Entry Name="TransferTransferring3">SOMA şablonu gönderiliyor...</Entry>
+	<Entry Name="TransferTransferring4">Yakalama başlatılıyor...</Entry>
+	<Entry Name="TransferTransferring5">Yakalamaya hazır:3</Entry>
+	<Entry Name="TransferTransferring6">Yakalamaya hazır:2</Entry>
+	<Entry Name="TransferTransferring7">Yakalamaya hazır:1</Entry>
+	<Entry Name="TransferTransferring8">Yakala</Entry>
+	<Entry Name="TransferTransferring9">Tamamlandı</Entry>
+	<Entry Name="TransferSimon">Simon J</Entry>
+	<Entry Name="TransferCath">Catherine C</Entry>
+	<Entry Name="TransferDone">BİTTİ</Entry>
+	
+	<Entry Name="LaunchButtonLaunch">Fırlat</Entry>
+	<Entry Name="LaunchButtonLaunching">Fırlatılıyor</Entry>
+
+	<Entry Name="LaunchStatus">SİSTEM KONTROLÜ</Entry>
+	<Entry Name="LaunchPrimarySystems">BİRİNCİL SİSTEMLER:</Entry>
+	<Entry Name="LaunchPrimary1">GÜNEŞ YELKENİ AÇILIMI:</Entry>
+	<Entry Name="LaunchPrimary2">ENERJİ ÜRETİMİ:</Entry>
+	<Entry Name="LaunchPrimary3">BİRİNCİL İTİCİ:</Entry>
+	<Entry Name="LaunchPrimary4">YEDEK BATARYALAR:</Entry>
+	<Entry Name="LaunchSecondarySystems">İKİNCİL SİSTEMLER:</Entry>
+	<Entry Name="LaunchSecondary1">İLETİŞİM:</Entry>
+	<Entry Name="LaunchSecondary2">GÖRSEL SENSÖR:</Entry>
+	<Entry Name="LaunchSecondary3">EKLENTİ (kimlik: ARK):</Entry>
+	<Entry Name="LaunchSecondary4">İKİNCİL İTİCİ:</Entry>
+	<Entry Name="LaunchCheck">KONTROL EDİLİYOR...</Entry>
+	<Entry Name="LaunchOK">TAMAM</Entry>
+	
+	<Entry Name="DieErr1">KRİTİK HATA</Entry>
+	<Entry Name="DieErr2">Hata EXT_READCTX570: Cortex Çipi bozuk.</Entry>
+	<Entry Name="DieErrRepeat">Lütfen tekrar deneyin.</Entry>
+	
+  </CATEGORY>
+</LANGUAGE>

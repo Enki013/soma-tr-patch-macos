@@ -1,0 +1,47 @@
+<LANGUAGE>
+    <CATEGORY Name="Voices_05_02_ARK_inside">
+        <Entry Name="general_1bwakeup_001_simon_001">Vay. Burası? İşe yaradı mı?</Entry>
+        <Entry Name="general_1dcommentonworld_001_simon_001">Bu inanılmaz.</Entry>
+        <Entry Name="general_1dcommentonworld_002_simon_001">Çok gerçekçi hissettiriyor.</Entry>
+        <Entry Name="general_1dcommentonworld_003_simon_001">İşe yaradığına inanamıyorum.</Entry>
+        <Entry Name="general_1dcommentonworld_004_simon_001">Evet, başardık!</Entry>
+        <Entry Name="general_1eseecatherine_001_simon_001">Catherine?</Entry>
+        <Entry Name="general_1eseecatherineprompts_001_catherine_001">Hey sen. Otur bakalım.</Entry>
+        <Entry Name="general_1eseecatherineprompts_002_catherine_001">Hadi, yanıma otur.</Entry>
+        <Entry Name="general_1eseecatherineprompts_003_catherine_001">Otur, Simon.</Entry>
+        <Entry Name="general_1eseecatherineprompts_004_catherine_001">Otur artık.</Entry>
+        <Entry Name="general_1fbenchtalk_001_simon_001">Bu gerçekten gerçek. Yani o kadar canlı ki.</Entry>
+        <Entry Name="general_1fbenchtalk_002_catherine_001">Teşekkür ederim. Beğenmene sevindim.</Entry>
+        <Entry Name="general_1fbenchtalk_003_simon_001">Yani burası ARK, değil mi?</Entry>
+        <Entry Name="general_1fbenchtalk_004_catherine_001">Evet, başka ne olacaktı ki?</Entry>
+        <Entry Name="general_1fbenchtalk_005_simon_001">O zaman gerçekten başardık. Cennet gibi bir yer olması gerekiyordu biliyorum ama burası...</Entry>
+        <Entry Name="general_1fbenchtalk_006_catherine_001">...Pathos'tan çok daha mı iyi?</Entry>
+        <Entry Name="general_1fbenchtalk_007_simon_001">Bu hafif kalır. Peki iyi miyiz?</Entry>
+        <Entry Name="general_1fbenchtalk_008_catherine_001">Evet. Güneşin etrafında güvenli bir yörüngedeyiz.</Entry>
+        <Entry Name="general_1fbenchtalk_009_simon_001">Herkes iyi mi?</Entry>
+        <Entry Name="general_1fbenchtalk_010_catherine_001">Brandon burada, eğer kastettiğin buysa.</Entry>
+        <Entry Name="general_1fbenchtalk_011_simon_001">Peki ya Lindwall?</Entry>
+        <Entry Name="general_1fbenchtalk_012_catherine_001">Sarah mı? O da burada.</Entry>
+        <Entry Name="general_1fbenchtalk_013_simon_001">Yani artık bir şey yapmama gerek yok mu?</Entry>
+        <Entry Name="general_1fbenchtalk_014_catherine_001">Şey, şuraya bakabilirsin.</Entry>
+        <Entry Name="general_1fplayernotlooking1_001_simon_001">Nereye?</Entry>
+        <Entry Name="general_1fplayernotlooking1_002_catherine_001">Şuraya.</Entry>
+        <Entry Name="general_1fplayernotlooking2_001_simon_001">Nereye?</Entry>
+        <Entry Name="general_1fplayernotlooking2_002_catherine_001">Gölün diğer tarafına.</Entry>
+        <Entry Name="general_1fplayernotlooking3_001_simon_001">Uh, nereye bakmam gerektiğinden emin değilim.</Entry>
+        <Entry Name="general_1fplayernotlooking3_002_catherine_001">*iç çeker* Denemeye devam et, dahi.</Entry>
+        <Entry Name="general_1garkcityappears_001_simon_001">O da ne?</Entry>
+        <Entry Name="general_1garkcityappears_002_catherine_001">İnşa ettiğimiz şehir.</Entry>
+        <Entry Name="general_1garkcityappears_003_simon_001">Bana da yer var mı?</Entry>
+        <Entry Name="general_1garkcityappears_004_catherine_001">Evet, var.</Entry>
+        <Entry Name="general_1hboatreminders1_001_catherine_001">Hadi oraya gidelim.</Entry>
+        <Entry Name="general_1hboatreminders2_001_catherine_001">Hadi ama. Merak etmiyor musun?</Entry>
+        <Entry Name="general_1hboatreminders3_001_catherine_001">Hadi, Simon. Eve gitme zamanı.</Entry>
+        <Entry Name="general_1eseecatherine2_ver1_001_player_001">Catherine!</Entry>
+        <Entry Name="general_1eseecatherine2_ver1_002_catherine_001">Başardık!</Entry>
+        <Entry Name="general_1ESeeCatherine2_Ver2_001_Player_001">Catherine! Başardık!</Entry>
+        <Entry Name="general_1ESeeCatherine2_Ver2_002_Catherine_001">Başardık tabii.</Entry>
+        <Entry Name="general_1ESeeCatherine2_Ver3_001_Player_001">İşe yaradı, Catherine! İşe yaradı!</Entry>
+        <Entry Name="general_1ESeeCatherine2_Ver3_002_Catherine_001">Başarabileceğimizi biliyordum.</Entry>
+    </CATEGORY>
+</LANGUAGE>

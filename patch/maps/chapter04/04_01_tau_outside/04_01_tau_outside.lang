@@ -1,0 +1,46 @@
+<LANGUAGE>
+    <CATEGORY Name="Voices_04_01_tau_outside">
+        <Entry Name="diverblackbox_diverblackbox_001_diverblackboxa_001">Tanrım, gördün mü onu?</Entry>
+        <Entry Name="diverblackbox_diverblackbox_001_diverblackboxa_002">Lamba ışıklarına sadık kal, yanlarına yaklaşmazlar.</Entry>
+        <Entry Name="diverblackbox_diverblackbox_002_diverblackboxb_001">Başarısız olamam, Glasser. Omicron'a ulaşmam önemli. Geleceğimiz buna bağlı!</Entry>
+        <Entry Name="diverblackbox_diverblackbox_003_diverblackboxa_001">Sakin ol. Sadece yolu takip edelim.</Entry>
+        <Entry Name="diverblackbox_diverblackbox_004_diverblackboxb_001">Eğer ölürsem, Julia Dahl'a WAU'nun kontrolden çıktığını söylemeni istiyorum. Sarang'a ulaşması gerekiyor. O ne yapacağını bilir.</Entry>
+        <Entry Name="diverblackbox_diverblackbox_005_diverblackboxa_001">Ross, onlara kendin söyleyebilirsin. Sadece tempoyu artırmamız gerekiyor, tamam mı?</Entry>
+        <Entry Name="diverblackbox_diverblackbox_006_diverblackboxb_001">Glass. Yolu kaybettik! Geri dönmemiz lazım.</Entry>
+        <Entry Name="diverblackbox_diverblackbox_007_diverblackboxa_001">Nereye gideceğimi biliyorum. Hadi.</Entry>
+        <Entry Name="diverblackbox_diverblackbox_008_diverblackboxb_001">İşte orada, ışık orada!</Entry>
+        <Entry Name="diverblackbox_diverblackbox_009_diverblackboxa_001">Son bir gayret, Ross. Neredeyse geldik, sadece...</Entry>
+        <Entry Name="diverblackbox_diverblackbox_010_diverblackboxb_001">Dikkat et!</Entry>
+        <Entry Name="cathchat_descentpart1_001_catherine_001">Oh, güzel. Geri döndün.</Entry>
+        <Entry Name="cathchat_descentpart1_002_player_001">Ne oldu?</Entry>
+        <Entry Name="cathchat_descentpart1_003_catherine_001">Kafesin üzerine bir şey düştü. Seni anında bayılttı.</Entry>
+        <Entry Name="cathchat_descentpart1_004_player_001">Benimle konuştu.</Entry>
+        <Entry Name="cathchat_descentpart1_005_catherine_001">Bir adama benziyordu -- WAU'nun yaratıklarından biri. Sadece bir an sana baktı, sonra kendini abise attı.</Entry>
+        <Entry Name="cathchat_descentpart1_006_player_001">"Hazırlıklar" yapacağını söyledi? Bu kulağa hiç hoş gelmiyor.</Entry>
+        <Entry Name="cathchat_descentpart1_007_catherine_001">Çok tuhaftı. Seni kesin öldüreceğini sanmıştım. Öldürmediğine sevindim.</Entry>
+        <Entry Name="cathchat_descentpart1_008_player_001">Evet, ben de.</Entry>
+        <Entry Name="cathchat_descentpart2_001_player_001">Görünüşe göre okyanus tabanına yaklaşıyoruz.</Entry>
+        <Entry Name="cathchat_descentpart2_002_catherine_001">Güzel, tırmanıcının daha fazla dayanabileceğinden emin değilim.</Entry>
+        <Entry Name="cathchat_descentpart2_003_catherine_001">Tamam, burası Omega sektörü, Pathos-II tarafından kullanılan abisal ovanın yaklaşık bir dönümlük bir kısmı. Tau'ya ulaşmadan önce biraz yürümemiz gerekeceğini tahmin ediyorum.</Entry>
+        <Entry Name="cathchat_descentpart2_004_player_001">Daha önce burada bulunmadın mı?</Entry>
+        <Entry Name="cathchat_descentpart2_005_catherine_001">Bize yardım edecek şekilde değil.</Entry>
+        <Entry Name="cathchat_descentpart2_006_player_001">Doğru, diğer sen burada bulundun. Eski ayak izlerini takip ediyoruz, Cath.</Entry>
+        <Entry Name="cathchat_descentpart2_007_catherine_001">Ayak izlerim varken.</Entry>
+        <Entry Name="cathchat_descentpart2_008_player_001">Teknik olarak hâlâ buralarda bir yerlerde olabilirsin.</Entry>
+        <Entry Name="cathchat_descentpart2_009_catherine_001">Hatırlatma. Beni korkutuyor.</Entry>
+        <Entry Name="cathchat_descentpart2_009_catherine_002">Pekâlâ, hadi Tau'ya gidelim ve o ARK'ı bulalım.</Entry>
+        <Entry Name="datamine_intercom_pedersen_1_001_pedersen_001">Tau. Cevap ver, Tau. Lütfen cevap ver, Tau.</Entry>
+        <Entry Name="datamine_intercom_pedersen_1_001_pedersen_002">Hiçbir şey. Ölü.</Entry>
+        <Entry Name="datamine_intercom_pedersen_1_002_lindwall_001">Hadi hareket edelim. Bir sonrakini deneyeceğiz.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_001_pedersen_001">Tau, bunu duyabiliyor musun? Orada kimse var mı?</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_002_diverblackboxa_001">Burası Tau. Kimsiniz?</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_003_pedersen_001">Burası Theta'dan Ian Pedersen. Yanımda bir ekip var ve Tau'dan yaklaşık yarım kilometre uzaktayız.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_004_diverblackboxa_001">Ne, nasıl, nasıl...? Tırmanıcı ile mi geldiniz?</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_005_pedersen_001">Dinle, bu sektörde gerçekten zorlanıyoruz.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_005_pedersen_002">Ağır türbülans ilerlemeyi zorlaştırıyor ve sahip olduğunuz yaban hayatı kesinlikle kuduz.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_006_diverblackboxa_001">Fırtına gelir ve gider. Aletler şu anda havanın nispeten iyi olduğunu gösteriyor. Mümkün olan en kısa sürede yola çıkmalısınız.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_006_diverblackboxa_002">Işıklara sadık kalın, yaratıklar sizi yalnız bırakacaktır.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_007_pedersen_001">Pekâlâ, adamı duydunuz. Yola çıkıyoruz, millet.</Entry>
+        <Entry Name="datamine_intercom_pedersen_2_007_pedersen_002">Tau. Kapıları açık bırakın, geliyoruz.</Entry>
+    </CATEGORY>
+</LANGUAGE>

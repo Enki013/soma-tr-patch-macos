@@ -1,0 +1,43 @@
+<LANGUAGE>
+    <CATEGORY Name="Voices_00_02_subway">
+        <Entry Name="Announcer_StationStAndrew_001_Announcer_001">St Andrew -- Bir sonraki istasyon St Andrew.</Entry>
+        <Entry Name="Announcer_StationOsgoode_001_Announcer_001">Osgoode -- Bir sonraki istasyon Osgoode.</Entry>
+        <Entry Name="Announcer_StationStPatrick_001_Announcer_001">St Patrick -- Bir sonraki istasyon St Patrick.</Entry>
+        <Entry Name="Announcer_StationQueensPark_001_Announcer_001">Queen's Park -- Bir sonraki istasyon Queen's Park.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_001_Player_001">Jesse.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_002_Jesse_001">Hey Simon. E-postanı aldım. Sadece iyi şanslar dilemek ve arkanı kolladığımı bildirmek istedim.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_003_Player_001">Teşekkürler, taramadan sonra dükkana gelebilirim sanırım.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_004_Jesse_001">Dert etme. Matt ve Chris bana yardım ediyor.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_005_Player_001">S&L'deki Matty mi?</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_006_Jesse_001">Sanırım duymadın. Tam zamanlı başlıyor -- çizgi roman bölümünde çalışacak.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_007_Player_001">O Ashley'in işi.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_008_Jesse_001">Evet, şey. Biliyorsun...</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_009_Player_001">Boş ver. Boş bir yer bırakarak ona iyilik etmiş olmuyorum. Geri dönecek gibi de değil zaten.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_010_Jesse_001">Neyse, iyi şanslar. Umarım bütün o... bilirsin... ölme olayını tersine çevirmenin bir yolunu bulurlar.</Entry>
+        <Entry Name="simon_phonecall_emailsent_011_player_001">Ölme olayı mı? Gördüğüm en berbat destekçisin.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_012_Jesse_001">E ne demeliyim?</Entry>
+        <Entry Name="simon_phonecall_emailsent_013_player_001">Sonra görüşürüz Jesse. Ben yokken orayı yakma.</Entry>
+        <Entry Name="Simon_Phonecall_EmailSent_014_Jesse_001">Tamamdır ve kapattım, dostum.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_001_Player_001">Jesse.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_002_Jesse_001">Simon, naber? Bugün dükkana gelip gelmeyeceğini merak etmiştim.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_003_Player_001">Belki daha sonra. Beyin taraması işim var, hatırladın mı?</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_004_Jesse_001">O bugün müydü!</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_005_Player_001">Unutacağını biliyordum.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_006_Jesse_001">Üzgünüm. Bir dahaki sefere bana bir mail at. Bunları yazılı görmem gerekiyor, biliyorsun!</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_007_Player_001">Hani takvim satıyoruz ya? Bir tane almalısın.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_008_Jesse_001">Bir tane var. Sadece... içine hiç bir şey yazmıyorum.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_009_Player_001">Belki daha sonra uğrarım. Bu tarama işinin ne kadar süreceğine bağlı.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_010_Jesse_001">Sorun değil. Chris'ten yardım isterim. Neyse, bugün yeni bir eleman alıyoruz. Gelip bir merhaba demek istersin diye düşündüm.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_011_Player_001">Ashley'in yerini çoktan doldurmuşsunuz. Hızlı oldu.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_012_Jesse_001">Hayır, hiç de değil. Haftalardır eleman eksiğimiz vardı ve bunu biliyorsun.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_013_Player_001">Sanırım epey zaman oldu.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_014_Jesse_001">Gerçekten oldu. Bir ay kadar oldu bile.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_015_Jesse_001">Neyse, taramanı yaptır. Doktordan iyi haberler falan al, dükkana gel, yeni çocuğa bir merhaba de, öğle yemeği de benden.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_016_Player_001">Teşekkürler, Jesse. Desteğini gerçekten takdir ediyorum.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_017_Jesse_001">Başka bir elemanı değiştirmek istemiyorum.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_018_Player_001">Bu komik değil.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_019_Jesse_001">Biraz komik.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_020_Player_001">Hayır, hayır, değil. Hoşça kal Jesse.</Entry>
+        <Entry Name="Simon_Phonecall_EmailNotSent_021_Jesse_001">Görüşürüz.</Entry>
+    </CATEGORY>
+</LANGUAGE>

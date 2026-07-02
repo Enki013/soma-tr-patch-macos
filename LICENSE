@@ -1,0 +1,6 @@
+This repository contains installer scripts created for macOS packaging.
+
+The Turkish translation patch files are not authored by this installer package.
+Before publishing or redistributing the patch files, make sure you have permission
+from the original patch/translation authors and comply with SOMA's applicable
+terms.

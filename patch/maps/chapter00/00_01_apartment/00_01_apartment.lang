@@ -1,0 +1,36 @@
+<LANGUAGE>
+    <CATEGORY Name="Voices_00_01_apartment">
+        <Entry Name="Phonecall_1_PhoneCall_001_Player_001">Evet, ayaktayım!</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_002_David_001">Merhaba, Simon Jarrett mı?</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_003_Player_001">Evet, benim.</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_004_David_001">Benim adım David Munshi. Daha önce konuşmuştuk--</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_005_Player_001">Beyin taraması! Hatırladım.</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_006_David_001">İyi misiniz?</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_007_Player_001">Evet, evet -- sadece kötü bir rüyaydı. Bugün için hâlâ anlaştığımız gibi mi?</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_008_David_001">Evet, o yüzden arıyorum. Size gönderdiğim izleyici sıvısını içmenizi hatırlatmak istedim. Hasarların daha iyi bir görüntüsünü yakalamama yardımcı olacak.</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_009_Player_001">Merak etmeyin, bir yerlerde duruyor.</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_010_David_001">Tamam, harika. O zaman birkaç saat içinde görüşürüz.</Entry>
+        <Entry Name="Phonecall_1_PhoneCall_011_Player_001">Tamam -- yakında görüşürüz.</Entry>
+        <Entry Name="SimonTalking_5_FoundTracer_001_Player_001">İşte orada.</Entry>
+        <Entry Name="SimonTalking_6_DrinkTracer_001_Player_001">Süt gibi hissettiriyor ama tadı -- bozuk para yalamak gibi.</Entry>
+        <Entry Name="SimonTalking_7_BrokenShower_001_Player_001">Doktoru bekletmek istemem. Geri döndüğümde duş alırım.</Entry>
+        <Entry Name="SimonTalking_8_OpenDrapes_001_Player_001">Yaz geliyor. Umarım iyi bir yaz olur.</Entry>
+        <Entry Name="SimonTalking_9_InspectFridge_001_Player_001">Hep abur cubur. Eve dönerken daha sağlıklı bir şeyler almalıyım.</Entry>
+        <Entry Name="AnswerMachine_10_AnswerMachine_001_Jerry_001">Hey, Simon. Ben Jesse! Bu hafta sonu çalışıyor musun, ne yapıyorsun?</Entry>
+        <Entry Name="AnswerMachine_10_AnswerMachine_001_Jerry_002">Bir şeyler yaptığını biliyordum -- bu hafta sonu muydu -- yoksa bir sonraki mi?</Entry>
+        <Entry Name="AnswerMachine_10_AnswerMachine_001_Jerry_003">Neyse, bana bir mail falan at. Seni seviyorum, özledim, ciddiyim!</Entry>
+        <Entry Name="AnswerMachine_10_AnswerMachine_002_AnswerMachine_001">Mesajların sonu.</Entry>
+        <Entry Name="AnswerMachine_10_AnswerMachine_003_Player_001">Yemin ederim herifin hafızası balık gibi.</Entry>
+        <Entry Name="SimonTalking_11_UseTV_001_Player_001">Doğru ya, artık televizyon izlemek başımı ağrıtıyor. Teşekkürler, beyin.</Entry>
+        <Entry Name="phonecall_12_trytoexit_001_player_001">Dr. Munshi'yi görmeye gitmeden önce izleyici sıvısını içmeliyim.</Entry>
+        <Entry Name="simontalking_13_tracerreminder_001_player_001">İzleyici sıvısını nereye koymuştum?</Entry>
+        <Entry Name="simontalking_13_tracerreminderb_001_player_001">Hadi ama, radyoaktif izleyici sıvısı. Neredesin?</Entry>
+        <Entry Name="answermachine_13_nonewmessages_001_answermachine_001">Yeni mesajınız yok.</Entry>
+        <Entry Name="phonecall_1_phonecallover_001_player_001">...kahretsin...</Entry>
+        <Entry Name="simontalking_2_unsentmailreaction_001_player_001">Göndere basmayı unutmuşum. Fark eder mi? Zaten ona bundan bahsetmiştim.</Entry>
+        <Entry Name="simontalking_2_sentmailreaction_001_player_001">Geç olsun güç olmasın.</Entry>
+        <Entry Name="simontalking_2_unsentmailreaction_heardmsg_001_player_001">Ah, göndere basmayı unutmuşum.</Entry>
+        <Entry Name="simontalking_10_answermachine_notreadmail_001_player_001">Onu hatırlatmak için bir e-posta bile göndermiştim, değil mi?</Entry>
+        <Entry Name="simontalking_10_answermachine_sentmail_001_player_001">Neyse, e-postayı gönderdim. Şimdiye kadar fark etmiştir.</Entry>
+    </CATEGORY>
+</LANGUAGE>
